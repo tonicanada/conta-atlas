@@ -1,0 +1,15 @@
+[
+  {
+    "id": "pymes-servicios",
+    "title": "PyMES (Servicios)"
+  },
+  {
+    "id": "pymes-comercial",
+    "title": "PyMES (Comercial)"
+  },
+  {
+    "id": "profesional",
+    "title": "Profesional"
+  }
+]
+

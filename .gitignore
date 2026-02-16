@@ -1,0 +1,42 @@
+node_modules
+.docusaurus
+build
+.cache
+.temp
+*.log
+*.tmp
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Env files
+.env
+.env.*
+.envrc
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Generated outputs/reports
+scripts/output/
+
+# Test/coverage/build artifacts (general)
+coverage/
+.nyc_output/
+dist/
+out/
+
+# Generated markers/state
+docs/**/.generated.json
+data/**/generation_state.json

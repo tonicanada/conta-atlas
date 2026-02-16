@@ -1,0 +1,29 @@
+[
+  { "term": "IVA", "tags": ["IVA"], "priority": 10, "aliases": [], "notes": "" },
+  { "term": "IVA acreditable", "tags": ["IVA"], "priority": 10, "aliases": [], "notes": "" },
+  { "term": "IVA trasladado", "tags": ["IVA"], "priority": 10, "aliases": [], "notes": "" },
+  { "term": "IVA por pagar", "tags": ["IVA"], "priority": 8, "aliases": [], "notes": "" },
+  { "term": "IVA a favor", "tags": ["IVA"], "priority": 8, "aliases": [], "notes": "" },
+
+  { "term": "ISR", "tags": ["ISR"], "priority": 10, "aliases": [], "notes": "" },
+  { "term": "UFIN", "tags": ["ISR"], "priority": 10, "aliases": ["CUFIN"], "notes": "" },
+  { "term": "CUFIN", "tags": ["ISR"], "priority": 10, "aliases": [], "notes": "" },
+  { "term": "CUCA", "tags": ["ISR"], "priority": 10, "aliases": [], "notes": "" },
+  { "term": "PTU", "tags": ["ISR"], "priority": 8, "aliases": [], "notes": "" },
+
+  { "term": "CFDI", "tags": ["SAT"], "priority": 10, "aliases": [], "notes": "" },
+  { "term": "RFC", "tags": ["SAT"], "priority": 9, "aliases": [], "notes": "" },
+  { "term": "DIOT", "tags": ["IVA"], "priority": 9, "aliases": [], "notes": "" },
+  { "term": "Buzón Tributario", "tags": ["SAT"], "priority": 7, "aliases": ["Buzón tributario"], "notes": "" },
+
+  { "term": "Base gravable", "tags": ["Impuestos"], "priority": 8, "aliases": [], "notes": "" },
+  { "term": "Tasa", "tags": ["Impuestos"], "priority": 6, "aliases": [], "notes": "" },
+  { "term": "Retención", "tags": ["Impuestos"], "priority": 7, "aliases": [], "notes": "" },
+  { "term": "Acreditamiento", "tags": ["Impuestos"], "priority": 7, "aliases": [], "notes": "" },
+
+  { "term": "Póliza contable", "tags": ["Contabilidad"], "priority": 7, "aliases": ["Poliza contable"], "notes": "" },
+  { "term": "Balanza de comprobación", "tags": ["Contabilidad"], "priority": 7, "aliases": [], "notes": "" },
+  { "term": "Catálogo de cuentas", "tags": ["Contabilidad"], "priority": 7, "aliases": [], "notes": "" },
+  { "term": "Estado de resultados", "tags": ["Contabilidad"], "priority": 6, "aliases": [], "notes": "" },
+  { "term": "Balance general", "tags": ["Contabilidad"], "priority": 6, "aliases": [], "notes": "" }
+]

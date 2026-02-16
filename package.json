@@ -1,0 +1,42 @@
+{
+  "name": "conta-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Conta-Atlas — Documentación del plan de cuentas (SAT) con Docusaurus.",
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "build:data": "node scripts/buildData.js",
+    "build:mx": "node scripts/buildDocsMx.js",
+    "build:all": "npm run build:data && npm run build:mx",
+    "build:glossary": "python3 scripts/build_glossary.py --only-missing --batch 50",
+    "linkify:terms": "python3 scripts/linkify_terms.py",
+    "link:notes": "python3 scripts/link_notes.py"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.8.0",
+    "@docusaurus/plugin-content-docs": "^3.8.0",
+    "@docusaurus/preset-classic": "^3.8.0",
+    "@mdx-js/react": "^3.0.1",
+    "clsx": "^2.1.1",
+    "prism-react-renderer": "^2.4.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "exceljs": "^4.4.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.8.0",
+    "@docusaurus/tsconfig": "^3.8.0",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18.0"
+  }
+}

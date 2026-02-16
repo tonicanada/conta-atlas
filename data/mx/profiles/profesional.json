@@ -1,0 +1,8 @@
+{
+  "id": "profesional",
+  "title": "Profesional",
+  "description": "Esqueleto simplificado (placeholder). Ajusta este perfil para incluir/excluir cuentas.",
+  "includeRoots": ["100", "200", "300", "400", "600"],
+  "excludeRoots": []
+}
+

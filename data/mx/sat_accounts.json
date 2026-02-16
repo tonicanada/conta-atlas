@@ -1,0 +1,8610 @@
+[
+  {
+    "code": "100",
+    "name": "Activo",
+    "parent_code": null,
+    "level": 1,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "100.01",
+    "name": "Activo a corto plazo",
+    "parent_code": "100",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "101",
+    "name": "Caja",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "101.01",
+    "name": "Caja y efectivo",
+    "parent_code": "101",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "102",
+    "name": "Bancos",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "102.01",
+    "name": "Bancos nacionales",
+    "parent_code": "102",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "102.02",
+    "name": "Bancos extranjeros",
+    "parent_code": "102",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "103",
+    "name": "Inversiones",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "103.01",
+    "name": "Inversiones temporales",
+    "parent_code": "103",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "103.02",
+    "name": "Inversiones en fideicomisos",
+    "parent_code": "103",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "103.03",
+    "name": "Otras inversiones",
+    "parent_code": "103",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "104",
+    "name": "Otros instrumentos financieros",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "104.01",
+    "name": "Otros instrumentos financieros",
+    "parent_code": "104",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "105",
+    "name": "Clientes",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "105.01",
+    "name": "Clientes nacionales",
+    "parent_code": "105",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "105.02",
+    "name": "Clientes extranjeros",
+    "parent_code": "105",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "105.03",
+    "name": "Clientes nacionales parte relacionada",
+    "parent_code": "105",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "105.04",
+    "name": "Clientes extranjeros parte relacionada",
+    "parent_code": "105",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "106",
+    "name": "Cuentas y documentos por cobrar a corto plazo",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "106.01",
+    "name": "Cuentas y documentos por cobrar a corto plazo nacional",
+    "parent_code": "106",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "106.02",
+    "name": "Cuentas y documentos por cobrar a corto plazo extranjero",
+    "parent_code": "106",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "106.03",
+    "name": "Cuentas y documentos por cobrar a corto plazo nacional parte relacionada",
+    "parent_code": "106",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "106.04",
+    "name": "Cuentas y documentos por cobrar a corto plazo extranjero parte relacionada",
+    "parent_code": "106",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "106.05",
+    "name": "Intereses por cobrar a corto plazo nacional",
+    "parent_code": "106",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "106.06",
+    "name": "Intereses por cobrar a corto plazo extranjero",
+    "parent_code": "106",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "106.07",
+    "name": "Intereses por cobrar a corto plazo nacional parte relacionada",
+    "parent_code": "106",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "106.08",
+    "name": "Intereses por cobrar a corto plazo extranjero parte relacionada",
+    "parent_code": "106",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "106.09",
+    "name": "Otras cuentas y documentos por cobrar a corto plazo",
+    "parent_code": "106",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "106.10",
+    "name": "Otras cuentas y documentos por cobrar a corto plazo parte relacionada",
+    "parent_code": "106",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "107",
+    "name": "Deudores diversos",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "107.01",
+    "name": "Funcionarios y empleados",
+    "parent_code": "107",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "107.02",
+    "name": "Socios y accionistas",
+    "parent_code": "107",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "107.03",
+    "name": "Partes relacionadas nacionales",
+    "parent_code": "107",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "107.04",
+    "name": "Partes relacionadas extranjeros",
+    "parent_code": "107",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "107.05",
+    "name": "Otros deudores diversos",
+    "parent_code": "107",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "108",
+    "name": "Estimación de cuentas incobrables",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "108.01",
+    "name": "Estimación de cuentas incobrables nacional",
+    "parent_code": "108",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "108.02",
+    "name": "Estimación de cuentas incobrables extranjero",
+    "parent_code": "108",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "108.03",
+    "name": "Estimación de cuentas incobrables nacional parte relacionada",
+    "parent_code": "108",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "108.04",
+    "name": "Estimación de cuentas incobrables extranjero parte relacionada",
+    "parent_code": "108",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109",
+    "name": "Pagos anticipados",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "109.01",
+    "name": "Seguros y fianzas pagados por anticipado nacional",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.02",
+    "name": "Seguros y fianzas pagados por anticipado extranjero",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.03",
+    "name": "Seguros y fianzas pagados por anticipado nacional parte relacionada",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.04",
+    "name": "Seguros y fianzas pagados por anticipado extranjero parte relacionada",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.05",
+    "name": "Rentas pagados por anticipado nacional",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.06",
+    "name": "Rentas pagados por anticipado extranjero",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.07",
+    "name": "Rentas pagados por anticipado nacional parte relacionada",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.08",
+    "name": "Rentas pagados por anticipado extranjero parte relacionada",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.09",
+    "name": "Intereses pagados por anticipado nacional",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.10",
+    "name": "Intereses pagados por anticipado extranjero",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.11",
+    "name": "Intereses pagados por anticipado nacional parte relacionada",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.12",
+    "name": "Intereses pagados por anticipado extranjero parte relacionada",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.13",
+    "name": "Factoraje financiero pagados por anticipado nacional",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.14",
+    "name": "Factoraje financiero pagados por anticipado extranjero",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.15",
+    "name": "Factoraje financiero pagados por anticipado nacional parte relacionada",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.16",
+    "name": "Factoraje financiero pagados por anticipado extranjero parte relacionada",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.17",
+    "name": "Arrendamiento financiero pagados por anticipado nacional",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.18",
+    "name": "Arrendamiento financiero pagados por anticipado extranjero",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.19",
+    "name": "Arrendamiento financiero pagados por anticipado nacional parte relacionada",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.20",
+    "name": "Arrendamiento financiero pagados por anticipado extranjero parte relacionada",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.21",
+    "name": "Pérdida por deterioro de pagos anticipados",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.22",
+    "name": "Derechos fiduciarios",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "109.23",
+    "name": "Otros pagos anticipados",
+    "parent_code": "109",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "110",
+    "name": "Subsidio al empleo por aplicar",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "110.01",
+    "name": "Subsidio al empleo por aplicar",
+    "parent_code": "110",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "111",
+    "name": "Crédito al diesel por acreditar",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "111.01",
+    "name": "Crédito al diesel por acreditar",
+    "parent_code": "111",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "112",
+    "name": "Otros estímulos",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "112.01",
+    "name": "Otros estímulos",
+    "parent_code": "112",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "113",
+    "name": "Impuestos a favor",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "113.01",
+    "name": "IVA a favor",
+    "parent_code": "113",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "113.02",
+    "name": "ISR a favor",
+    "parent_code": "113",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "113.03",
+    "name": "IETU a favor",
+    "parent_code": "113",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "113.04",
+    "name": "IDE a favor",
+    "parent_code": "113",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "113.05",
+    "name": "IA a favor",
+    "parent_code": "113",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "113.06",
+    "name": "Subsidio al empleo",
+    "parent_code": "113",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "113.07",
+    "name": "Pago de lo indebido",
+    "parent_code": "113",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "113.08",
+    "name": "Otros impuestos a favor",
+    "parent_code": "113",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "114",
+    "name": "Pagos provisionales",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "114.01",
+    "name": "Pagos provisionales de ISR",
+    "parent_code": "114",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "115",
+    "name": "Inventario",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "115.01",
+    "name": "Inventario",
+    "parent_code": "115",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "115.02",
+    "name": "Materia prima y materiales",
+    "parent_code": "115",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "115.03",
+    "name": "Producción en proceso",
+    "parent_code": "115",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "115.04",
+    "name": "Productos terminados",
+    "parent_code": "115",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "115.05",
+    "name": "Mercancías en tránsito",
+    "parent_code": "115",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "115.06",
+    "name": "Mercancías en poder de terceros",
+    "parent_code": "115",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "115.07",
+    "name": "Otros",
+    "parent_code": "115",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "116",
+    "name": "Estimación de inventarios obsoletos y de lento movimiento",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "116.01",
+    "name": "Estimación de inventarios obsoletos y de lento movimiento",
+    "parent_code": "116",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "117",
+    "name": "Obras en proceso de inmuebles",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "117.01",
+    "name": "Obras en proceso de inmuebles",
+    "parent_code": "117",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "118",
+    "name": "Impuestos acreditables pagados",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "118.01",
+    "name": "IVA acreditable pagado",
+    "parent_code": "118",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "118.02",
+    "name": "IVA acreditable de importación pagado",
+    "parent_code": "118",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "118.03",
+    "name": "IEPS acreditable pagado",
+    "parent_code": "118",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "118.04",
+    "name": "IEPS pagado en importación",
+    "parent_code": "118",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "119",
+    "name": "Impuestos acreditables por pagar",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "119.01",
+    "name": "IVA pendiente de pago",
+    "parent_code": "119",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "119.02",
+    "name": "IVA de importación pendiente de pago",
+    "parent_code": "119",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "119.03",
+    "name": "IEPS pendiente de pago",
+    "parent_code": "119",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "119.04",
+    "name": "IEPS pendiente de pago en importación",
+    "parent_code": "119",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "120",
+    "name": "Anticipo a proveedores",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "120.01",
+    "name": "Anticipo a proveedores nacional",
+    "parent_code": "120",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "120.02",
+    "name": "Anticipo a proveedores extranjero",
+    "parent_code": "120",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "120.03",
+    "name": "Anticipo a proveedores nacional parte relacionada",
+    "parent_code": "120",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "120.04",
+    "name": "Anticipo a proveedores extranjero parte relacionada",
+    "parent_code": "120",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "121",
+    "name": "Otros activos a corto plazo",
+    "parent_code": "100.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "121.01",
+    "name": "Otros activos a corto plazo",
+    "parent_code": "121",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "100.02",
+    "name": "Activo a largo plazo",
+    "parent_code": "100",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "151",
+    "name": "Terrenos",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "151.01",
+    "name": "Terrenos",
+    "parent_code": "151",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "152",
+    "name": "Edificios",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "152.01",
+    "name": "Edificios",
+    "parent_code": "152",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "153",
+    "name": "Maquinaria y equipo",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "153.01",
+    "name": "Maquinaria y equipo",
+    "parent_code": "153",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "154",
+    "name": "Automóviles, autobuses, camiones de carga, tractocamiones, montacargas y remolques",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "154.01",
+    "name": "Automóviles, autobuses, camiones de carga, tractocamiones, montacargas y remolques",
+    "parent_code": "154",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "155",
+    "name": "Mobiliario y equipo de oficina",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "155.01",
+    "name": "Mobiliario y equipo de oficina",
+    "parent_code": "155",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "156",
+    "name": "Equipo de cómputo",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "156.01",
+    "name": "Equipo de cómputo",
+    "parent_code": "156",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "157",
+    "name": "Equipo de comunicación",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "157.01",
+    "name": "Equipo de comunicación",
+    "parent_code": "157",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "158",
+    "name": "Activos biológicos, vegetales y semovientes",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "158.01",
+    "name": "Activos biológicos, vegetales y semovientes",
+    "parent_code": "158",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "159",
+    "name": "Obras en proceso de activos fijos",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "159.01",
+    "name": "Obras en proceso de activos fijos",
+    "parent_code": "159",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "160",
+    "name": "Otros activos fijos",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "160.01",
+    "name": "Otros activos fijos",
+    "parent_code": "160",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "161",
+    "name": "Ferrocarriles",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "161.01",
+    "name": "Ferrocarriles",
+    "parent_code": "161",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "162",
+    "name": "Embarcaciones",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "162.01",
+    "name": "Embarcaciones",
+    "parent_code": "162",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "163",
+    "name": "Aviones",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "163.01",
+    "name": "Aviones",
+    "parent_code": "163",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "164",
+    "name": "Troqueles, moldes, matrices y herramental",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "164.01",
+    "name": "Troqueles, moldes, matrices y herramental",
+    "parent_code": "164",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "165",
+    "name": "Equipo de comunicaciones telefónicas",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "165.01",
+    "name": "Equipo de comunicaciones telefónicas",
+    "parent_code": "165",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "166",
+    "name": "Equipo de comunicación satelital",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "166.01",
+    "name": "Equipo de comunicación satelital",
+    "parent_code": "166",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "167",
+    "name": "Equipo de adaptaciones para personas con capacidades diferentes",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "167.01",
+    "name": "Equipo de adaptaciones para personas con capacidades diferentes",
+    "parent_code": "167",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "168",
+    "name": "Maquinaria y equipo de generación de energía de fuentes renovables o de sistemas de cogeneración de electricidad eficiente",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "168.01",
+    "name": "Maquinaria y equipo de generación de energía de fuentes renovables o de sistemas de cogeneración de electricidad eficiente",
+    "parent_code": "168",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "169",
+    "name": "Otra maquinaria y equipo",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "169.01",
+    "name": "Otra maquinaria y equipo",
+    "parent_code": "169",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "170",
+    "name": "Adaptaciones y mejoras",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "170.01",
+    "name": "Adaptaciones y mejoras",
+    "parent_code": "170",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171",
+    "name": "Depreciación acumulada de activos fijos",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "171.01",
+    "name": "Depreciación acumulada de edificios",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.02",
+    "name": "Depreciación acumulada de maquinaria y equipo",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.03",
+    "name": "Depreciación acumulada de automóviles, autobuses, camiones de carga, tractocamiones, montacargas y remolques",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.04",
+    "name": "Depreciación acumulada de mobiliario y equipo de oficina",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.05",
+    "name": "Depreciación acumulada de equipo de cómputo",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.06",
+    "name": "Depreciación acumulada de equipo de comunicación",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.07",
+    "name": "Depreciación acumulada de activos biológicos, vegetales y semovientes",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.08",
+    "name": "Depreciación acumulada de otros activos fijos",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.09",
+    "name": "Depreciación acumulada de ferrocarriles",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.10",
+    "name": "Depreciación acumulada de embarcaciones",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.11",
+    "name": "Depreciación acumulada de aviones",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.12",
+    "name": "Depreciación acumulada de troqueles, moldes, matrices y herramental",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.13",
+    "name": "Depreciación acumulada de equipo de comunicaciones telefónicas",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.14",
+    "name": "Depreciación acumulada de equipo de comunicación satelital",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.15",
+    "name": "Depreciación acumulada de equipo de adaptaciones para personas con capacidades diferentes",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.16",
+    "name": "Depreciación acumulada de maquinaria y equipo de generación de energía de fuentes renovables o de sistemas de cogeneración de electricidad eficiente",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.17",
+    "name": "Depreciación acumulada de adaptaciones y mejoras",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "171.18",
+    "name": "Depreciación acumulada de otra maquinaria y equipo",
+    "parent_code": "171",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172",
+    "name": "Pérdida por deterioro acumulado de activos fijos",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "172.01",
+    "name": "Pérdida por deterioro acumulado de edificios",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.02",
+    "name": "Pérdida por deterioro acumulado de maquinaria y equipo",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.03",
+    "name": "Pérdida por deterioro acumulado de automóviles, autobuses, camiones de carga, tractocamiones, montacargas y remolques",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.04",
+    "name": "Pérdida por deterioro acumulado de mobiliario y equipo de oficina",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.05",
+    "name": "Pérdida por deterioro acumulado de equipo de cómputo",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.06",
+    "name": "Pérdida por deterioro acumulado de equipo de comunicación",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.07",
+    "name": "Pérdida por deterioro acumulado de activos biológicos, vegetales y semovientes",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.08",
+    "name": "Pérdida por deterioro acumulado de otros activos fijos",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.09",
+    "name": "Pérdida por deterioro acumulado de ferrocarriles",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.10",
+    "name": "Pérdida por deterioro acumulado de embarcaciones",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.11",
+    "name": "Pérdida por deterioro acumulado de aviones",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.12",
+    "name": "Pérdida por deterioro acumulado de troqueles, moldes, matrices y herramental",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.13",
+    "name": "Pérdida por deterioro acumulado de equipo de comunicaciones telefónicas",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.14",
+    "name": "Pérdida por deterioro acumulado de equipo de comunicación satelital",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.15",
+    "name": "Pérdida por deterioro acumulado de equipo de adaptaciones para personas con capacidades diferentes",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.16",
+    "name": "Pérdida por deterioro acumulado de maquinaria y equipo de generación de energía de fuentes renovables o de sistemas de cogeneración de electricidad eficiente",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.17",
+    "name": "Pérdida por deterioro acumulado de adaptaciones y mejoras",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "172.18",
+    "name": "Pérdida por deterioro acumulado de otra maquinaria y equipo",
+    "parent_code": "172",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "173",
+    "name": "Gastos diferidos",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "173.01",
+    "name": "Gastos diferidos",
+    "parent_code": "173",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "174",
+    "name": "Gastos pre operativos",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "174.01",
+    "name": "Gastos pre operativos",
+    "parent_code": "174",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "175",
+    "name": "Regalías, asistencia técnica y otros gastos diferidos",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "175.01",
+    "name": "Regalías, asistencia técnica y otros gastos diferidos",
+    "parent_code": "175",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "176",
+    "name": "Activos intangibles",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "176.01",
+    "name": "Activos intangibles",
+    "parent_code": "176",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "177",
+    "name": "Gastos de organización",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "177.01",
+    "name": "Gastos de organización",
+    "parent_code": "177",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "178",
+    "name": "Investigación y desarrollo de mercado",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "178.01",
+    "name": "Investigación y desarrollo de mercado",
+    "parent_code": "178",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "179",
+    "name": "Marcas y patentes",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "179.01",
+    "name": "Marcas y patentes",
+    "parent_code": "179",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "180",
+    "name": "Crédito mercantil",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "180.01",
+    "name": "Crédito mercantil",
+    "parent_code": "180",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "181",
+    "name": "Gastos de instalación",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "181.01",
+    "name": "Gastos de instalación",
+    "parent_code": "181",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "182",
+    "name": "Otros activos diferidos",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "182.01",
+    "name": "Otros activos diferidos",
+    "parent_code": "182",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "183",
+    "name": "Amortización acumulada de activos diferidos",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "183.01",
+    "name": "Amortización acumulada de gastos diferidos",
+    "parent_code": "183",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "183.02",
+    "name": "Amortización acumulada de gastos pre operativos",
+    "parent_code": "183",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "183.03",
+    "name": "Amortización acumulada de regalías, asistencia técnica y otros gastos diferidos",
+    "parent_code": "183",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "183.04",
+    "name": "Amortización acumulada de activos intangibles",
+    "parent_code": "183",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "183.05",
+    "name": "Amortización acumulada de gastos de organización",
+    "parent_code": "183",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "183.06",
+    "name": "Amortización acumulada de investigación y desarrollo de mercado",
+    "parent_code": "183",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "183.07",
+    "name": "Amortización acumulada de marcas y patentes",
+    "parent_code": "183",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "183.08",
+    "name": "Amortización acumulada de crédito mercantil",
+    "parent_code": "183",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "183.09",
+    "name": "Amortización acumulada de gastos de instalación",
+    "parent_code": "183",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "183.10",
+    "name": "Amortización acumulada de otros activos diferidos",
+    "parent_code": "183",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "184",
+    "name": "Depósitos en garantía",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "184.01",
+    "name": "Depósitos de fianzas",
+    "parent_code": "184",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "184.02",
+    "name": "Depósitos de arrendamiento de bienes inmuebles",
+    "parent_code": "184",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "184.03",
+    "name": "Otros depósitos en garantía",
+    "parent_code": "184",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "185",
+    "name": "Impuestos diferidos",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "185.01",
+    "name": "Impuestos diferidos ISR",
+    "parent_code": "185",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "186",
+    "name": "Cuentas y documentos por cobrar a largo plazo",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "186.01",
+    "name": "Cuentas y documentos por cobrar a largo plazo nacional",
+    "parent_code": "186",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "186.02",
+    "name": "Cuentas y documentos por cobrar a largo plazo extranjero",
+    "parent_code": "186",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "186.03",
+    "name": "Cuentas y documentos por cobrar a largo plazo nacional parte relacionada",
+    "parent_code": "186",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "186.04",
+    "name": "Cuentas y documentos por cobrar a largo plazo extranjero parte relacionada",
+    "parent_code": "186",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "186.05",
+    "name": "Intereses por cobrar a largo plazo nacional",
+    "parent_code": "186",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "186.06",
+    "name": "Intereses por cobrar a largo plazo extranjero",
+    "parent_code": "186",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "186.07",
+    "name": "Intereses por cobrar a largo plazo nacional parte relacionada",
+    "parent_code": "186",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "186.08",
+    "name": "Intereses por cobrar a largo plazo extranjero parte relacionada",
+    "parent_code": "186",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "186.09",
+    "name": "Otras cuentas y documentos por cobrar a largo plazo",
+    "parent_code": "186",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "186.10",
+    "name": "Otras cuentas y documentos por cobrar a largo plazo parte relacionada",
+    "parent_code": "186",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "187",
+    "name": "Participación de los trabajadores en las utilidades diferidas",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "187.01",
+    "name": "Participación de los trabajadores en las utilidades diferidas",
+    "parent_code": "187",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "188",
+    "name": "Inversiones permanentes en acciones",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "188.01",
+    "name": "Inversiones a largo plazo en subsidiarias",
+    "parent_code": "188",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "188.02",
+    "name": "Inversiones a largo plazo en asociadas",
+    "parent_code": "188",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "188.03",
+    "name": "Otras inversiones permanentes en acciones",
+    "parent_code": "188",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "189",
+    "name": "Estimación por deterioro de inversiones permanentes en acciones",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "189.01",
+    "name": "Estimación por deterioro de inversiones permanentes en acciones",
+    "parent_code": "189",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "190",
+    "name": "Otros instrumentos financieros",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "190.01",
+    "name": "Otros instrumentos financieros",
+    "parent_code": "190",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "191",
+    "name": "Otros activos a largo plazo",
+    "parent_code": "100.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "191.01",
+    "name": "Otros activos a largo plazo",
+    "parent_code": "191",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "200",
+    "name": "Pasivo",
+    "parent_code": null,
+    "level": 1,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "200.01",
+    "name": "Pasivo a corto plazo",
+    "parent_code": "200",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "201",
+    "name": "Proveedores",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "201.01",
+    "name": "Proveedores nacionales",
+    "parent_code": "201",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "201.02",
+    "name": "Proveedores extranjeros",
+    "parent_code": "201",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "201.03",
+    "name": "Proveedores nacionales parte relacionada",
+    "parent_code": "201",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "201.04",
+    "name": "Proveedores extranjeros parte relacionada",
+    "parent_code": "201",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "202",
+    "name": "Cuentas por pagar a corto plazo",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "202.01",
+    "name": "Documentos por pagar bancario y financiero nacional",
+    "parent_code": "202",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "202.02",
+    "name": "Documentos por pagar bancario y financiero extranjero",
+    "parent_code": "202",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "202.03",
+    "name": "Documentos y cuentas por pagar a corto plazo nacional",
+    "parent_code": "202",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "202.04",
+    "name": "Documentos y cuentas por pagar a corto plazo extranjero",
+    "parent_code": "202",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "202.05",
+    "name": "Documentos y cuentas por pagar a corto plazo nacional parte relacionada",
+    "parent_code": "202",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "202.06",
+    "name": "Documentos y cuentas por pagar a corto plazo extranjero parte relacionada",
+    "parent_code": "202",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "202.07",
+    "name": "Intereses por pagar a corto plazo nacional",
+    "parent_code": "202",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "202.08",
+    "name": "Intereses por pagar a corto plazo extranjero",
+    "parent_code": "202",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "202.09",
+    "name": "Intereses por pagar a corto plazo nacional parte relacionada",
+    "parent_code": "202",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "202.10",
+    "name": "Intereses por pagar a corto plazo extranjero parte relacionada",
+    "parent_code": "202",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "202.11",
+    "name": "Dividendo por pagar nacional",
+    "parent_code": "202",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "202.12",
+    "name": "Dividendo por pagar extranjero",
+    "parent_code": "202",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203",
+    "name": "Cobros anticipados a corto plazo",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "203.01",
+    "name": "Rentas cobradas por anticipado a corto plazo nacional",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.02",
+    "name": "Rentas cobradas por anticipado a corto plazo extranjero",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.03",
+    "name": "Rentas cobradas por anticipado a corto plazo nacional parte relacionada",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.04",
+    "name": "Rentas cobradas por anticipado a corto plazo extranjero parte relacionada",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.05",
+    "name": "Intereses cobrados por anticipado a corto plazo nacional",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.06",
+    "name": "Intereses cobrados por anticipado a corto plazo extranjero",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.07",
+    "name": "Intereses cobrados por anticipado a corto plazo nacional parte relacionada",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.08",
+    "name": "Intereses cobrados por anticipado a corto plazo extranjero parte relacionada",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.09",
+    "name": "Factoraje financiero cobrados por anticipado a corto plazo nacional",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.10",
+    "name": "Factoraje financiero cobrados por anticipado a corto plazo extranjero",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.11",
+    "name": "Factoraje financiero cobrados por anticipado a corto plazo nacional parte relacionada",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.12",
+    "name": "Factoraje financiero cobrados por anticipado a corto plazo extranjero parte relacionada",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.13",
+    "name": "Arrendamiento financiero cobrados por anticipado a corto plazo nacional",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.14",
+    "name": "Arrendamiento financiero cobrados por anticipado a corto plazo extranjero",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.15",
+    "name": "Arrendamiento financiero cobrados por anticipado a corto plazo nacional parte relacionada",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.16",
+    "name": "Arrendamiento financiero cobrados por anticipado a corto plazo extranjero parte relacionada",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.17",
+    "name": "Derechos fiduciarios",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "203.18",
+    "name": "Otros cobros anticipados",
+    "parent_code": "203",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "204",
+    "name": "Instrumentos financieros a corto plazo",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "204.01",
+    "name": "Instrumentos financieros a corto plazo",
+    "parent_code": "204",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "205",
+    "name": "Acreedores diversos a corto plazo",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "205.01",
+    "name": "Socios, accionistas o representante legal",
+    "parent_code": "205",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "205.02",
+    "name": "Acreedores diversos a corto plazo nacional",
+    "parent_code": "205",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "205.03",
+    "name": "Acreedores diversos a corto plazo extranjero",
+    "parent_code": "205",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "205.04",
+    "name": "Acreedores diversos a corto plazo nacional parte relacionada",
+    "parent_code": "205",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "205.05",
+    "name": "Acreedores diversos a corto plazo extranjero parte relacionada",
+    "parent_code": "205",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "205.06",
+    "name": "Otros acreedores diversos a corto plazo",
+    "parent_code": "205",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "206",
+    "name": "Anticipo de cliente",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "206.01",
+    "name": "Anticipo de cliente nacional",
+    "parent_code": "206",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "206.02",
+    "name": "Anticipo de cliente extranjero",
+    "parent_code": "206",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "206.03",
+    "name": "Anticipo de cliente nacional parte relacionada",
+    "parent_code": "206",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "206.04",
+    "name": "Anticipo de cliente extranjero parte relacionada",
+    "parent_code": "206",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "206.05",
+    "name": "Otros anticipos de clientes",
+    "parent_code": "206",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "207",
+    "name": "Impuestos trasladados",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "207.01",
+    "name": "IVA trasladado",
+    "parent_code": "207",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "207.02",
+    "name": "IEPS trasladado",
+    "parent_code": "207",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "208",
+    "name": "Impuestos trasladados cobrados",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "208.01",
+    "name": "IVA trasladado cobrado",
+    "parent_code": "208",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "208.02",
+    "name": "IEPS trasladado cobrado",
+    "parent_code": "208",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "209",
+    "name": "Impuestos trasladados no cobrados",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "209.01",
+    "name": "IVA trasladado no cobrado",
+    "parent_code": "209",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "209.02",
+    "name": "IEPS trasladado no cobrado",
+    "parent_code": "209",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "210",
+    "name": "Provisión de sueldos y salarios por pagar",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "210.01",
+    "name": "Provisión de sueldos y salarios por pagar",
+    "parent_code": "210",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "210.02",
+    "name": "Provisión de vacaciones por pagar",
+    "parent_code": "210",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "210.03",
+    "name": "Provisión de aguinaldo por pagar",
+    "parent_code": "210",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "210.04",
+    "name": "Provisión de fondo de ahorro por pagar",
+    "parent_code": "210",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "210.05",
+    "name": "Provisión de asimilados a salarios por pagar",
+    "parent_code": "210",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "210.06",
+    "name": "Provisión de anticipos o remanentes por distribuir",
+    "parent_code": "210",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "210.07",
+    "name": "Provisión de otros sueldos y salarios por pagar",
+    "parent_code": "210",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "211",
+    "name": "Provisión de contribuciones de seguridad social por pagar",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "211.01",
+    "name": "Provisión de IMSS patronal por pagar",
+    "parent_code": "211",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "211.02",
+    "name": "Provisión de SAR por pagar",
+    "parent_code": "211",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "211.03",
+    "name": "Provisión de infonavit por pagar",
+    "parent_code": "211",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "212",
+    "name": "Provisión de impuesto estatal sobre nómina por pagar",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "212.01",
+    "name": "Provisión de impuesto estatal sobre nómina por pagar",
+    "parent_code": "212",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "213",
+    "name": "Impuestos y derechos por pagar",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "213.01",
+    "name": "IVA por pagar",
+    "parent_code": "213",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "213.02",
+    "name": "IEPS por pagar",
+    "parent_code": "213",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "213.03",
+    "name": "ISR por pagar",
+    "parent_code": "213",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "213.04",
+    "name": "Impuesto estatal sobre nómina por pagar",
+    "parent_code": "213",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "213.05",
+    "name": "Impuesto estatal y municipal por pagar",
+    "parent_code": "213",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "213.06",
+    "name": "Derechos por pagar",
+    "parent_code": "213",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "213.07",
+    "name": "Otros impuestos por pagar",
+    "parent_code": "213",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "214",
+    "name": "Dividendos por pagar",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "214.01",
+    "name": "Dividendos por pagar",
+    "parent_code": "214",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "215",
+    "name": "PTU por pagar",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "215.01",
+    "name": "PTU por pagar",
+    "parent_code": "215",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "215.02",
+    "name": "PTU por pagar de ejercicios anteriores",
+    "parent_code": "215",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "215.03",
+    "name": "Provisión de PTU por pagar",
+    "parent_code": "215",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "216",
+    "name": "Impuestos retenidos",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "216.01",
+    "name": "Impuestos retenidos de ISR por sueldos y salarios",
+    "parent_code": "216",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "216.02",
+    "name": "Impuestos retenidos de ISR por asimilados a salarios",
+    "parent_code": "216",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "216.03",
+    "name": "Impuestos retenidos de ISR por arrendamiento",
+    "parent_code": "216",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "216.04",
+    "name": "Impuestos retenidos de ISR por servicios profesionales",
+    "parent_code": "216",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "216.05",
+    "name": "Impuestos retenidos de ISR por dividendos",
+    "parent_code": "216",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "216.06",
+    "name": "Impuestos retenidos de ISR por intereses",
+    "parent_code": "216",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "216.07",
+    "name": "Impuestos retenidos de ISR por pagos al extranjero",
+    "parent_code": "216",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "216.08",
+    "name": "Impuestos retenidos de ISR por venta de acciones",
+    "parent_code": "216",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "216.09",
+    "name": "Impuestos retenidos de ISR por venta de partes sociales",
+    "parent_code": "216",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "216.10",
+    "name": "Impuestos retenidos de IVA",
+    "parent_code": "216",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "216.11",
+    "name": "Retenciones de IMSS a los trabajadores",
+    "parent_code": "216",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "216.12",
+    "name": "Otras impuestos retenidos",
+    "parent_code": "216",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "217",
+    "name": "Pagos realizados por cuenta de terceros",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "217.01",
+    "name": "Pagos realizados por cuenta de terceros",
+    "parent_code": "217",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "218",
+    "name": "Otros pasivos a corto plazo",
+    "parent_code": "200.01",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "218.01",
+    "name": "Otros pasivos a corto plazo",
+    "parent_code": "218",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "200.02",
+    "name": "Pasivo a largo plazo",
+    "parent_code": "200",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "251",
+    "name": "Acreedores diversos a largo plazo",
+    "parent_code": "200.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "251.01",
+    "name": "Socios, accionistas o representante legal",
+    "parent_code": "251",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "251.02",
+    "name": "Acreedores diversos a largo plazo nacional",
+    "parent_code": "251",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "251.03",
+    "name": "Acreedores diversos a largo plazo extranjero",
+    "parent_code": "251",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "251.04",
+    "name": "Acreedores diversos a largo plazo nacional parte relacionada",
+    "parent_code": "251",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "251.05",
+    "name": "Acreedores diversos a largo plazo extranjero parte relacionada",
+    "parent_code": "251",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "251.06",
+    "name": "Otros acreedores diversos a largo plazo",
+    "parent_code": "251",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252",
+    "name": "Cuentas por pagar a largo plazo",
+    "parent_code": "200.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "252.01",
+    "name": "Documentos bancarios y financieros por pagar a largo plazo nacional",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.02",
+    "name": "Documentos bancarios y financieros por pagar a largo plazo extranjero",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.03",
+    "name": "Documentos y cuentas por pagar a largo plazo nacional",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.04",
+    "name": "Documentos y cuentas por pagar a largo plazo extranjero",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.05",
+    "name": "Documentos y cuentas por pagar a largo plazo nacional parte relacionada",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.06",
+    "name": "Documentos y cuentas por pagar a largo plazo extranjero parte relacionada",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.07",
+    "name": "Hipotecas por pagar a largo plazo nacional",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.08",
+    "name": "Hipotecas por pagar a largo plazo extranjero",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.09",
+    "name": "Hipotecas por pagar a largo plazo nacional parte relacionada",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.10",
+    "name": "Hipotecas por pagar a largo plazo extranjero parte relacionada",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.11",
+    "name": "Intereses por pagar a largo plazo nacional",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.12",
+    "name": "Intereses por pagar a largo plazo extranjero",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.13",
+    "name": "Intereses por pagar a largo plazo nacional parte relacionada",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.14",
+    "name": "Intereses por pagar a largo plazo extranjero parte relacionada",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.15",
+    "name": "Dividendos por pagar nacionales",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.16",
+    "name": "Dividendos por pagar extranjeros",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "252.17",
+    "name": "Otras cuentas y documentos por pagar a largo plazo",
+    "parent_code": "252",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253",
+    "name": "Cobros anticipados a largo plazo",
+    "parent_code": "200.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "253.01",
+    "name": "Rentas cobradas por anticipado a largo plazo nacional",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.02",
+    "name": "Rentas cobradas por anticipado a largo plazo extranjero",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.03",
+    "name": "Rentas cobradas por anticipado a largo plazo nacional parte relacionada",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.04",
+    "name": "Rentas cobradas por anticipado a largo plazo extranjero parte relacionada",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.05",
+    "name": "Intereses cobrados por anticipado a largo plazo nacional",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.06",
+    "name": "Intereses cobrados por anticipado a largo plazo extranjero",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.07",
+    "name": "Intereses cobrados por anticipado a largo plazo nacional parte relacionada",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.08",
+    "name": "Intereses cobrados por anticipado a largo plazo extranjero parte relacionada",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.09",
+    "name": "Factoraje financiero cobrados por anticipado a largo plazo nacional",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.10",
+    "name": "Factoraje financiero cobrados por anticipado a largo plazo extranjero",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.11",
+    "name": "Factoraje financiero cobrados por anticipado a largo plazo nacional parte relacionada",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.12",
+    "name": "Factoraje financiero cobrados por anticipado a largo plazo extranjero parte relacionada",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.13",
+    "name": "Arrendamiento financiero cobrados por anticipado a largo plazo nacional",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.14",
+    "name": "Arrendamiento financiero cobrados por anticipado a largo plazo extranjero",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.15",
+    "name": "Arrendamiento financiero cobrados por anticipado a largo plazo nacional parte relacionada",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.16",
+    "name": "Arrendamiento financiero cobrados por anticipado a largo plazo extranjero parte relacionada",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.17",
+    "name": "Derechos fiduciarios",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "253.18",
+    "name": "Otros cobros anticipados",
+    "parent_code": "253",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "254",
+    "name": "Instrumentos financieros a largo plazo",
+    "parent_code": "200.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "254.01",
+    "name": "Instrumentos financieros a largo plazo",
+    "parent_code": "254",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "255",
+    "name": "Pasivos por beneficios a los empleados a largo plazo",
+    "parent_code": "200.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "255.01",
+    "name": "Pasivos por beneficios a los empleados a largo plazo",
+    "parent_code": "255",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "256",
+    "name": "Otros pasivos a largo plazo",
+    "parent_code": "200.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "256.01",
+    "name": "Otros pasivos a largo plazo",
+    "parent_code": "256",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "257",
+    "name": "Participación de los trabajadores en las utilidades diferida",
+    "parent_code": "200.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "257.01",
+    "name": "Participación de los trabajadores en las utilidades diferida",
+    "parent_code": "257",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "258",
+    "name": "Obligaciones contraídas de fideicomisos",
+    "parent_code": "200.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "258.01",
+    "name": "Obligaciones contraídas de fideicomisos",
+    "parent_code": "258",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "259",
+    "name": "Impuestos diferidos",
+    "parent_code": "200.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "259.01",
+    "name": "ISR diferido",
+    "parent_code": "259",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "259.02",
+    "name": "ISR por dividendo diferido",
+    "parent_code": "259",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "259.03",
+    "name": "Otros impuestos diferidos",
+    "parent_code": "259",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "260",
+    "name": "Pasivos diferidos",
+    "parent_code": "200.02",
+    "level": 3,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "260.01",
+    "name": "Pasivos diferidos",
+    "parent_code": "260",
+    "level": 4,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "300",
+    "name": "Capital contable",
+    "parent_code": null,
+    "level": 1,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "301",
+    "name": "Capital social",
+    "parent_code": "300",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "301.01",
+    "name": "Capital fijo",
+    "parent_code": "301",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "301.02",
+    "name": "Capital variable",
+    "parent_code": "301",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "301.03",
+    "name": "Aportaciones para futuros aumentos de capital",
+    "parent_code": "301",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "301.04",
+    "name": "Prima en suscripción de acciones",
+    "parent_code": "301",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "301.05",
+    "name": "Prima en suscripción de partes sociales",
+    "parent_code": "301",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "302",
+    "name": "Patrimonio",
+    "parent_code": "300",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "302.01",
+    "name": "Patrimonio",
+    "parent_code": "302",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "302.02",
+    "name": "Aportación patrimonial",
+    "parent_code": "302",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "302.03",
+    "name": "Déficit o remanente del ejercicio",
+    "parent_code": "302",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "303",
+    "name": "Reserva legal",
+    "parent_code": "300",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "303.01",
+    "name": "Reserva legal",
+    "parent_code": "303",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "304",
+    "name": "Resultado de ejercicios anteriores",
+    "parent_code": "300",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "304.01",
+    "name": "Utilidad de ejercicios anteriores",
+    "parent_code": "304",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "304.02",
+    "name": "Pérdida de ejercicios anteriores",
+    "parent_code": "304",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "304.03",
+    "name": "Resultado integral de ejercicios anteriores",
+    "parent_code": "304",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "304.04",
+    "name": "Déficit o remanente de ejercicio anteriores",
+    "parent_code": "304",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "305",
+    "name": "Resultado del ejercicio",
+    "parent_code": "300",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "305.01",
+    "name": "Utilidad del ejercicio",
+    "parent_code": "305",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "305.02",
+    "name": "Pérdida del ejercicio",
+    "parent_code": "305",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "305.03",
+    "name": "Resultado integral",
+    "parent_code": "305",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "306",
+    "name": "Otras cuentas de capital",
+    "parent_code": "300",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "306.01",
+    "name": "Otras cuentas de capital",
+    "parent_code": "306",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "400",
+    "name": "Ingresos",
+    "parent_code": null,
+    "level": 1,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "401",
+    "name": "Ingresos",
+    "parent_code": "400",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "401.01",
+    "name": "Ventas y/o servicios gravados a la tasa general",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.02",
+    "name": "Ventas y/o servicios gravados a la tasa general de contado",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.03",
+    "name": "Ventas y/o servicios gravados a la tasa general a crédito",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.04",
+    "name": "Ventas y/o servicios gravados al 0%",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.05",
+    "name": "Ventas y/o servicios gravados al 0% de contado",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.06",
+    "name": "Ventas y/o servicios gravados al 0% a crédito",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.07",
+    "name": "Ventas y/o servicios exentos",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.08",
+    "name": "Ventas y/o servicios exentos de contado",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.09",
+    "name": "Ventas y/o servicios exentos a crédito",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.10",
+    "name": "Ventas y/o servicios gravados a la tasa general nacionales partes relacionadas",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.11",
+    "name": "Ventas y/o servicios gravados a la tasa general extranjeros partes relacionadas",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.12",
+    "name": "Ventas y/o servicios gravados al 0% nacionales partes relacionadas",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.13",
+    "name": "Ventas y/o servicios gravados al 0% extranjeros partes relacionadas",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.14",
+    "name": "Ventas y/o servicios exentos nacionales partes relacionadas",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.15",
+    "name": "Ventas y/o servicios exentos extranjeros partes relacionadas",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.16",
+    "name": "Ingresos por servicios administrativos",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.17",
+    "name": "Ingresos por servicios administrativos nacionales partes relacionadas",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.18",
+    "name": "Ingresos por servicios administrativos extranjeros partes relacionadas",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.19",
+    "name": "Ingresos por servicios profesionales",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.20",
+    "name": "Ingresos por servicios profesionales nacionales partes relacionadas",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.21",
+    "name": "Ingresos por servicios profesionales extranjeros partes relacionadas",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.22",
+    "name": "Ingresos por arrendamiento",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.23",
+    "name": "Ingresos por arrendamiento nacionales partes relacionadas",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.24",
+    "name": "Ingresos por arrendamiento extranjeros partes relacionadas",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.25",
+    "name": "Ingresos por exportación",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.26",
+    "name": "Ingresos por comisiones",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.27",
+    "name": "Ingresos por maquila",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.28",
+    "name": "Ingresos por coordinados",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.29",
+    "name": "Ingresos por regalías",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.30",
+    "name": "Ingresos por asistencia técnica",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.31",
+    "name": "Ingresos por donativos",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.32",
+    "name": "Ingresos por intereses (actividad propia)",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.33",
+    "name": "Ingresos de copropiedad",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.34",
+    "name": "Ingresos por fideicomisos",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.35",
+    "name": "Ingresos por factoraje financiero",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.36",
+    "name": "Ingresos por arrendamiento financiero",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.37",
+    "name": "Ingresos de extranjeros con establecimiento en el país",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "401.38",
+    "name": "Otros ingresos propios",
+    "parent_code": "401",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "402",
+    "name": "Devoluciones, descuentos o bonificaciones sobre ingresos",
+    "parent_code": "400",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "402.01",
+    "name": "Devoluciones, descuentos o bonificaciones sobre ventas y/o servicios a la tasa general",
+    "parent_code": "402",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "402.02",
+    "name": "Devoluciones, descuentos o bonificaciones sobre ventas y/o servicios al 0%",
+    "parent_code": "402",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "402.03",
+    "name": "Devoluciones, descuentos o bonificaciones sobre ventas y/o servicios exentos",
+    "parent_code": "402",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "402.04",
+    "name": "Devoluciones, descuentos o bonificaciones de otros ingresos",
+    "parent_code": "402",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "403",
+    "name": "Otros ingresos",
+    "parent_code": "400",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "403.01",
+    "name": "Otros Ingresos",
+    "parent_code": "403",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "403.02",
+    "name": "Otros ingresos nacionales parte relacionada",
+    "parent_code": "403",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "403.03",
+    "name": "Otros ingresos extranjeros parte relacionada",
+    "parent_code": "403",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "403.04",
+    "name": "Ingresos por operaciones discontinuas",
+    "parent_code": "403",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "403.05",
+    "name": "Ingresos por condonación de adeudo",
+    "parent_code": "403",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "500",
+    "name": "Costos",
+    "parent_code": null,
+    "level": 1,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "501",
+    "name": "Costo de venta y/o servicio",
+    "parent_code": "500",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "501.01",
+    "name": "Costo de venta",
+    "parent_code": "501",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "501.02",
+    "name": "Costo de servicios (Mano de obra)",
+    "parent_code": "501",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "501.03",
+    "name": "Materia prima directa utilizada para la producción",
+    "parent_code": "501",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "501.04",
+    "name": "Materia prima consumida en el proceso productivo",
+    "parent_code": "501",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "501.05",
+    "name": "Mano de obra directa consumida",
+    "parent_code": "501",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "501.06",
+    "name": "Mano de obra directa",
+    "parent_code": "501",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "501.07",
+    "name": "Cargos indirectos de producción",
+    "parent_code": "501",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "501.08",
+    "name": "Otros conceptos de costo",
+    "parent_code": "501",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "502",
+    "name": "Compras",
+    "parent_code": "500",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "502.01",
+    "name": "Compras nacionales",
+    "parent_code": "502",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "502.02",
+    "name": "Compras nacionales parte relacionada",
+    "parent_code": "502",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "502.03",
+    "name": "Compras de Importación",
+    "parent_code": "502",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "502.04",
+    "name": "Compras de Importación partes relacionadas",
+    "parent_code": "502",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "503",
+    "name": "Devoluciones, descuentos o bonificaciones sobre compras",
+    "parent_code": "500",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "503.01",
+    "name": "Devoluciones, descuentos o bonificaciones sobre compras",
+    "parent_code": "503",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504",
+    "name": "Otras cuentas de costos",
+    "parent_code": "500",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "504.01",
+    "name": "Gastos indirectos de fabricación",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.02",
+    "name": "Gastos indirectos de fabricación de partes relacionadas nacionales",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.03",
+    "name": "Gastos indirectos de fabricación de partes relacionadas extranjeras",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.04",
+    "name": "Otras cuentas de costos incurridos",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.05",
+    "name": "Otras cuentas de costos incurridos con partes relacionadas nacionales",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.06",
+    "name": "Otras cuentas de costos incurridos con partes relacionadas extranjeras",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.07",
+    "name": "Depreciación de edificios",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.08",
+    "name": "Depreciación de maquinaria y equipo",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.09",
+    "name": "Depreciación de automóviles, autobuses, camiones de carga, tractocamiones, montacargas y remolques",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.10",
+    "name": "Depreciación de mobiliario y equipo de oficina",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.11",
+    "name": "Depreciación de equipo de cómputo",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.12",
+    "name": "Depreciación de equipo de comunicación",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.13",
+    "name": "Depreciación de activos biológicos, vegetales y semovientes",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.14",
+    "name": "Depreciación de otros activos fijos",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.15",
+    "name": "Depreciación de ferrocarriles",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.16",
+    "name": "Depreciación de embarcaciones",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.17",
+    "name": "Depreciación de aviones",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.18",
+    "name": "Depreciación de troqueles, moldes, matrices y herramental",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.19",
+    "name": "Depreciación de equipo de comunicaciones telefónicas",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.20",
+    "name": "Depreciación de equipo de comunicación satelital",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.21",
+    "name": "Depreciación de equipo de adaptaciones para personas con capacidades diferentes",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.22",
+    "name": "Depreciación de maquinaria y equipo de generación de energía de fuentes renovables o de sistemas de cogeneración de electricidad eficiente",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.23",
+    "name": "Depreciación de adaptaciones y mejoras",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.24",
+    "name": "Depreciación de otra maquinaria y equipo",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "504.25",
+    "name": "Otras cuentas de costos",
+    "parent_code": "504",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "505",
+    "name": "Costo de activo fijo",
+    "parent_code": "500",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "505.01",
+    "name": "Costo por venta de activo fijo",
+    "parent_code": "505",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "505.02",
+    "name": "Costo por baja de activo fijo",
+    "parent_code": "505",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "600",
+    "name": "Gastos",
+    "parent_code": null,
+    "level": 1,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "601",
+    "name": "Gastos generales",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "601.01",
+    "name": "Sueldos y salarios",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.02",
+    "name": "Compensaciones",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.03",
+    "name": "Tiempos extras",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.04",
+    "name": "Premios de asistencia",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.05",
+    "name": "Premios de puntualidad",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.06",
+    "name": "Vacaciones",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.07",
+    "name": "Prima vacacional",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.08",
+    "name": "Prima dominical",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.09",
+    "name": "Días festivos",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.10",
+    "name": "Gratificaciones",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.11",
+    "name": "Primas de antigüedad",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.12",
+    "name": "Aguinaldo",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.13",
+    "name": "Indemnizaciones",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.14",
+    "name": "Destajo",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.15",
+    "name": "Despensa",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.16",
+    "name": "Transporte",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.17",
+    "name": "Servicio médico",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.18",
+    "name": "Ayuda en gastos funerarios",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.19",
+    "name": "Fondo de ahorro",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.20",
+    "name": "Cuotas sindicales",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.21",
+    "name": "PTU",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.22",
+    "name": "Estímulo al personal",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.23",
+    "name": "Previsión social",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.24",
+    "name": "Aportaciones para el plan de jubilación",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.25",
+    "name": "Otras prestaciones al personal",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.26",
+    "name": "Cuotas al IMSS",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.27",
+    "name": "Aportaciones al infonavit",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.28",
+    "name": "Aportaciones al SAR",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.29",
+    "name": "Impuesto estatal sobre nóminas",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.30",
+    "name": "Otras aportaciones",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.31",
+    "name": "Asimilados a salarios",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.32",
+    "name": "Servicios administrativos",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.33",
+    "name": "Servicios administrativos partes relacionadas",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.34",
+    "name": "Honorarios a personas físicas residentes nacionales",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.35",
+    "name": "Honorarios a personas físicas residentes nacionales partes relacionadas",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.36",
+    "name": "Honorarios a personas físicas residentes del extranjero",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.37",
+    "name": "Honorarios a personas físicas residentes del extranjero partes relacionadas",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.38",
+    "name": "Honorarios a personas morales residentes nacionales",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.39",
+    "name": "Honorarios a personas morales residentes nacionales partes relacionadas",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.40",
+    "name": "Honorarios a personas morales residentes del extranjero",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.41",
+    "name": "Honorarios a personas morales residentes del extranjero partes relacionadas",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.42",
+    "name": "Honorarios aduanales personas físicas",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.43",
+    "name": "Honorarios aduanales personas morales",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.44",
+    "name": "Honorarios al consejo de administración",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.45",
+    "name": "Arrendamiento a personas físicas residentes nacionales",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.46",
+    "name": "Arrendamiento a personas morales residentes nacionales",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.47",
+    "name": "Arrendamiento a residentes del extranjero",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.48",
+    "name": "Combustibles y lubricantes",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.49",
+    "name": "Viáticos y gastos de viaje",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.50",
+    "name": "Teléfono, internet",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.51",
+    "name": "Agua",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.52",
+    "name": "Energía eléctrica",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.53",
+    "name": "Vigilancia y seguridad",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.54",
+    "name": "Limpieza",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.55",
+    "name": "Papelería y artículos de oficina",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.56",
+    "name": "Mantenimiento y conservación",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.57",
+    "name": "Seguros y fianzas",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.58",
+    "name": "Otros impuestos y derechos",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.59",
+    "name": "Recargos fiscales",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.60",
+    "name": "Cuotas y suscripciones",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.61",
+    "name": "Propaganda y publicidad",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.62",
+    "name": "Capacitación al personal",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.63",
+    "name": "Donativos y ayudas",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.64",
+    "name": "Asistencia técnica",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.65",
+    "name": "Regalías sujetas a otros porcentajes",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.66",
+    "name": "Regalías sujetas al 5%",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.67",
+    "name": "Regalías sujetas al 10%",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.68",
+    "name": "Regalías sujetas al 15%",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.69",
+    "name": "Regalías sujetas al 25%",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.70",
+    "name": "Regalías sujetas al 30%",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.71",
+    "name": "Regalías sin retención",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.72",
+    "name": "Fletes y acarreos",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.73",
+    "name": "Gastos de importación",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.74",
+    "name": "Comisiones sobre ventas",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.75",
+    "name": "Comisiones por tarjetas de crédito",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.76",
+    "name": "Patentes y marcas",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.77",
+    "name": "Uniformes",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.78",
+    "name": "Prediales",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.79",
+    "name": "Gastos generales de urbanización",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.80",
+    "name": "Gastos generales de construcción",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.81",
+    "name": "Fletes del extranjero",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.82",
+    "name": "Recolección de bienes del sector agropecuario y/o ganadero",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.83",
+    "name": "Gastos no deducibles (sin requisitos fiscales)",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "601.84",
+    "name": "Otros gastos generales",
+    "parent_code": "601",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602",
+    "name": "Gastos de venta",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "602.01",
+    "name": "Sueldos y salarios",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.02",
+    "name": "Compensaciones",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.03",
+    "name": "Tiempos extras",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.04",
+    "name": "Premios de asistencia",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.05",
+    "name": "Premios de puntualidad",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.06",
+    "name": "Vacaciones",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.07",
+    "name": "Prima vacacional",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.08",
+    "name": "Prima dominical",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.09",
+    "name": "Días festivos",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.10",
+    "name": "Gratificaciones",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.11",
+    "name": "Primas de antigüedad",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.12",
+    "name": "Aguinaldo",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.13",
+    "name": "Indemnizaciones",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.14",
+    "name": "Destajo",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.15",
+    "name": "Despensa",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.16",
+    "name": "Transporte",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.17",
+    "name": "Servicio médico",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.18",
+    "name": "Ayuda en gastos funerarios",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.19",
+    "name": "Fondo de ahorro",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.20",
+    "name": "Cuotas sindicales",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.21",
+    "name": "PTU",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.22",
+    "name": "Estímulo al personal",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.23",
+    "name": "Previsión social",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.24",
+    "name": "Aportaciones para el plan de jubilación",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.25",
+    "name": "Otras prestaciones al personal",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.26",
+    "name": "Cuotas al IMSS",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.27",
+    "name": "Aportaciones al infonavit",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.28",
+    "name": "Aportaciones al SAR",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.29",
+    "name": "Impuesto estatal sobre nóminas",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.30",
+    "name": "Otras aportaciones",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.31",
+    "name": "Asimilados a salarios",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.32",
+    "name": "Servicios administrativos",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.33",
+    "name": "Servicios administrativos partes relacionadas",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.34",
+    "name": "Honorarios a personas físicas residentes nacionales",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.35",
+    "name": "Honorarios a personas físicas residentes nacionales partes relacionadas",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.36",
+    "name": "Honorarios a personas físicas residentes del extranjero",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.37",
+    "name": "Honorarios a personas físicas residentes del extranjero partes relacionadas",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.38",
+    "name": "Honorarios a personas morales residentes nacionales",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.39",
+    "name": "Honorarios a personas morales residentes nacionales partes relacionadas",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.40",
+    "name": "Honorarios a personas morales residentes del extranjero",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.41",
+    "name": "Honorarios a personas morales residentes del extranjero partes relacionadas",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.42",
+    "name": "Honorarios aduanales personas físicas",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.43",
+    "name": "Honorarios aduanales personas morales",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.44",
+    "name": "Honorarios al consejo de administración",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.45",
+    "name": "Arrendamiento a personas físicas residentes nacionales",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.46",
+    "name": "Arrendamiento a personas morales residentes nacionales",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.47",
+    "name": "Arrendamiento a residentes del extranjero",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.48",
+    "name": "Combustibles y lubricantes",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.49",
+    "name": "Viáticos y gastos de viaje",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.50",
+    "name": "Teléfono, internet",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.51",
+    "name": "Agua",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.52",
+    "name": "Energía eléctrica",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.53",
+    "name": "Vigilancia y seguridad",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.54",
+    "name": "Limpieza",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.55",
+    "name": "Papelería y artículos de oficina",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.56",
+    "name": "Mantenimiento y conservación",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.57",
+    "name": "Seguros y fianzas",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.58",
+    "name": "Otros impuestos y derechos",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.59",
+    "name": "Recargos fiscales",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.60",
+    "name": "Cuotas y suscripciones",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.61",
+    "name": "Propaganda y publicidad",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.62",
+    "name": "Capacitación al personal",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.63",
+    "name": "Donativos y ayudas",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.64",
+    "name": "Asistencia técnica",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.65",
+    "name": "Regalías sujetas a otros porcentajes",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.66",
+    "name": "Regalías sujetas al 5%",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.67",
+    "name": "Regalías sujetas al 10%",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.68",
+    "name": "Regalías sujetas al 15%",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.69",
+    "name": "Regalías sujetas al 25%",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.70",
+    "name": "Regalías sujetas al 30%",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.71",
+    "name": "Regalías sin retención",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.72",
+    "name": "Fletes y acarreos",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.73",
+    "name": "Gastos de importación",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.74",
+    "name": "Comisiones sobre ventas",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.75",
+    "name": "Comisiones por tarjetas de crédito",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.76",
+    "name": "Patentes y marcas",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.77",
+    "name": "Uniformes",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.78",
+    "name": "Prediales",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.79",
+    "name": "Gastos de venta de urbanización",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.80",
+    "name": "Gastos de venta de construcción",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.81",
+    "name": "Fletes del extranjero",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.82",
+    "name": "Recolección de bienes del sector agropecuario y/o ganadero",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.83",
+    "name": "Gastos no deducibles (sin requisitos fiscales)",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "602.84",
+    "name": "Otros gastos de venta",
+    "parent_code": "602",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603",
+    "name": "Gastos de administración",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "603.01",
+    "name": "Sueldos y salarios",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.02",
+    "name": "Compensaciones",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.03",
+    "name": "Tiempos extras",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.04",
+    "name": "Premios de asistencia",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.05",
+    "name": "Premios de puntualidad",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.06",
+    "name": "Vacaciones",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.07",
+    "name": "Prima vacacional",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.08",
+    "name": "Prima dominical",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.09",
+    "name": "Días festivos",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.10",
+    "name": "Gratificaciones",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.11",
+    "name": "Primas de antigüedad",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.12",
+    "name": "Aguinaldo",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.13",
+    "name": "Indemnizaciones",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.14",
+    "name": "Destajo",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.15",
+    "name": "Despensa",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.16",
+    "name": "Transporte",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.17",
+    "name": "Servicio médico",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.18",
+    "name": "Ayuda en gastos funerarios",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.19",
+    "name": "Fondo de ahorro",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.20",
+    "name": "Cuotas sindicales",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.21",
+    "name": "PTU",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.22",
+    "name": "Estímulo al personal",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.23",
+    "name": "Previsión social",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.24",
+    "name": "Aportaciones para el plan de jubilación",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.25",
+    "name": "Otras prestaciones al personal",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.26",
+    "name": "Cuotas al IMSS",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.27",
+    "name": "Aportaciones al infonavit",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.28",
+    "name": "Aportaciones al SAR",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.29",
+    "name": "Impuesto estatal sobre nóminas",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.30",
+    "name": "Otras aportaciones",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.31",
+    "name": "Asimilados a salarios",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.32",
+    "name": "Servicios administrativos",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.33",
+    "name": "Servicios administrativos partes relacionadas",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.34",
+    "name": "Honorarios a personas físicas residentes nacionales",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.35",
+    "name": "Honorarios a personas físicas residentes nacionales partes relacionadas",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.36",
+    "name": "Honorarios a personas físicas residentes del extranjero",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.37",
+    "name": "Honorarios a personas físicas residentes del extranjero partes relacionadas",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.38",
+    "name": "Honorarios a personas morales residentes nacionales",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.39",
+    "name": "Honorarios a personas morales residentes nacionales partes relacionadas",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.40",
+    "name": "Honorarios a personas morales residentes del extranjero",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.41",
+    "name": "Honorarios a personas morales residentes del extranjero partes relacionadas",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.42",
+    "name": "Honorarios aduanales personas físicas",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.43",
+    "name": "Honorarios aduanales personas morales",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.44",
+    "name": "Honorarios al consejo de administración",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.45",
+    "name": "Arrendamiento a personas físicas residentes nacionales",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.46",
+    "name": "Arrendamiento a personas morales residentes nacionales",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.47",
+    "name": "Arrendamiento a residentes del extranjero",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.48",
+    "name": "Combustibles y lubricantes",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.49",
+    "name": "Viáticos y gastos de viaje",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.50",
+    "name": "Teléfono, internet",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.51",
+    "name": "Agua",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.52",
+    "name": "Energía eléctrica",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.53",
+    "name": "Vigilancia y seguridad",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.54",
+    "name": "Limpieza",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.55",
+    "name": "Papelería y artículos de oficina",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.56",
+    "name": "Mantenimiento y conservación",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.57",
+    "name": "Seguros y fianzas",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.58",
+    "name": "Otros impuestos y derechos",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.59",
+    "name": "Recargos fiscales",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.60",
+    "name": "Cuotas y suscripciones",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.61",
+    "name": "Propaganda y publicidad",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.62",
+    "name": "Capacitación al personal",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.63",
+    "name": "Donativos y ayudas",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.64",
+    "name": "Asistencia técnica",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.65",
+    "name": "Regalías sujetas a otros porcentajes",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.66",
+    "name": "Regalías sujetas al 5%",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.67",
+    "name": "Regalías sujetas al 10%",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.68",
+    "name": "Regalías sujetas al 15%",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.69",
+    "name": "Regalías sujetas al 25%",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.70",
+    "name": "Regalías sujetas al 30%",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.71",
+    "name": "Regalías sin retención",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.72",
+    "name": "Fletes y acarreos",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.73",
+    "name": "Gastos de importación",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.74",
+    "name": "Patentes y marcas",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.75",
+    "name": "Uniformes",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.76",
+    "name": "Prediales",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.77",
+    "name": "Gastos de administración de urbanización",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.78",
+    "name": "Gastos de administración de construcción",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.79",
+    "name": "Fletes del extranjero",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.80",
+    "name": "Recolección de bienes del sector agropecuario y/o ganadero",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.81",
+    "name": "Gastos no deducibles (sin requisitos fiscales)",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "603.82",
+    "name": "Otros gastos de administración",
+    "parent_code": "603",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604",
+    "name": "Gastos de fabricación",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "604.01",
+    "name": "Sueldos y salarios",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.02",
+    "name": "Compensaciones",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.03",
+    "name": "Tiempos extras",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.04",
+    "name": "Premios de asistencia",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.05",
+    "name": "Premios de puntualidad",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.06",
+    "name": "Vacaciones",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.07",
+    "name": "Prima vacacional",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.08",
+    "name": "Prima dominical",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.09",
+    "name": "Días festivos",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.10",
+    "name": "Gratificaciones",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.11",
+    "name": "Primas de antigüedad",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.12",
+    "name": "Aguinaldo",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.13",
+    "name": "Indemnizaciones",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.14",
+    "name": "Destajo",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.15",
+    "name": "Despensa",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.16",
+    "name": "Transporte",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.17",
+    "name": "Servicio médico",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.18",
+    "name": "Ayuda en gastos funerarios",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.19",
+    "name": "Fondo de ahorro",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.20",
+    "name": "Cuotas sindicales",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.21",
+    "name": "PTU",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.22",
+    "name": "Estímulo al personal",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.23",
+    "name": "Previsión social",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.24",
+    "name": "Aportaciones para el plan de jubilación",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.25",
+    "name": "Otras prestaciones al personal",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.26",
+    "name": "Cuotas al IMSS",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.27",
+    "name": "Aportaciones al infonavit",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.28",
+    "name": "Aportaciones al SAR",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.29",
+    "name": "Impuesto estatal sobre nóminas",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.30",
+    "name": "Otras aportaciones",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.31",
+    "name": "Asimilados a salarios",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.32",
+    "name": "Servicios administrativos",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.33",
+    "name": "Servicios administrativos partes relacionadas",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.34",
+    "name": "Honorarios a personas físicas residentes nacionales",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.35",
+    "name": "Honorarios a personas físicas residentes nacionales partes relacionadas",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.36",
+    "name": "Honorarios a personas físicas residentes del extranjero",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.37",
+    "name": "Honorarios a personas físicas residentes del extranjero partes relacionadas",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.38",
+    "name": "Honorarios a personas morales residentes nacionales",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.39",
+    "name": "Honorarios a personas morales residentes nacionales partes relacionadas",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.40",
+    "name": "Honorarios a personas morales residentes del extranjero",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.41",
+    "name": "Honorarios a personas morales residentes del extranjero partes relacionadas",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.42",
+    "name": "Honorarios aduanales personas físicas",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.43",
+    "name": "Honorarios aduanales personas morales",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.44",
+    "name": "Honorarios al consejo de administración",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.45",
+    "name": "Arrendamiento a personas físicas residentes nacionales",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.46",
+    "name": "Arrendamiento a personas morales residentes nacionales",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.47",
+    "name": "Arrendamiento a residentes del extranjero",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.48",
+    "name": "Combustibles y lubricantes",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.49",
+    "name": "Viáticos y gastos de viaje",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.50",
+    "name": "Teléfono, internet",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.51",
+    "name": "Agua",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.52",
+    "name": "Energía eléctrica",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.53",
+    "name": "Vigilancia y seguridad",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.54",
+    "name": "Limpieza",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.55",
+    "name": "Papelería y artículos de oficina",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.56",
+    "name": "Mantenimiento y conservación",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.57",
+    "name": "Seguros y fianzas",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.58",
+    "name": "Otros impuestos y derechos",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.59",
+    "name": "Recargos fiscales",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.60",
+    "name": "Cuotas y suscripciones",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.61",
+    "name": "Propaganda y publicidad",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.62",
+    "name": "Capacitación al personal",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.63",
+    "name": "Donativos y ayudas",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.64",
+    "name": "Asistencia técnica",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.65",
+    "name": "Regalías sujetas a otros porcentajes",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.66",
+    "name": "Regalías sujetas al 5%",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.67",
+    "name": "Regalías sujetas al 10%",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.68",
+    "name": "Regalías sujetas al 15%",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.69",
+    "name": "Regalías sujetas al 25%",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.70",
+    "name": "Regalías sujetas al 30%",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.71",
+    "name": "Regalías sin retención",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.72",
+    "name": "Fletes y acarreos",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.73",
+    "name": "Gastos de importación",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.74",
+    "name": "Patentes y marcas",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.75",
+    "name": "Uniformes",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.76",
+    "name": "Prediales",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.77",
+    "name": "Gastos de fabricación de urbanización",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.78",
+    "name": "Gastos de fabricación de construcción",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.79",
+    "name": "Fletes del extranjero",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.80",
+    "name": "Recolección de bienes del sector agropecuario y/o ganadero",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.81",
+    "name": "Gastos no deducibles (sin requisitos fiscales)",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "604.82",
+    "name": "Otros gastos de fabricación",
+    "parent_code": "604",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605",
+    "name": "Mano de obra directa",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "605.01",
+    "name": "Mano de obra",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.02",
+    "name": "Sueldos y Salarios",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.03",
+    "name": "Compensaciones",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.04",
+    "name": "Tiempos extras",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.05",
+    "name": "Premios de asistencia",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.06",
+    "name": "Premios de puntualidad",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.07",
+    "name": "Vacaciones",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.08",
+    "name": "Prima vacacional",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.09",
+    "name": "Prima dominical",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.10",
+    "name": "Días festivos",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.11",
+    "name": "Gratificaciones",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.12",
+    "name": "Primas de antigüedad",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.13",
+    "name": "Aguinaldo",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.14",
+    "name": "Indemnizaciones",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.15",
+    "name": "Destajo",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.16",
+    "name": "Despensa",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.17",
+    "name": "Transporte",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.18",
+    "name": "Servicio médico",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.19",
+    "name": "Ayuda en gastos funerarios",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.20",
+    "name": "Fondo de ahorro",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.21",
+    "name": "Cuotas sindicales",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.22",
+    "name": "PTU",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.23",
+    "name": "Estímulo al personal",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.24",
+    "name": "Previsión social",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.25",
+    "name": "Aportaciones para el plan de jubilación",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.26",
+    "name": "Otras prestaciones al personal",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.27",
+    "name": "Asimilados a salarios",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.28",
+    "name": "Cuotas al IMSS",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.29",
+    "name": "Aportaciones al infonavit",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.30",
+    "name": "Aportaciones al SAR",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "605.31",
+    "name": "Otros costos de mano de obra directa",
+    "parent_code": "605",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "606",
+    "name": "Facilidades administrativas fiscales",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "606.01",
+    "name": "Facilidades administrativas fiscales",
+    "parent_code": "606",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "607",
+    "name": "Participación de los trabajadores en las utilidades",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "607.01",
+    "name": "Participación de los trabajadores en las utilidades",
+    "parent_code": "607",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "608",
+    "name": "Participación en resultados de subsidiarias",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "608.01",
+    "name": "Participación en resultados de subsidiarias",
+    "parent_code": "608",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "609",
+    "name": "Participación en resultados de asociadas",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "609.01",
+    "name": "Participación en resultados de asociadas",
+    "parent_code": "609",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "610",
+    "name": "Participación de los trabajadores en las utilidades diferida",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "610.01",
+    "name": "Participación de los trabajadores en las utilidades diferida",
+    "parent_code": "610",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "611",
+    "name": "Impuesto Sobre la renta",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "611.01",
+    "name": "Impuesto Sobre la renta",
+    "parent_code": "611",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "611.02",
+    "name": "Impuesto Sobre la renta por remanente distribuible",
+    "parent_code": "611",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "612",
+    "name": "Gastos no deducibles para CUFIN",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "612.01",
+    "name": "Gastos no deducibles para CUFIN",
+    "parent_code": "612",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613",
+    "name": "Depreciación contable",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "613.01",
+    "name": "Depreciación de edificios",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.02",
+    "name": "Depreciación de maquinaria y equipo",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.03",
+    "name": "Depreciación de automóviles, autobuses, camiones de carga, tractocamiones, montacargas y remolques",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.04",
+    "name": "Depreciación de mobiliario y equipo de oficina",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.05",
+    "name": "Depreciación de equipo de cómputo",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.06",
+    "name": "Depreciación de equipo de comunicación",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.07",
+    "name": "Depreciación de activos biológicos, vegetales y semovientes",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.08",
+    "name": "Depreciación de otros activos fijos",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.09",
+    "name": "Depreciación de ferrocarriles",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.10",
+    "name": "Depreciación de embarcaciones",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.11",
+    "name": "Depreciación de aviones",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.12",
+    "name": "Depreciación de troqueles, moldes, matrices y herramental",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.13",
+    "name": "Depreciación de equipo de comunicaciones telefónicas",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.14",
+    "name": "Depreciación de equipo de comunicación satelital",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.15",
+    "name": "Depreciación de equipo de adaptaciones para personas con capacidades diferentes",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.16",
+    "name": "Depreciación de maquinaria y equipo de generación de energía de fuentes renovables o de sistemas de cogeneración de electricidad eficiente",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.17",
+    "name": "Depreciación de adaptaciones y mejoras",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "613.18",
+    "name": "Depreciación de otra maquinaria y equipo",
+    "parent_code": "613",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "614",
+    "name": "Amortización contable",
+    "parent_code": "600",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "614.01",
+    "name": "Amortización de gastos diferidos",
+    "parent_code": "614",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "614.02",
+    "name": "Amortización de gastos pre operativos",
+    "parent_code": "614",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "614.03",
+    "name": "Amortización de regalías, asistencia técnica y otros gastos diferidos",
+    "parent_code": "614",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "614.04",
+    "name": "Amortización de activos intangibles",
+    "parent_code": "614",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "614.05",
+    "name": "Amortización de gastos de organización",
+    "parent_code": "614",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "614.06",
+    "name": "Amortización de investigación y desarrollo de mercado",
+    "parent_code": "614",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "614.07",
+    "name": "Amortización de marcas y patentes",
+    "parent_code": "614",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "614.08",
+    "name": "Amortización de crédito mercantil",
+    "parent_code": "614",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "614.09",
+    "name": "Amortización de gastos de instalación",
+    "parent_code": "614",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "614.10",
+    "name": "Amortización de otros activos diferidos",
+    "parent_code": "614",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "700",
+    "name": "Resultado integral de financiamiento",
+    "parent_code": null,
+    "level": 1,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "701",
+    "name": "Gastos financieros",
+    "parent_code": "700",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "701.01",
+    "name": "Pérdida cambiaria",
+    "parent_code": "701",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "701.02",
+    "name": "Pérdida cambiaria nacional parte relacionada",
+    "parent_code": "701",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "701.03",
+    "name": "Pérdida cambiaria extranjero parte relacionada",
+    "parent_code": "701",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "701.04",
+    "name": "Intereses a cargo bancario nacional",
+    "parent_code": "701",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "701.05",
+    "name": "Intereses a cargo bancario extranjero",
+    "parent_code": "701",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "701.06",
+    "name": "Intereses a cargo de personas físicas nacional",
+    "parent_code": "701",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "701.07",
+    "name": "Intereses a cargo de personas físicas extranjero",
+    "parent_code": "701",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "701.08",
+    "name": "Intereses a cargo de personas morales nacional",
+    "parent_code": "701",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "701.09",
+    "name": "Intereses a cargo de personas morales extranjero",
+    "parent_code": "701",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "701.10",
+    "name": "Comisiones bancarias",
+    "parent_code": "701",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "701.11",
+    "name": "Otros gastos financieros",
+    "parent_code": "701",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "702",
+    "name": "Productos financieros",
+    "parent_code": "700",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "702.01",
+    "name": "Utilidad cambiaria",
+    "parent_code": "702",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "702.02",
+    "name": "Utilidad cambiaria nacional parte relacionada",
+    "parent_code": "702",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "702.03",
+    "name": "Utilidad cambiaria extranjero parte relacionada",
+    "parent_code": "702",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "702.04",
+    "name": "Intereses a favor bancarios nacional",
+    "parent_code": "702",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "702.05",
+    "name": "Intereses a favor bancarios extranjero",
+    "parent_code": "702",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "702.06",
+    "name": "Intereses a favor de personas físicas nacional",
+    "parent_code": "702",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "702.07",
+    "name": "Intereses a favor de personas físicas extranjero",
+    "parent_code": "702",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "702.08",
+    "name": "Intereses a favor de personas morales nacional",
+    "parent_code": "702",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "702.09",
+    "name": "Intereses a favor de personas morales extranjero",
+    "parent_code": "702",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "702.10",
+    "name": "Otros productos financieros",
+    "parent_code": "702",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703",
+    "name": "Otros gastos",
+    "parent_code": "700",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "703.01",
+    "name": "Pérdida en venta y/o baja de terrenos",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.02",
+    "name": "Pérdida en venta y/o baja de edificios",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.03",
+    "name": "Pérdida en venta y/o baja de maquinaria y equipo",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.04",
+    "name": "Pérdida en venta y/o baja de automóviles, autobuses, camiones de carga, tractocamiones,",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.05",
+    "name": "montacargas y remolques",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.06",
+    "name": "Pérdida en venta y/o baja de mobiliario y equipo de oficina",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.07",
+    "name": "Pérdida en venta y/o baja de equipo de cómputo",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.08",
+    "name": "Pérdida en venta y/o baja de equipo de comunicación",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.09",
+    "name": "Pérdida en venta y/o baja de activos biológicos, vegetales y semovientes",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.10",
+    "name": "Pérdida en venta y/o baja de otros activos fijos",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.11",
+    "name": "Pérdida en venta y/o baja de ferrocarriles",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.12",
+    "name": "Pérdida en venta y/o baja de embarcaciones",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.13",
+    "name": "Pérdida en venta y/o baja de aviones",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.14",
+    "name": "Pérdida en venta y/o baja de troqueles, moldes, matrices y herramental",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.15",
+    "name": "Pérdida en venta y/o baja de equipo de comunicaciones telefónicas",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.16",
+    "name": "Pérdida en venta y/o baja de equipo de comunicación satelital",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.17",
+    "name": "Pérdida en venta y/o baja de maquinaria y equipo de generación de energía de fuentes renovables o de sistemas de cogeneración de electricidad eficiente",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.18",
+    "name": "Pérdida en venta y/o baja de otra maquinaria y equipo",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.19",
+    "name": "Pérdida por enajenación de acciones",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.20",
+    "name": "Pérdida por enajenación de partes sociales",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "703.21",
+    "name": "Otros gastos",
+    "parent_code": "703",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704",
+    "name": "Otros productos",
+    "parent_code": "700",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "704.01",
+    "name": "Ganancia en venta y/o baja de terrenos",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.02",
+    "name": "Ganancia en venta y/o baja de edificios",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.03",
+    "name": "Ganancia en venta y/o baja de maquinaria y equipo",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.04",
+    "name": "Ganancia en venta y/o baja de automóviles, autobuses, camiones de carga, tractocamiones, montacargas y remolques",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.05",
+    "name": "Ganancia en venta y/o baja de mobiliario y equipo de oficina",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.06",
+    "name": "Ganancia en venta y/o baja de equipo de cómputo",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.07",
+    "name": "Ganancia en venta y/o baja de equipo de comunicación",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.08",
+    "name": "Ganancia en venta y/o baja de activos biológicos, vegetales y semovientes",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.09",
+    "name": "Ganancia en venta y/o baja de otros activos fijos",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.10",
+    "name": "Ganancia en venta y/o baja de ferrocarriles",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.11",
+    "name": "Ganancia en venta y/o baja de embarcaciones",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.12",
+    "name": "Ganancia en venta y/o baja de aviones",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.13",
+    "name": "Ganancia en venta y/o baja de troqueles, moldes, matrices y herramental",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.14",
+    "name": "Ganancia en venta y/o baja de equipo de comunicaciones telefónicas",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.15",
+    "name": "Ganancia en venta y/o baja de equipo de comunicación satelital",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.16",
+    "name": "Ganancia en venta y/o baja de equipo de adaptaciones para personas con capacidades diferentes",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.17",
+    "name": "Ganancia en venta de maquinaria y equipo de generación de energía de fuentes renovables o de sistemas de cogeneración de electricidad eficiente",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.18",
+    "name": "Ganancia en venta y/o baja de otra maquinaria y equipo",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.19",
+    "name": "Ganancia por enajenación de acciones",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.20",
+    "name": "Ganancia por enajenación de partes sociales",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.21",
+    "name": "Ingresos por estímulos fiscales",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.22",
+    "name": "Ingresos por condonación de adeudo",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "704.23",
+    "name": "Otros productos",
+    "parent_code": "704",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "800",
+    "name": "Cuentas de orden",
+    "parent_code": null,
+    "level": 1,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "801",
+    "name": "UFIN del ejercicio",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "801.01",
+    "name": "UFIN",
+    "parent_code": "801",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "801.02",
+    "name": "Contra cuenta UFIN",
+    "parent_code": "801",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "802",
+    "name": "CUFIN del ejercicio",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "802.01",
+    "name": "CUFIN",
+    "parent_code": "802",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "802.02",
+    "name": "Contra cuenta CUFIN",
+    "parent_code": "802",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "803",
+    "name": "CUFIN de ejercicios anteriores",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "803.01",
+    "name": "CUFIN de ejercicios anteriores",
+    "parent_code": "803",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "803.02",
+    "name": "Contra cuenta CUFIN de ejercicios anteriores",
+    "parent_code": "803",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "804",
+    "name": "CUFINRE del ejercicio",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "804.01",
+    "name": "CUFINRE",
+    "parent_code": "804",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "804.02",
+    "name": "Contra cuenta CUFINRE",
+    "parent_code": "804",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "805",
+    "name": "CUFINRE de ejercicios anteriores",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "805.01",
+    "name": "CUFINRE de ejercicios anteriores",
+    "parent_code": "805",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "805.02",
+    "name": "Contra cuenta CUFINRE de ejercicios anteriores",
+    "parent_code": "805",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "806",
+    "name": "CUCA del ejercicio",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "806.01",
+    "name": "CUCA",
+    "parent_code": "806",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "806.02",
+    "name": "Contra cuenta CUCA",
+    "parent_code": "806",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "807",
+    "name": "CUCA de ejercicios anteriores",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "807.01",
+    "name": "CUCA de ejercicios anteriores",
+    "parent_code": "807",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "807.02",
+    "name": "Contra cuenta CUCA de ejercicios anteriores",
+    "parent_code": "807",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "808",
+    "name": "Ajuste anual por inflación acumulable",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "808.01",
+    "name": "Ajuste anual por inflación acumulable",
+    "parent_code": "808",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "808.02",
+    "name": "Acumulación del ajuste anual inflacionario",
+    "parent_code": "808",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "809",
+    "name": "Ajuste anual por inflación deducible",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "809.01",
+    "name": "Ajuste anual por inflación deducible",
+    "parent_code": "809",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "809.02",
+    "name": "Deducción del ajuste anual inflacionario",
+    "parent_code": "809",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "810",
+    "name": "Deducción de inversión",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "810.01",
+    "name": "Deducción de inversión",
+    "parent_code": "810",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "810.02",
+    "name": "Contra cuenta deducción de inversiones",
+    "parent_code": "810",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "811",
+    "name": "Utilidad o pérdida fiscal en venta y/o baja de activo fijo",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "811.01",
+    "name": "Utilidad o pérdida fiscal en venta y/o baja de activo fijo",
+    "parent_code": "811",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "811.02",
+    "name": "Contra cuenta utilidad o pérdida fiscal en venta y/o baja de activo fijo",
+    "parent_code": "811",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "812",
+    "name": "Utilidad o pérdida fiscal en venta acciones o partes sociales",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "812.01",
+    "name": "Utilidad o pérdida fiscal en venta acciones o partes sociales",
+    "parent_code": "812",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "812.02",
+    "name": "Contra cuenta utilidad o pérdida fiscal en venta acciones o partes sociales",
+    "parent_code": "812",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "813",
+    "name": "Pérdidas fiscales pendientes de amortizar actualizadas de ejercicios anteriores",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "813.01",
+    "name": "Pérdidas fiscales pendientes de amortizar actualizadas de ejercicios anteriores",
+    "parent_code": "813",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "813.02",
+    "name": "Actualización de pérdidas fiscales pendientes de amortizar de ejercicios anteriores",
+    "parent_code": "813",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "814",
+    "name": "Mercancías recibidas en consignación",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "814.01",
+    "name": "Mercancías recibidas en consignación",
+    "parent_code": "814",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "814.02",
+    "name": "Consignación de mercancías recibidas",
+    "parent_code": "814",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "815",
+    "name": "Crédito fiscal de IVA e IEPS por la importación de mercancías para empresas certificadas",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "815.01",
+    "name": "Crédito fiscal de IVA e IEPS por la importación de mercancías",
+    "parent_code": "815",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "815.02",
+    "name": "Importación de mercancías con aplicación de crédito fiscal de IVA e IEPS",
+    "parent_code": "815",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "816",
+    "name": "Crédito fiscal de IVA e IEPS por la importación de activos fijos para empresas certificadas",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "816.01",
+    "name": "Crédito fiscal de IVA e IEPS por la importación de activo fijo",
+    "parent_code": "816",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "816.02",
+    "name": "Importación de activo fijo con aplicación de crédito fiscal de IVA e IEPS",
+    "parent_code": "816",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "899",
+    "name": "Otras cuentas de orden",
+    "parent_code": "800",
+    "level": 2,
+    "tags": [],
+    "type": "group"
+  },
+  {
+    "code": "899.01",
+    "name": "Otras cuentas de orden",
+    "parent_code": "899",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "899.02",
+    "name": "Contra cuenta otras cuentas de orden",
+    "parent_code": "899",
+    "level": 3,
+    "tags": [],
+    "type": "leaf"
+  },
+  {
+    "code": "0",
+    "name": "Código para uso exclusivo de contribuyentes del sector financiero",
+    "parent_code": null,
+    "level": 1,
+    "tags": [],
+    "type": "leaf"
+  }
+]
