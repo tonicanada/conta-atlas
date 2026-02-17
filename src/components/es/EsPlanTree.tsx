@@ -126,65 +126,41 @@ export default function EsPlanTree({ view }: { view: 'bizmotion' | 'pgc' }): JSX
     return rawAccounts.filter((a) => String(a.id || '').startsWith('pgc:'));
   }, [rawAccounts, view]);
 
-  const { byId } = useMemo(() => {
+  const { byId, childrenByParent, roots, orderById } = useMemo(() => {
     const by = new Map<string, EsAccount>();
     for (const a of allAccounts) by.set(a.id, a);
-    return { byId: by };
+
+    const ids = allAccounts.map((a) => a.id);
+    const children = buildChildrenByParent(ids, by);
+    const rootIds = buildRoots(ids, by);
+
+    const orderByIdLocal = (aId: string, bId: string) => {
+      const a = by.get(aId);
+      const b = by.get(bId);
+      if (!a || !b) return cmpEs(String(aId), String(bId));
+
+      const aKey = view === 'bizmotion' ? sortKeyForBizmotion(a) : sortKeyForPgc(a);
+      const bKey = view === 'bizmotion' ? sortKeyForBizmotion(b) : sortKeyForPgc(b);
+
+      const keyCmp = cmpEs(String(aKey), String(bKey));
+      if (keyCmp !== 0) return keyCmp;
+
+      const nameCmp = cmpEs(a.name || '', b.name || '');
+      if (nameCmp !== 0) return nameCmp;
+
+      return cmpEs(String(a.id), String(b.id));
+    };
+
+    rootIds.sort(orderByIdLocal);
+    for (const [parent, list] of children.entries()) {
+      list.sort(orderByIdLocal);
+      children.set(parent, list);
+    }
+
+    return { byId: by, childrenByParent: children, roots: rootIds, orderById: orderByIdLocal };
   }, [allAccounts]);
 
   const [defaultOpenLevels, setDefaultOpenLevels] = useState<number>(1);
-
-  const groups = useMemo(() => {
-    if (view === 'bizmotion') {
-      const order: { key: BizmotionClass | 'unclassified'; label: string }[] = [
-        { key: 'A', label: 'Activos' },
-        { key: 'P', label: 'Pasivos' },
-        { key: 'E', label: 'Equity (Patrimonio)' },
-        { key: 'I', label: 'Ingresos' },
-        { key: 'G', label: 'Gastos' },
-        { key: 'unclassified', label: 'Sin clasificar' }
-      ];
-
-      const byGroup = new Map<string, string[]>();
-      for (const a of allAccounts) {
-        const k = a.bizmotion_class || 'unclassified';
-        const list = byGroup.get(k) || [];
-        list.push(a.id);
-        byGroup.set(k, list);
-      }
-
-      return order.map(({ key, label }) => ({
-        key,
-        label,
-        ids: (byGroup.get(key) || []).slice()
-      }));
-    }
-
-    const order: { key: number | 'unclassified'; label: string }[] = [
-      { key: 1, label: 'Grupo 1' },
-      { key: 2, label: 'Grupo 2' },
-      { key: 3, label: 'Grupo 3' },
-      { key: 4, label: 'Grupo 4' },
-      { key: 5, label: 'Grupo 5' },
-      { key: 6, label: 'Grupo 6' },
-      { key: 7, label: 'Grupo 7' },
-      { key: 'unclassified', label: 'Sin clasificar' }
-    ];
-
-    const byGroup = new Map<string | number, string[]>();
-    for (const a of allAccounts) {
-      const k = a.pgc_group ?? 'unclassified';
-      const list = byGroup.get(k) || [];
-      list.push(a.id);
-      byGroup.set(k, list);
-    }
-
-    return order.map(({ key, label }) => ({
-      key,
-      label,
-      ids: (byGroup.get(key) || []).slice()
-    }));
-  }, [allAccounts, view]);
 
   if (allAccounts.length === 0) {
     return (
@@ -217,54 +193,20 @@ export default function EsPlanTree({ view }: { view: 'bizmotion' | 'pgc' }): JSX
         </div>
       </div>
 
-      {groups.map((g) => {
-        const ids = g.ids;
-        const childrenByParent = buildChildrenByParent(ids, byId);
-        const roots = buildRoots(ids, byId);
-
-        const orderById = (aId: string, bId: string) => {
-          const a = byId.get(aId);
-          const b = byId.get(bId);
-          if (!a || !b) return cmpEs(String(aId), String(bId));
-
-          const aKey = view === 'bizmotion' ? sortKeyForBizmotion(a) : sortKeyForPgc(a);
-          const bKey = view === 'bizmotion' ? sortKeyForBizmotion(b) : sortKeyForPgc(b);
-
-          const keyCmp = cmpEs(String(aKey), String(bKey));
-          if (keyCmp !== 0) return keyCmp;
-
-          const nameCmp = cmpEs(a.name || '', b.name || '');
-          if (nameCmp !== 0) return nameCmp;
-
-          return cmpEs(String(a.id), String(b.id));
-        };
-
-        roots.sort(orderById);
-
-        return (
-          <section key={String(g.key)} className="margin-bottom--lg">
-            <h2>{g.label}</h2>
-            {ids.length === 0 ? (
-              <div className="alert alert--secondary">Sin cuentas en este grupo.</div>
-            ) : (
-              <ul>
-                {roots.map((rootId) => (
-                  <TreeNode
-                    key={rootId}
-                    id={rootId}
-                    byId={byId}
-                    childrenByParent={childrenByParent}
-                    orderById={orderById}
-                    defaultOpenLevels={defaultOpenLevels}
-                    depth={0}
-                    view={view}
-                  />
-                ))}
-              </ul>
-            )}
-          </section>
-        );
-      })}
+      <ul>
+        {roots.map((rootId) => (
+          <TreeNode
+            key={rootId}
+            id={rootId}
+            byId={byId}
+            childrenByParent={childrenByParent}
+            orderById={orderById}
+            defaultOpenLevels={defaultOpenLevels}
+            depth={0}
+            view={view}
+          />
+        ))}
+      </ul>
     </div>
   );
 }
