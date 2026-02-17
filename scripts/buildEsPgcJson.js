@@ -65,17 +65,6 @@ function cleanName(value) {
   return out;
 }
 
-function parseNameAndSortKey(accountNameRaw) {
-  const raw = String(accountNameRaw || '').trim();
-  if (!raw) return { name: '', bizmotion_sort_key: null };
-
-  // Pattern: "1.A.1.11.206 - Inmovilizado intangible"
-  const m = raw.match(/^\s*([0-9]+(?:\.[A-Za-z0-9]+)+)\s*[-–—]\s*(.+)\s*$/);
-  if (m) return { name: cleanName(m[2]), bizmotion_sort_key: m[1] };
-
-  return { name: cleanName(raw), bizmotion_sort_key: null };
-}
-
 function inferBizmotionClass(bizmotion_sort_key) {
   if (!bizmotion_sort_key) return null;
   const m = String(bizmotion_sort_key).match(/^\d+\.(A|P|E|I|G)(?:\.|$)/i);
@@ -94,10 +83,170 @@ function inferPgcGroup(code_pgc) {
 
 function findColIndex(headerNorm, includesAny) {
   for (const inc of includesAny) {
-    const idx = headerNorm.findIndex((h) => h.includes(inc));
+    const idx = headerNorm.findIndex((h) => String(h || '').includes(inc));
     if (idx !== -1) return idx + 1; // exceljs is 1-based for getCell()
   }
   return 0;
+}
+
+function readHeaderRow(worksheet, rowNumber = 1) {
+  const headerRow = worksheet.getRow(rowNumber);
+  const headerValues = Array.isArray(headerRow.values) ? headerRow.values : [];
+  const dense = [];
+  for (let i = 1; i < headerValues.length; i += 1) {
+    const h = headerValues[i];
+    dense.push(h == null ? '' : String(h));
+  }
+  return dense;
+}
+
+function findWorksheetByNameOrFirst(workbook, preferredNames) {
+  for (const name of preferredNames) {
+    const ws = workbook.getWorksheet(name);
+    if (ws) return ws;
+  }
+  return workbook.worksheets[0] || null;
+}
+
+function parseBizmotionSheet(worksheet) {
+  const header = readHeaderRow(worksheet, 1);
+  const headerNorm = header.map(stripAccents);
+
+  const nameIdx = findColIndex(headerNorm, ['account name', 'nombre', 'name', 'cuenta']);
+  const codeIdx = findColIndex(headerNorm, ['account number', 'codigo', 'code', 'numero', 'número', 'number']);
+  const parentCodeIdx = findColIndex(headerNorm, ['parent account number', 'parent code', 'codigo padre', 'parent number']);
+  const isGroupIdx = findColIndex(headerNorm, ['is group', 'grupo', 'group']);
+
+  if (!nameIdx || !codeIdx) {
+    console.error('No pude detectar columnas de nombre/código en la hoja Bizmotion.');
+    console.error('Header:', header);
+    process.exit(1);
+  }
+
+  const rows = [];
+  worksheet.eachRow({ includeEmpty: false }, (row, rowNumber) => {
+    if (rowNumber === 1) return;
+    const rawName = cellToPrimitive(row.getCell(nameIdx).value);
+    const rawCode = cellToPrimitive(row.getCell(codeIdx).value);
+    const rawParentCode = parentCodeIdx ? cellToPrimitive(row.getCell(parentCodeIdx).value) : null;
+    const rawIsGroup = isGroupIdx ? cellToPrimitive(row.getCell(isGroupIdx).value) : null;
+
+    const name = cleanName(rawName);
+    const bizmotion_sort_key = formatCode(rawCode);
+    const parent_sort_key = formatCode(rawParentCode);
+    if (!name && !bizmotion_sort_key) return;
+
+    rows.push({
+      name,
+      bizmotion_sort_key,
+      parent_sort_key,
+      is_group_raw: rawIsGroup
+    });
+  });
+
+  const accounts = rows.map((r) => ({
+    id: `bm:${r.bizmotion_sort_key}`,
+    name: r.name,
+    is_group: null,
+    parent_id: r.parent_sort_key ? `bm:${r.parent_sort_key}` : null,
+    bizmotion_class: inferBizmotionClass(r.bizmotion_sort_key),
+    bizmotion_sort_key: r.bizmotion_sort_key,
+    pgc_group: null,
+    pgc_sort_key: null,
+    code_pgc: null,
+    code_display: r.bizmotion_sort_key || null,
+    _is_group_raw: r.is_group_raw
+  }));
+
+  const byId = new Map(accounts.map((a) => [a.id, a]));
+  const childrenByParent = new Map();
+  for (const a of accounts) {
+    if (!a.parent_id) continue;
+    if (!byId.has(a.parent_id)) continue;
+    const list = childrenByParent.get(a.parent_id) || [];
+    list.push(a.id);
+    childrenByParent.set(a.parent_id, list);
+  }
+
+  for (const a of accounts) {
+    const hinted = truthy(a._is_group_raw);
+    if (hinted !== null) a.is_group = hinted;
+    else a.is_group = (childrenByParent.get(a.id) || []).length > 0;
+    delete a._is_group_raw;
+  }
+
+  return accounts;
+}
+
+function parsePgcSheet(worksheet) {
+  const header = readHeaderRow(worksheet, 1);
+  const headerNorm = header.map(stripAccents);
+
+  const numIdx = findColIndex(headerNorm, ['num', 'numero', 'número', 'account number', 'codigo', 'code']);
+  const nameIdx = findColIndex(headerNorm, ['cuenta', 'account name', 'nombre', 'name']);
+  if (!numIdx || !nameIdx) {
+    console.error('No pude detectar columnas num/cuenta en la hoja PGC.');
+    console.error('Header:', header);
+    process.exit(1);
+  }
+
+  const rows = [];
+  worksheet.eachRow({ includeEmpty: false }, (row, rowNumber) => {
+    if (rowNumber === 1) return;
+    const rawNum = cellToPrimitive(row.getCell(numIdx).value);
+    const rawName = cellToPrimitive(row.getCell(nameIdx).value);
+    const num = formatCode(rawNum);
+    const name = cleanName(rawName);
+    if (!num && !name) return;
+    if (!num) return;
+    rows.push({ num, name });
+  });
+
+  const codes = new Set(rows.map((r) => r.num));
+
+  function inferParentCode(code) {
+    const s = String(code);
+    for (let i = s.length - 1; i >= 1; i -= 1) {
+      const candidate = s.slice(0, i);
+      if (codes.has(candidate)) return candidate;
+    }
+    return null;
+  }
+
+  const accounts = rows.map((r) => ({
+    id: `pgc:${r.num}`,
+    name: r.name || r.num,
+    is_group: null,
+    parent_id: null,
+    bizmotion_class: null,
+    bizmotion_sort_key: null,
+    pgc_group: inferPgcGroup(r.num),
+    pgc_sort_key: String(r.num),
+    code_pgc: String(r.num),
+    code_display: String(r.num)
+  }));
+
+  const byCode = new Map(accounts.map((a) => [a.code_pgc, a]));
+  for (const a of accounts) {
+    const parentCode = inferParentCode(a.code_pgc);
+    a.parent_id = parentCode && byCode.has(parentCode) ? byCode.get(parentCode).id : null;
+  }
+
+  const byId = new Map(accounts.map((a) => [a.id, a]));
+  const childrenByParent = new Map();
+  for (const a of accounts) {
+    if (!a.parent_id) continue;
+    if (!byId.has(a.parent_id)) continue;
+    const list = childrenByParent.get(a.parent_id) || [];
+    list.push(a.id);
+    childrenByParent.set(a.parent_id, list);
+  }
+
+  for (const a of accounts) {
+    a.is_group = (childrenByParent.get(a.id) || []).length > 0;
+  }
+
+  return accounts;
 }
 
 async function main() {
@@ -123,128 +272,25 @@ async function main() {
 
   const workbook = new ExcelJS.Workbook();
   await workbook.xlsx.readFile(excelPath);
-  const worksheet = workbook.worksheets[0];
-  if (!worksheet) {
+  if (!workbook.worksheets.length) {
     console.error('El Excel no contiene hojas.');
     process.exit(1);
   }
 
-  const headerRow = worksheet.getRow(1);
-  const headerValues = Array.isArray(headerRow.values) ? headerRow.values : [];
-  const header = headerValues.slice(1).map((h) => (h == null ? '' : String(h)));
-  const headerNorm = header.map(stripAccents);
-
-  const nameIdx = findColIndex(headerNorm, ['account name', 'nombre', 'name', 'cuenta']);
-  const codeIdx = findColIndex(headerNorm, ['account number', 'codigo', 'code', 'numero', 'número', 'number']);
-  const parentCodeIdx = findColIndex(headerNorm, ['parent account number', 'parent code', 'codigo padre', 'parent number']);
-  const parentNameIdx = findColIndex(headerNorm, ['parent account', 'cuenta padre', 'parent name']);
-  const isGroupIdx = findColIndex(headerNorm, ['is group', 'grupo', 'group']);
-
-  if (!nameIdx) {
-    console.error('No pude detectar la columna de nombre de cuenta en el Excel.');
-    console.error('Header:', header);
+  const bizmotionWs = findWorksheetByNameOrFirst(workbook, ['import_erp_v2', 'import_erp', 'import']);
+  const pgcWs = findWorksheetByNameOrFirst(workbook, ['cuentas_pyme', 'cuentas_balance', 'pgc_pyme']);
+  if (!bizmotionWs) {
+    console.error('No pude encontrar hoja Bizmotion (p.ej. import_erp_v2).');
+    process.exit(1);
+  }
+  if (!pgcWs) {
+    console.error('No pude encontrar hoja PGC (p.ej. cuentas_pyme).');
     process.exit(1);
   }
 
-  const rows = [];
-  worksheet.eachRow({ includeEmpty: false }, (row, rowNumber) => {
-    if (rowNumber === 1) return;
-    const rawName = cellToPrimitive(row.getCell(nameIdx).value);
-    const rawCode = codeIdx ? cellToPrimitive(row.getCell(codeIdx).value) : null;
-    const rawParentCode = parentCodeIdx ? cellToPrimitive(row.getCell(parentCodeIdx).value) : null;
-    const rawParentName = parentNameIdx ? cellToPrimitive(row.getCell(parentNameIdx).value) : null;
-    const rawIsGroup = isGroupIdx ? cellToPrimitive(row.getCell(isGroupIdx).value) : null;
-
-    const { name, bizmotion_sort_key } = parseNameAndSortKey(rawName);
-    const code_pgc = formatCode(rawCode);
-    const parent_code_pgc = formatCode(rawParentCode);
-    const parent_name = rawParentName == null ? null : cleanName(rawParentName);
-
-    if (!name && !code_pgc && !bizmotion_sort_key) return;
-
-    rows.push({
-      rowNumber,
-      name,
-      name_norm: stripAccents(name),
-      code_pgc,
-      parent_code_pgc,
-      parent_name,
-      parent_name_norm: parent_name ? stripAccents(parent_name) : null,
-      is_group_raw: rawIsGroup,
-      bizmotion_sort_key,
-      bizmotion_class: inferBizmotionClass(bizmotion_sort_key),
-      pgc_group: inferPgcGroup(code_pgc),
-      pgc_sort_key: code_pgc ? String(code_pgc) : null
-    });
-  });
-
-  // Build stable IDs.
-  const accounts = rows.map((r) => {
-    const id = r.code_pgc || r.bizmotion_sort_key || `row_${r.rowNumber}`;
-    return {
-      id,
-      name: r.name,
-      is_group: null,
-      parent_id: null,
-      bizmotion_class: r.bizmotion_class,
-      bizmotion_sort_key: r.bizmotion_sort_key,
-      pgc_group: r.pgc_group,
-      pgc_sort_key: r.pgc_sort_key,
-      code_pgc: r.code_pgc,
-      code_display: r.code_pgc || null,
-      _parent_code_pgc: r.parent_code_pgc,
-      _parent_name_norm: r.parent_name_norm
-    };
-  });
-
-  const byId = new Map(accounts.map((a) => [a.id, a]));
-  const byCodePgc = new Map();
-  const byNameNorm = new Map();
-  const byBizmotionSortKey = new Map();
-
-  for (const a of accounts) {
-    if (a.code_pgc && !byCodePgc.has(a.code_pgc)) byCodePgc.set(a.code_pgc, a);
-    if (a.name) {
-      const n = stripAccents(a.name);
-      if (n && !byNameNorm.has(n)) byNameNorm.set(n, a);
-    }
-    if (a.bizmotion_sort_key && !byBizmotionSortKey.has(a.bizmotion_sort_key)) byBizmotionSortKey.set(a.bizmotion_sort_key, a);
-  }
-
-  for (const a of accounts) {
-    let parent = null;
-    if (a._parent_code_pgc && byCodePgc.has(a._parent_code_pgc)) parent = byCodePgc.get(a._parent_code_pgc);
-    else if (a._parent_name_norm && byNameNorm.has(a._parent_name_norm)) parent = byNameNorm.get(a._parent_name_norm);
-    else if (a.bizmotion_sort_key) {
-      const parts = String(a.bizmotion_sort_key).split('.');
-      if (parts.length > 1) {
-        const parentKey = parts.slice(0, -1).join('.');
-        if (byBizmotionSortKey.has(parentKey)) parent = byBizmotionSortKey.get(parentKey);
-      }
-    }
-    a.parent_id = parent ? parent.id : null;
-  }
-
-  const childrenByParent = new Map();
-  for (const a of accounts) {
-    if (!a.parent_id) continue;
-    const list = childrenByParent.get(a.parent_id) || [];
-    list.push(a.id);
-    childrenByParent.set(a.parent_id, list);
-  }
-
-  for (const a of accounts) {
-    const hinted = truthy(a.is_group_raw);
-    if (hinted !== null) a.is_group = hinted;
-    else a.is_group = (childrenByParent.get(a.id) || []).length > 0;
-  }
-
-  // Remove internal fields
-  for (const a of accounts) {
-    delete a._parent_code_pgc;
-    delete a._parent_name_norm;
-    delete a.is_group_raw;
-  }
+  const bizmotionAccounts = parseBizmotionSheet(bizmotionWs);
+  const pgcAccounts = parsePgcSheet(pgcWs);
+  const accounts = [...bizmotionAccounts, ...pgcAccounts];
 
   accounts.sort((a, b) => String(a.id).localeCompare(String(b.id), 'es', { numeric: true }));
 
@@ -252,10 +298,11 @@ async function main() {
   fs.writeFileSync(outPath, `${JSON.stringify(accounts, null, 2)}\n`, 'utf8');
   console.log(`OK: ${path.relative(repoRoot, outPath)} (cuentas: ${accounts.length})`);
   console.log(`Fuente: ${path.relative(repoRoot, excelPath)}`);
+  console.log(`Hoja Bizmotion: ${bizmotionWs.name} (cuentas: ${bizmotionAccounts.length})`);
+  console.log(`Hoja PGC: ${pgcWs.name} (cuentas: ${pgcAccounts.length})`);
 }
 
 main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
-

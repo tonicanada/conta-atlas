@@ -106,7 +106,13 @@ function buildRoots(ids: string[], byId: Map<string, EsAccount>) {
 }
 
 export default function EsPlanTree({ view }: { view: 'bizmotion' | 'pgc' }): JSX.Element {
-  const allAccounts = (accounts as EsAccount[]) || [];
+  const rawAccounts = (accounts as EsAccount[]) || [];
+  const allAccounts = useMemo(() => {
+    if (view === 'bizmotion') {
+      return rawAccounts.filter((a) => a.bizmotion_sort_key != null);
+    }
+    return rawAccounts.filter((a) => a.code_pgc != null);
+  }, [rawAccounts, view]);
 
   const { byId } = useMemo(() => {
     const by = new Map<string, EsAccount>();
@@ -249,4 +255,3 @@ export default function EsPlanTree({ view }: { view: 'bizmotion' | 'pgc' }): JSX
     </div>
   );
 }
-
