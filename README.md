@@ -1,6 +1,9 @@
 # Conta-Atlas
 
-Sitio de documentación con **Docusaurus** para explorar el **plan de cuentas SAT (MX)** a partir de `plan_sat.xlsx`.
+Sitio de documentación con **Docusaurus** para explorar:
+
+- **MX**: plan de cuentas SAT desde `excels/mx/plan_sat.xlsx`
+- **ES**: plan de cuentas desde `plan_es.xlsx` (o `excels/es/plan_es.xlsx` como fallback)
 
 ## Flujo
 
@@ -16,6 +19,14 @@ npm install
 
 ```bash
 npm run build:all
+```
+
+### ES (España)
+
+Genera/actualiza el dataset único de ES:
+
+```bash
+npm run build:es:data
 ```
 
 3. Inicia el sitio:

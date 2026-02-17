@@ -209,7 +209,7 @@ async function parseWithExceljs(excelPath) {
 
 async function main() {
   const repoRoot = path.join(__dirname, '..');
-  const excelPath = path.join(repoRoot, 'plan_sat.xlsx');
+  const excelPath = path.join(repoRoot, 'excels', 'mx', 'plan_sat.xlsx');
   const outDir = path.join(repoRoot, 'data', 'mx');
   const outPath = path.join(outDir, 'sat_accounts.json');
 

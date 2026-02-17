@@ -49,6 +49,15 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'es',
+        path: 'docs/es',
+        routeBasePath: 'es',
+        sidebarPath: require.resolve('./sidebarsEs.js')
+      }
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'global',
         path: 'docs/global',
         routeBasePath: 'global',
@@ -63,7 +72,8 @@ const config = {
       navbar: {
         title: 'Conta-Atlas',
         items: [
-          { to: '/mx/intro', label: '🇲🇽 MX', position: 'left' }
+          { to: '/mx/intro', label: '🇲🇽 MX', position: 'left' },
+          { to: '/es/plan-completo-bizmotion', label: '🇪🇸 ES', position: 'left' }
         ]
       },
       footer: {

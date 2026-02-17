@@ -11,6 +11,7 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "build:data": "node scripts/buildData.js",
+    "build:es:data": "node scripts/buildEsPgcJson.js",
     "build:mx": "node scripts/buildDocsMx.js",
     "build:all": "npm run build:data && npm run build:mx",
     "build:glossary": "python3 scripts/build_glossary.py --only-missing --batch 50",
