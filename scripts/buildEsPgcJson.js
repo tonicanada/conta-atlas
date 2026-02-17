@@ -81,6 +81,15 @@ function inferPgcGroup(code_pgc) {
   return n;
 }
 
+function extractPgcCodeFromBizmotionKey(bizmotion_sort_key) {
+  if (!bizmotion_sort_key) return null;
+  const parts = String(bizmotion_sort_key).split('.');
+  const last = parts[parts.length - 1];
+  if (!last) return null;
+  if (!/^\d+$/.test(last)) return null;
+  return last;
+}
+
 function findColIndex(headerNorm, includesAny) {
   for (const inc of includesAny) {
     const idx = headerNorm.findIndex((h) => String(h || '').includes(inc));
@@ -151,9 +160,9 @@ function parseBizmotionSheet(worksheet) {
     parent_id: r.parent_sort_key ? `bm:${r.parent_sort_key}` : null,
     bizmotion_class: inferBizmotionClass(r.bizmotion_sort_key),
     bizmotion_sort_key: r.bizmotion_sort_key,
-    pgc_group: null,
-    pgc_sort_key: null,
-    code_pgc: null,
+    pgc_group: inferPgcGroup(extractPgcCodeFromBizmotionKey(r.bizmotion_sort_key)),
+    pgc_sort_key: extractPgcCodeFromBizmotionKey(r.bizmotion_sort_key),
+    code_pgc: extractPgcCodeFromBizmotionKey(r.bizmotion_sort_key),
     code_display: r.bizmotion_sort_key || null,
     _is_group_raw: r.is_group_raw
   }));
@@ -277,14 +286,14 @@ async function main() {
     process.exit(1);
   }
 
-  const bizmotionWs = findWorksheetByNameOrFirst(workbook, ['import_erp_v2', 'import_erp', 'import']);
-  const pgcWs = findWorksheetByNameOrFirst(workbook, ['cuentas_pyme', 'cuentas_balance', 'pgc_pyme']);
+  const bizmotionWs = findWorksheetByNameOrFirst(workbook, ['plan', 'import_erp_v2', 'import_erp', 'import']);
+  const pgcWs = findWorksheetByNameOrFirst(workbook, ['pgc', 'PGC', 'cuentas_pyme', 'cuentas_balance', 'pgc_pyme']);
   if (!bizmotionWs) {
-    console.error('No pude encontrar hoja Bizmotion (p.ej. import_erp_v2).');
+    console.error('No pude encontrar hoja Bizmotion (p.ej. plan).');
     process.exit(1);
   }
   if (!pgcWs) {
-    console.error('No pude encontrar hoja PGC (p.ej. cuentas_pyme).');
+    console.error('No pude encontrar hoja PGC (p.ej. pgc).');
     process.exit(1);
   }
 

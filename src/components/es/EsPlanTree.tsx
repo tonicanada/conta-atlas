@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import Link from '@docusaurus/Link';
 
 import accounts from '@site/data/es/pgc_accounts.json';
 
@@ -34,13 +35,20 @@ function labelFor(a: EsAccount) {
   return a.name;
 }
 
+function accountHref(a: EsAccount, view: 'bizmotion' | 'pgc') {
+  if (a.code_pgc) return `/es/cuentas/${a.code_pgc}`;
+  if (view === 'bizmotion' && a.bizmotion_sort_key) return null;
+  return null;
+}
+
 function TreeNode({
   id,
   byId,
   childrenByParent,
   orderById,
   defaultOpenLevels,
-  depth
+  depth,
+  view
 }: {
   id: string;
   byId: Map<string, EsAccount>;
@@ -48,20 +56,23 @@ function TreeNode({
   orderById: (a: string, b: string) => number;
   defaultOpenLevels: number;
   depth: number;
+  view: 'bizmotion' | 'pgc';
 }) {
   const account = byId.get(id);
   if (!account) return null;
 
   const children = (childrenByParent.get(id) || []).slice().sort(orderById);
+  const href = accountHref(account, view);
+  const nodeLabel = href ? <Link to={href}>{labelFor(account)}</Link> : labelFor(account);
   if (children.length === 0) {
-    return <li>{labelFor(account)}</li>;
+    return <li>{nodeLabel}</li>;
   }
 
   const openByDefault = depth < defaultOpenLevels;
   return (
     <li>
       <details open={openByDefault}>
-        <summary>{labelFor(account)}</summary>
+        <summary>{nodeLabel}</summary>
         <ul>
           {children.map((child) => (
             <TreeNode
@@ -72,6 +83,7 @@ function TreeNode({
               orderById={orderById}
               defaultOpenLevels={defaultOpenLevels}
               depth={depth + 1}
+              view={view}
             />
           ))}
         </ul>
@@ -245,6 +257,7 @@ export default function EsPlanTree({ view }: { view: 'bizmotion' | 'pgc' }): JSX
                     orderById={orderById}
                     defaultOpenLevels={defaultOpenLevels}
                     depth={0}
+                    view={view}
                   />
                 ))}
               </ul>
