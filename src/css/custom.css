@@ -7,3 +7,51 @@
   max-width: 1100px;
 }
 
+.acctEntry {
+  margin: 0.75rem 0 1.25rem;
+}
+
+.acctEntry__title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.acctEntry__wrap {
+  max-width: 760px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.acctEntry__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--ifm-background-surface-color, #fff);
+  border: 1px solid var(--ifm-toc-border-color, #d9d9d9);
+}
+
+.acctEntry__table th,
+.acctEntry__table td {
+  padding: 0.35rem 0.6rem;
+  border-bottom: 1px solid var(--ifm-toc-border-color, #e0e0e0);
+  vertical-align: middle;
+}
+
+.acctEntry__table thead th {
+  background: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+}
+
+.acctEntry__account {
+  width: 100%;
+}
+
+.acctEntry__num {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.acctEntry__totals td {
+  border-top: 2px solid var(--ifm-toc-border-color, #d0d0d0);
+  font-weight: 700;
+}
