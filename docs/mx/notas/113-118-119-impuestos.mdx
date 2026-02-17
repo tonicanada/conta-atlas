@@ -42,13 +42,18 @@ Esta nota aclara la diferencia práctica entre:
 
 ## Asientos contables típicos (PyME) — ejemplos
 
-Los nombres exactos de cuentas varían por sistema/empresa, pero el flujo típico es:
+Los nombres exactos de cuentas varían por sistema/empresa, pero el flujo típico (simplificado) es:
 
 - **Durante el mes**: acumulas IVA acreditable (compras) y IVA trasladado (ventas).
 - **Al cierre**: determinas si queda **IVA por pagar** o **IVA a favor** (113).
-- **Si quieres más control**: separas acreditables **pagados** (118) vs **pendientes** (119), especialmente en importación.
 
 > Ejemplos **ilustrativos** (no sustituyen criterio fiscal/contable). Montos en MXN, IVA 16% para simplificar.
+
+### ¿Qué era “IVA acreditable (cuenta puente)”?
+
+Una “cuenta puente” es un **intermedio** que algunas empresas usan para llevar el IVA acreditable “en proceso” y luego **reclasificarlo** a otra cuenta (por ejemplo, a 118) cuando se cumple cierta condición (p. ej. “solo considero acreditable lo efectivamente pagado”).
+
+Para el caso **más simple** (que es el que usamos abajo), **no necesitas cuenta puente**: registra el IVA acreditable directamente en **118** y, al cierre, determina si queda **IVA por pagar** o **IVA a favor (113)**.
 
 ### 1) Compra nacional a crédito (genera IVA acreditable)
 
@@ -57,12 +62,10 @@ Compra de insumos $10,000 + IVA $1,600 a crédito.
 <AccountingEntryTable
   rows={[
     { account: 'Gasto/Inventario/Activo (según corresponda)', debit: 10000 },
-    { account: 'IVA acreditable (o 118 si lo manejas como “pagado”)*', debit: 1600 },
+    { account: '118 — IVA acreditable pagado', debit: 1600 },
     { account: 'Proveedores', credit: 11600 }
   ]}
 />
-
-\* Muchas PyMEs registran el IVA acreditable al devengo y luego lo “cruzan” en la determinación mensual; otras lo llevan a 118 solo cuando está efectivamente pagado (según su política).
 
 ### 2) Pago al proveedor (no cambia el IVA, salvo que tu política lo mueva a 118)
 
@@ -72,15 +75,6 @@ Pago del saldo $11,600.
   rows={[
     { account: 'Proveedores', debit: 11600 },
     { account: 'Bancos', credit: 11600 }
-  ]}
-/>
-
-Si tu política es “IVA acreditable **pagado**”:
-
-<AccountingEntryTable
-  rows={[
-    { account: '118 — Impuestos acreditables pagados', debit: 1600 },
-    { account: 'IVA acreditable (cuenta puente)', credit: 1600 }
   ]}
 />
 
@@ -103,7 +97,7 @@ Venta $20,000 + IVA $3,200.
 <AccountingEntryTable
   rows={[
     { account: 'IVA trasladado', debit: 3200 },
-    { account: 'IVA acreditable / 118 (según tu política)', credit: 1600 },
+    { account: '118 — IVA acreditable pagado', credit: 1600 },
     { account: 'IVA por pagar (pasivo)', credit: 1600 }
   ]}
 />
@@ -115,7 +109,7 @@ Venta $20,000 + IVA $3,200.
 <AccountingEntryTable
   rows={[
     { account: 'IVA trasladado', debit: 3200 },
-    { account: 'IVA acreditable / 118', credit: 3200 }
+    { account: '118 — IVA acreditable pagado', credit: 3200 }
   ]}
 />
 
@@ -124,13 +118,15 @@ Venta $20,000 + IVA $3,200.
 <AccountingEntryTable
   rows={[
     { account: '113 — IVA a favor (Impuestos a favor)', debit: 800 },
-    { account: 'IVA acreditable / 118', credit: 800 }
+    { account: '118 — IVA acreditable pagado', credit: 800 }
   ]}
 />
 
 > En la práctica, muchas PyMEs usan una cuenta “IVA a favor” (activo) dentro de 113 cuando el saldo del periodo es a favor.
 
-### 5) Importación (caso típico donde aparece 119)
+### 5) (Opcional) ¿Cuándo entra 119?
+
+La cuenta **119** suele ser útil cuando quieres separar **acreditable pendiente** (por ejemplo, importación) de lo ya “listo para acreditar”. En muchas PyMEs **puedes no usar 119** si no importas o si no necesitas ese control fino.
 
 Si tienes IVA de importación que **aún no has pagado**, puedes reconocerlo como acreditable **pendiente** (119) hasta pagarlo/enterarlo:
 
