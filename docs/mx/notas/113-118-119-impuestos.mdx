@@ -38,6 +38,98 @@ Esta nota aclara la diferencia práctica entre:
   - IVA de importación pendiente de pago (cuando el acreditamiento depende de ese pago).
   - IEPS de importación pendiente de pago (cuando aplica).
 
+## Asientos contables típicos (PyME) — ejemplos
+
+Los nombres exactos de cuentas varían por sistema/empresa, pero el flujo típico es:
+
+- **Durante el mes**: acumulas IVA acreditable (compras) y IVA trasladado (ventas).
+- **Al cierre**: determinas si queda **IVA por pagar** o **IVA a favor** (113).
+- **Si quieres más control**: separas acreditables **pagados** (118) vs **pendientes** (119), especialmente en importación.
+
+> Ejemplos **ilustrativos** (no sustituyen criterio fiscal/contable). Montos en MXN, IVA 16% para simplificar.
+
+### 1) Compra nacional a crédito (genera IVA acreditable)
+
+Compra de insumos $10,000 + IVA $1,600 a crédito.
+
+| Cuenta | Debe | Haber |
+|---|---:|---:|
+| Gasto/Inventario/Activo (según corresponda) | 10,000 |  |
+| IVA acreditable (o 118 si lo manejas como “pagado”)* | 1,600 |  |
+| Proveedores |  | 11,600 |
+
+\* Muchas PyMEs registran el IVA acreditable al devengo y luego lo “cruzan” en la determinación mensual; otras lo llevan a 118 solo cuando está efectivamente pagado (según su política).
+
+### 2) Pago al proveedor (no cambia el IVA, salvo que tu política lo mueva a 118)
+
+Pago del saldo $11,600.
+
+| Cuenta | Debe | Haber |
+|---|---:|---:|
+| Proveedores | 11,600 |  |
+| Bancos |  | 11,600 |
+
+Si tu política es “IVA acreditable **pagado**”:
+
+| Cuenta | Debe | Haber |
+|---|---:|---:|
+| 118 — Impuestos acreditables pagados | 1,600 |  |
+| IVA acreditable (cuenta puente) |  | 1,600 |
+
+### 3) Venta (genera IVA trasladado)
+
+Venta $20,000 + IVA $3,200.
+
+| Cuenta | Debe | Haber |
+|---|---:|---:|
+| Clientes / Bancos | 23,200 |  |
+| Ventas |  | 20,000 |
+| IVA trasladado |  | 3,200 |
+
+### 4) Determinación mensual (IVA por pagar vs IVA a favor)
+
+**Escenario A (IVA por pagar)**: IVA trasladado $3,200 – IVA acreditable $1,600 = **IVA por pagar $1,600**.
+
+| Cuenta | Debe | Haber |
+|---|---:|---:|
+| IVA trasladado | 3,200 |  |
+| IVA acreditable / 118 (según tu política) |  | 1,600 |
+| IVA por pagar (pasivo) |  | 1,600 |
+
+**Escenario B (IVA a favor)**: si IVA acreditable $4,000 – IVA trasladado $3,200 = **IVA a favor $800**.
+
+1) Primero “cruzas” el IVA trasladado contra el acreditable por el monto que alcance:
+
+| Cuenta | Debe | Haber |
+|---|---:|---:|
+| IVA trasladado | 3,200 |  |
+| IVA acreditable / 118 |  | 3,200 |
+
+2) El remanente de IVA acreditable se reclasifica como **IVA a favor** dentro de **113**:
+
+| Cuenta | Debe | Haber |
+|---|---:|---:|
+| 113 — IVA a favor (Impuestos a favor) | 800 |  |
+| IVA acreditable / 118 |  | 800 |
+
+> En la práctica, muchas PyMEs usan una cuenta “IVA a favor” (activo) dentro de 113 cuando el saldo del periodo es a favor.
+
+### 5) Importación (caso típico donde aparece 119)
+
+Si tienes IVA de importación que **aún no has pagado**, puedes reconocerlo como acreditable **pendiente** (119) hasta pagarlo/enterarlo:
+
+| Cuenta | Debe | Haber |
+|---|---:|---:|
+| 119 — IVA de importación pendiente de pago | 1,600 |  |
+| IVA por pagar (o cuenta puente de importación) |  | 1,600 |
+
+Cuando se paga/entera y ya es acreditable, se mueve a 118:
+
+| Cuenta | Debe | Haber |
+|---|---:|---:|
+| 118 — IVA acreditable de importación pagado | 1,600 |  |
+| 119 — IVA de importación pendiente de pago |  | 1,600 |
+
 ## Qué podría simplificarse/excluirse en PyMEs (orientativo)
 
 Depende del giro y de si hay importaciones/IEPS, pero en muchas PyMEs:
@@ -52,4 +144,3 @@ Depende del giro y de si hay importaciones/IEPS, pero en muchas PyMEs:
 
 - Usar **113** para “cualquier IVA acreditable” sin haber determinado realmente un saldo a favor (eso suele vivir primero en cuentas de IVA acreditable/IVA por pagar y se determina al cierre).
 - Mezclar impuestos acreditables **pagados** con **pendientes** (perdiendo trazabilidad, especialmente en importación).
-
