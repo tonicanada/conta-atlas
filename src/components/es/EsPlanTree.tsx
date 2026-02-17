@@ -121,9 +121,9 @@ export default function EsPlanTree({ view }: { view: 'bizmotion' | 'pgc' }): JSX
   const rawAccounts = (accounts as EsAccount[]) || [];
   const allAccounts = useMemo(() => {
     if (view === 'bizmotion') {
-      return rawAccounts.filter((a) => a.bizmotion_sort_key != null);
+      return rawAccounts.filter((a) => String(a.id || '').startsWith('bm:'));
     }
-    return rawAccounts.filter((a) => a.code_pgc != null);
+    return rawAccounts.filter((a) => String(a.id || '').startsWith('pgc:'));
   }, [rawAccounts, view]);
 
   const { byId } = useMemo(() => {

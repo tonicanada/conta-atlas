@@ -117,7 +117,7 @@ function findWorksheetByNameOrFirst(workbook, preferredNames) {
   return workbook.worksheets[0] || null;
 }
 
-function parseBizmotionSheet(worksheet) {
+function parseBizmotionSheet(worksheet, pgcCodeSet) {
   const header = readHeaderRow(worksheet, 1);
   const headerNorm = header.map(stripAccents);
 
@@ -160,12 +160,22 @@ function parseBizmotionSheet(worksheet) {
     parent_id: r.parent_sort_key ? `bm:${r.parent_sort_key}` : null,
     bizmotion_class: inferBizmotionClass(r.bizmotion_sort_key),
     bizmotion_sort_key: r.bizmotion_sort_key,
-    pgc_group: inferPgcGroup(extractPgcCodeFromBizmotionKey(r.bizmotion_sort_key)),
-    pgc_sort_key: extractPgcCodeFromBizmotionKey(r.bizmotion_sort_key),
-    code_pgc: extractPgcCodeFromBizmotionKey(r.bizmotion_sort_key),
+    pgc_group: null,
+    pgc_sort_key: null,
+    code_pgc: null,
     code_display: r.bizmotion_sort_key || null,
     _is_group_raw: r.is_group_raw
   }));
+
+  for (const a of accounts) {
+    const extracted = extractPgcCodeFromBizmotionKey(a.bizmotion_sort_key);
+    if (!extracted) continue;
+    const code = String(extracted);
+    if (!pgcCodeSet || !pgcCodeSet.has(code)) continue;
+    a.code_pgc = code;
+    a.pgc_sort_key = code;
+    a.pgc_group = inferPgcGroup(code);
+  }
 
   const byId = new Map(accounts.map((a) => [a.id, a]));
   const childrenByParent = new Map();
@@ -208,6 +218,7 @@ function parsePgcSheet(worksheet) {
     const name = cleanName(rawName);
     if (!num && !name) return;
     if (!num) return;
+    if (!/^\d+$/.test(String(num))) return;
     rows.push({ num, name });
   });
 
@@ -255,7 +266,7 @@ function parsePgcSheet(worksheet) {
     a.is_group = (childrenByParent.get(a.id) || []).length > 0;
   }
 
-  return accounts;
+  return { accounts, codes };
 }
 
 async function main() {
@@ -297,8 +308,9 @@ async function main() {
     process.exit(1);
   }
 
-  const bizmotionAccounts = parseBizmotionSheet(bizmotionWs);
-  const pgcAccounts = parsePgcSheet(pgcWs);
+  const parsedPgc = parsePgcSheet(pgcWs);
+  const pgcAccounts = parsedPgc.accounts;
+  const bizmotionAccounts = parseBizmotionSheet(bizmotionWs, parsedPgc.codes);
   const accounts = [...bizmotionAccounts, ...pgcAccounts];
 
   accounts.sort((a, b) => String(a.id).localeCompare(String(b.id), 'es', { numeric: true }));

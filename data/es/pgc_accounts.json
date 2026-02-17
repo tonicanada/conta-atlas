@@ -5239,8 +5239,8 @@
     "bizmotion_class": "E",
     "bizmotion_sort_key": "3.E.1.8",
     "pgc_group": null,
-    "pgc_sort_key": "8",
-    "code_pgc": "8",
+    "pgc_sort_key": null,
+    "code_pgc": null,
     "code_display": "3.E.1.8"
   },
   {
@@ -18202,17 +18202,5 @@
     "pgc_sort_key": "79549",
     "code_pgc": "79549",
     "code_display": "79549"
-  },
-  {
-    "id": "pgc:partes vinculadas",
-    "name": "partes vinculadas",
-    "is_group": false,
-    "parent_id": null,
-    "bizmotion_class": null,
-    "bizmotion_sort_key": null,
-    "pgc_group": null,
-    "pgc_sort_key": "partes vinculadas",
-    "code_pgc": "partes vinculadas",
-    "code_display": "partes vinculadas"
   }
 ]
