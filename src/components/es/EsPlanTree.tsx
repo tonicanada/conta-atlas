@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import Link from '@docusaurus/Link';
 
 import accounts from '@site/data/es/pgc_accounts.json';
+import styles from './EsPlanTree.module.css';
 
 type BizmotionClass = 'A' | 'P' | 'E' | 'I' | 'G';
 
@@ -35,9 +36,36 @@ function labelFor(a: EsAccount) {
   return a.name;
 }
 
+function isPgcRootCode(code: string) {
+  return /^[1-7]$/.test(String(code || '').trim());
+}
+
+function slugifyBizmotionKey(value: string) {
+  const s = String(value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
+  return s
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/--+/g, '-');
+}
+
 function accountHref(a: EsAccount, view: 'bizmotion' | 'pgc') {
-  if (a.code_pgc) return `/es/cuentas/${a.code_pgc}`;
-  if (view === 'bizmotion' && a.bizmotion_sort_key) return null;
+  if (view === 'pgc') {
+    if (a.code_pgc) return `/es/cuentas/${a.code_pgc}`;
+    return null;
+  }
+
+  // Bizmotion (Balance/PyG):
+  // - Link to a specific PGC account only when the mapping is unambiguous (not a root group).
+  // - Never map to PGC roots (1..7); those Bizmotion nodes get their own pages under /es/balance/.
+  if (a.code_pgc && !isPgcRootCode(a.code_pgc)) return `/es/cuentas/${a.code_pgc}`;
+  if (a.bizmotion_sort_key || a.code_display) {
+    const key = String(a.bizmotion_sort_key || a.code_display || '');
+    const slug = slugifyBizmotionKey(key);
+    if (slug) return `/es/balance/${slug}`;
+  }
   return null;
 }
 
@@ -65,7 +93,7 @@ function TreeNode({
   const href = accountHref(account, view);
   const nodeLabel = href ? <Link to={href}>{labelFor(account)}</Link> : labelFor(account);
   if (children.length === 0) {
-    return <li>{nodeLabel}</li>;
+    return <li className={styles.leaf}>{nodeLabel}</li>;
   }
 
   const openByDefault = depth < defaultOpenLevels;
@@ -73,7 +101,7 @@ function TreeNode({
     <li>
       <details open={openByDefault}>
         <summary>{nodeLabel}</summary>
-        <ul>
+        <ul className={styles.tree}>
           {children.map((child) => (
             <TreeNode
               key={child}
@@ -193,7 +221,7 @@ export default function EsPlanTree({ view }: { view: 'bizmotion' | 'pgc' }): JSX
         </div>
       </div>
 
-      <ul>
+      <ul className={styles.treeRoot}>
         {roots.map((rootId) => (
           <TreeNode
             key={rootId}

@@ -1,0 +1,745 @@
+1.A — ACTIVOS
+  1.A.1 — ACTIVO NO CORRIENTE
+    1.A.1.1 — Inmovilizado intangible
+      1.A.1.1.20 — Inmovilizaciones Intangibles
+        1.A.1.1.200 — Investigación
+        1.A.1.1.201 — Desarrollo
+        1.A.1.1.202 — Concesiones administrativas
+        1.A.1.1.203 — Propiedad industrial
+        1.A.1.1.205 — Derechos de traspaso
+        1.A.1.1.206 — Aplicaciones informáticas
+        1.A.1.1.209 — Anticipos para inmovilizaciones intangibles
+      1.A.1.1.280 — Amortización acumulada del inmovilizado intangible
+        1.A.1.1.2800 — Amortización acumulada de investigación
+        1.A.1.1.2801 — Amortización acumulada de desarrollo
+        1.A.1.1.2802 — Amortización acumulada de concesiones administrativas
+        1.A.1.1.2803 — Amortización acumulada de propiedad industrial
+        1.A.1.1.2805 — Amortización acumulada de derechos de traspaso
+        1.A.1.1.2806 — Amortización acumulada de aplicaciones informáticas
+      1.A.1.1.290 — Deterioro de valor del inmovilizado intangible
+        1.A.1.1.2900 — Deterioro de valor de investigación
+        1.A.1.1.2901 — Deterioro del valor de desarrollo
+        1.A.1.1.2902 — Deterioro de valor de concesiones administrativas
+        1.A.1.1.2903 — Deterioro de valor de propiedad industrial
+        1.A.1.1.2905 — Deterioro de valor de derechos de traspaso
+        1.A.1.1.2906 — Deterioro de valor de aplicaciones informáticas
+    1.A.1.2 — Inmovilizado material
+      1.A.1.2.21 — Inmovilizaciones Materiales
+        1.A.1.2.210 — Terrenos y bienes naturales
+        1.A.1.2.211 — Construcciones
+        1.A.1.2.212 — Instalaciones técnicas
+        1.A.1.2.213 — Maquinaria
+        1.A.1.2.214 — Utillaje
+        1.A.1.2.215 — Otras instalaciones
+        1.A.1.2.216 — Mobiliario
+        1.A.1.2.217 — Equipos para procesos de información
+        1.A.1.2.218 — Elementos de transporte
+        1.A.1.2.219 — Otro inmovilizado material
+      1.A.1.2.23 — Inmovilizaciones Materiales en Curso
+        1.A.1.2.230 — Adaptación de terrenos y bienes naturales
+        1.A.1.2.231 — Construcciones en curso
+        1.A.1.2.232 — Instalaciones técnicas en montaje
+        1.A.1.2.233 — Maquinaria en montaje
+        1.A.1.2.237 — Equipos para procesos de información en montaje
+        1.A.1.2.239 — Anticipos para inmovilizaciones materiales
+      1.A.1.2.281 — Amortización acumulada del inmovilizado material
+        1.A.1.2.2811 — Amortización acumulada de construcciones
+        1.A.1.2.2812 — Amortización acumulada de instalaciones técnicas
+        1.A.1.2.2813 — Amortización acumulada de maquinaria
+        1.A.1.2.2814 — Amortización acumulada de utillaje
+        1.A.1.2.2815 — Amortización acumulada de otras instalaciones
+        1.A.1.2.2816 — Amortización acumulada de mobiliario
+        1.A.1.2.2817 — Amortización acumulada de equipos para procesos de información
+        1.A.1.2.2818 — Amortización acumulada de elementos de transporte
+        1.A.1.2.2819 — Amortización acumulada de otro inmovilizado material
+      1.A.1.2.291 — Deterioro de valor del inmovilizado material
+        1.A.1.2.2910 — Deterioro de valor de terrenos y bienes naturales
+        1.A.1.2.2911 — Deterioro de valor de construcciones
+        1.A.1.2.2912 — Deterioro de valor de instalaciones técnicas
+        1.A.1.2.2913 — Deterioro de valor de maquinaria
+        1.A.1.2.2914 — Deterioro de valor de utillaje
+        1.A.1.2.2915 — Deterioro de valor de otras instalaciones
+        1.A.1.2.2916 — Deterioro de valor de mobiliario
+        1.A.1.2.2917 — Deterioro de valor de equipos para procesos de información
+        1.A.1.2.2918 — Deterioro de valor de elementos de transporte
+        1.A.1.2.2919 — Deterioro de valor de otro inmovilizado material
+    1.A.1.3 — Inversiones inmobiliarias
+      1.A.1.3.22 — Inversiones Inmobiliarias
+        1.A.1.3.220 — Inversiones en terrenos y bienes naturales
+        1.A.1.3.221 — Inversiones en construcciones
+      1.A.1.3.282 — Amortización acumulada de las inversiones inmobiliarias
+      1.A.1.3.292 — Deterioro de valor de las inversiones inmobiliarias
+        1.A.1.3.2920 — Deterioro de valor de los terrenos y bienes naturales
+        1.A.1.3.2921 — Deterioro de valor de construcciones
+    1.A.1.4 — Inversiones en empresas del grupo y asociadas a largo plazo
+      1.A.1.4.2403 — Participaciones a largo plazo en empresas del grupo
+      1.A.1.4.2404 — Participaciones a largo plazo en empresas asociadas
+      1.A.1.4.2413 — Valores representativos de deuda a largo plazo de empresas del grupo
+      1.A.1.4.2414 — Valores representativos de deuda a largo plazo de empresas asociadas
+      1.A.1.4.2423 — Créditos a largo plazo a empresas del grupo
+      1.A.1.4.2424 — Créditos a largo plazo a empresas asociadas
+      1.A.1.4.2493 — Desembolsos pendientes sobre participaciones a largo plazo en em presas del grupo
+      1.A.1.4.2494 — Desembolsos pendientes sobre participaciones a largo plazo en empresas asociadas
+      1.A.1.4.2933 — Deterioro de valor de participaciones a largo plazo en empresas del grupo
+      1.A.1.4.2934 — Deterioro de valor de participaciones a largo plazo en empresas asociadas
+      1.A.1.4.2943 — Deterioro de valor de valores representativos de deuda a largo plazo de empresas del grupo
+      1.A.1.4.2944 — Deterioro de valor de valores representativos de deuda a largo plazo de empresas asociadas
+      1.A.1.4.2953 — Deterioro de valor de créditos a largo plazo a empresas del grupo
+    1.A.1.5 — Inversiones financieras a largo plazo
+      1.A.1.5.26 — Fianzas y Depósitos Constituidos a Largo Plazo
+        1.A.1.5.260 — Fianzas constituidas a largo plazo
+        1.A.1.5.265 — Depósitos constituidos a largo plazo
+      1.A.1.5.250 — Inversiones financieras a largo plazo en instrumentos de patrimonio
+      1.A.1.5.251 — Valores representativos de deuda a largo plazo
+      1.A.1.5.252 — Créditos a largo plazo
+      1.A.1.5.253 — Créditos a largo plazo por enajenación de inmovilizado
+      1.A.1.5.254 — Créditos a largo plazo al personal
+      1.A.1.5.255 — Activos por derivados financieros a largo plazo
+      1.A.1.5.258 — Imposiciones a largo plazo
+      1.A.1.5.259 — Desembolsos pendientes sobre participaciones en el patrimonio neto a largo plazo
+      1.A.1.5.296 — Deterioro de valor de participaciones en el patrimonio neto a largo plazo
+      1.A.1.5.297 — Deterioro de valor de valores representativos de deuda a largo plazo
+      1.A.1.5.298 — Deterioro de valor de créditos a largo plazo
+      1.A.1.5.2405 — Participaciones a largo plazo en otras partes vinculadas
+      1.A.1.5.2415 — Valores representativos de deuda a largo plazo de otras partes vinculadas
+      1.A.1.5.2425 — Créditos a largo plazo a otras partes vinculadas
+      1.A.1.5.2495 — Desembolsos pendientes sobre participaciones a largo plazo en otras partes vinculadas
+      1.A.1.5.2935 — Deterioro de valor de participaciones a largo plazo en otras partes vinculadas
+      1.A.1.5.2945 — Deterioro de valor de valores representativos de deuda a largo plazo de otras partes vinculadas
+      1.A.1.5.2954 — Deterioro de valor de créditos a largo plazo a empresas asociadas
+      1.A.1.5.2955 — Deterioro de valor de créditos a largo plazo a otras partes vinculadas
+    1.A.1.6 — Activos por impuesto diferido
+      1.A.1.6.474 — Activos por impuesto diferido
+        1.A.1.6.4740 — Activos por diferencias temporarias deducibles
+        1.A.1.6.4742 — Derechos por deducciones y bonificaciones pendientes de aplicar
+        1.A.1.6.4745 — Crédito por pérdidas a compensar del ejercicio
+  1.A.2 — ACTIVO CORRIENTE
+    1.A.2.1 — Existencias
+      1.A.2.1.30 — Comerciales
+        1.A.2.1.300 — Mercaderías A
+        1.A.2.1.301 — Mercaderías B
+      1.A.2.1.31 — Materias Primas
+        1.A.2.1.310 — Materias primas A
+        1.A.2.1.311 — Materias primas B
+      1.A.2.1.32 — Otros Aprovisionamientos
+        1.A.2.1.320 — Elementos y conjuntos incorporables
+        1.A.2.1.321 — Combustibles
+        1.A.2.1.322 — Repuestos
+        1.A.2.1.325 — Materiales diversos
+        1.A.2.1.326 — Embalajes
+        1.A.2.1.327 — Envases
+        1.A.2.1.328 — Material de oficina
+      1.A.2.1.33 — Productos en Curso
+        1.A.2.1.330 — Productos en curso A
+        1.A.2.1.331 — Productos en curso B
+      1.A.2.1.34 — Productos Semiterminados
+        1.A.2.1.340 — Productos semiterminados A
+        1.A.2.1.341 — Productos semiterminados B
+      1.A.2.1.35 — Productos Terminados
+        1.A.2.1.350 — Productos terminados A
+        1.A.2.1.351 — Productos terminados B
+      1.A.2.1.36 — Subproductos, Residuos y Materiales Recuperados
+        1.A.2.1.360 — Subproductos A
+        1.A.2.1.361 — Subproductos B
+        1.A.2.1.365 — Residuos A
+        1.A.2.1.366 — Residuos B
+        1.A.2.1.368 — Materiales recuperados A
+        1.A.2.1.369 — Materiales recuperados B
+      1.A.2.1.39 — Deterioro de Valor de Las existencias
+        1.A.2.1.390 — Deterioro de valor de las mercaderías
+        1.A.2.1.391 — Deterioro de valor de las materias primas
+        1.A.2.1.392 — Deterioro de valor de otros aprovi sionamientos
+        1.A.2.1.393 — Deterioro de valor de los productos en curso
+        1.A.2.1.394 — Deterioro de valor de los productos semiterminados
+        1.A.2.1.395 — Deterioro de valor de los productos terminados
+        1.A.2.1.396 — Deterioro de valor de los subproductos, residuos y materiales recuperados
+    1.A.2.2 — Deudores comerciales y otras cuentas a cobrar
+      1.A.2.2.1 — Clientes por ventas y prestaciones de servicios
+        1.A.2.2.1.430 — Clientes
+          1.A.2.2.1.4300 — Clientes (euros)
+          1.A.2.2.1.4304 — Clientes (moneda extranjera)
+          1.A.2.2.1.4309 — Clientes, facturas pendientes de formalizar
+        1.A.2.2.1.431 — Clientes, efectos comerciales a cobrar
+          1.A.2.2.1.4310 — Efectos comerciales en cartera
+          1.A.2.2.1.4311 — Efectos comerciales descontados
+          1.A.2.2.1.4312 — Efectos comerciales en gestión de cobro
+          1.A.2.2.1.4315 — Efectos comerciales impagados
+        1.A.2.2.1.432 — Clientes, operaciones de “factoring”
+        1.A.2.2.1.433 — Clientes, empresas del grupo
+          1.A.2.2.1.4330 — Clientes empresas del grupo (euros)
+          1.A.2.2.1.4331 — Efectos comerciales a cobrar, empresas del grupo
+          1.A.2.2.1.4332 — Clientes empresas del grupo, operaciones de “factoring”
+          1.A.2.2.1.4334 — Clientes empresas del grupo (moneda extranjera)
+          1.A.2.2.1.4336 — Clientes empresas del grupo de dudoso cobro
+          1.A.2.2.1.4337 — Envases y embalajes a devolver a clientes, empresas del grupo
+          1.A.2.2.1.4339 — Clientes empresas del grupo, facturas pendientes de formalizar
+        1.A.2.2.1.434 — Clientes, empresas asociadas
+        1.A.2.2.1.435 — Clientes, otras partes vinculadas
+        1.A.2.2.1.436 — Clientes de dudoso cobro
+        1.A.2.2.1.437 — Envases y embalajes a devolver por clientes
+        1.A.2.2.1.490 — Deterioro de valor de créditos por operaciones comerciales
+        1.A.2.2.1.493 — Deterioro de valor de créditos por operaciones comerciales con partes vinculadas
+          1.A.2.2.1.4933 — Deterioro de valor de créditos por operaciones comerciales con empresas del grupo
+          1.A.2.2.1.4934 — Deterioro de valor de créditos por operaciones comerciales con empresas asociadas
+          1.A.2.2.1.4935 — Deterioro de valor de créditos por operaciones comerciales con otras partes vinculadas
+      1.A.2.2.2 — Accionistas (socios) por desembolsos exigidos
+        1.A.2.2.2.5580 — Socios por desembolsos exigidos sobre acciones o participaciones ordinarias
+      1.A.2.2.3 — Otros deudores
+        1.A.2.2.3.44 — Deudores Varios
+          1.A.2.2.3.440 — Deudores
+            1.A.2.2.3.4400 — Deudores (euros)
+            1.A.2.2.3.4404 — Deudores (moneda extranjera)
+            1.A.2.2.3.4409 — Deudores, facturas pendientes de formalizar
+          1.A.2.2.3.441 — Deudores, efectos comerciales a cobrar
+            1.A.2.2.3.4410 — Deudores, efectos comerciales en cartera
+            1.A.2.2.3.4411 — Deudores, efectos comerciales descontados
+            1.A.2.2.3.4412 — Deudores, efectos comerciales en gestión de cobro
+            1.A.2.2.3.4415 — Deudores, efectos comerciales impagados
+        1.A.2.2.3.407 — Anticipos a proveedores
+        1.A.2.2.3.460 — Anticipos de remuneraciones
+        1.A.2.2.3.544 — Créditos a corto plazo al personal
+      1.A.2.2.4 — Administraciones públicas deudoras (Fiscal/SS)
+        1.A.2.2.4.470 — Hacienda Pública, deudora por diversos conceptos
+          1.A.2.2.4.4700 — Hacienda Pública, deudora por IVA
+          1.A.2.2.4.4708 — Hacienda Pública, deudora por subvenciones concedidas
+          1.A.2.2.4.4709 — Hacienda Pública, deudora por devolución de impuestos
+        1.A.2.2.4.471 — Organismos de la Seguridad Social, deudores
+        1.A.2.2.4.472 — Hacienda Pública, IVA soportado
+    1.A.2.3 — Inversiones en empresas del grupo y asociadas a corto plazo
+      1.A.2.3.5303 — Participaciones a corto plazo, en empresas del grupo
+      1.A.2.3.5304 — Participaciones a corto plazo, en empresas asociadas
+      1.A.2.3.5313 — Valores representativos de deuda a corto plazo de empresas del grupo
+      1.A.2.3.5314 — Valores representativos de deuda a corto plazo de empresas asociadas
+      1.A.2.3.5323 — Créditos a corto plazo a empresas del grupo
+      1.A.2.3.5324 — Créditos a corto plazo a empresas asociadas
+      1.A.2.3.5333 — Intereses a corto plazo de valores representativos de deuda de empresas del grupo
+      1.A.2.3.5334 — Intereses a corto plazo de valores representativos de deuda de empresas asociadas
+      1.A.2.3.5343 — Intereses a corto plazo de créditos a empresas del grupo
+      1.A.2.3.5344 — Intereses a corto plazo de créditos a empresas asociadas
+      1.A.2.3.5353 — Dividendo a cobrar de empresas de grupo
+      1.A.2.3.5354 — Dividendo a cobrar de empresas asociadas
+      1.A.2.3.5393 — Desembolsos pendientes sobre participaciones a corto plazo en empresas del grupo
+      1.A.2.3.5394 — Desembolsos pendientes sobre participaciones a corto plazo en empresas asociadas
+      1.A.2.3.5523 — Cuenta corriente con empresas del grupo
+      1.A.2.3.5524 — Cuenta corriente con empresas asociadas
+      1.A.2.3.5933 — Deterioro de valor de participaciones a corto plazo en empresas del grupo
+      1.A.2.3.5934 — Deterioro de valor de participaciones a corto plazo en empresas asociadas
+      1.A.2.3.5943 — Deterioro de valor de valores representativos de deuda a corto plazo de empresas del grupo
+      1.A.2.3.5944 — Deterioro de valor de valores representativos de deuda a corto plazo de empresas asociadas
+      1.A.2.3.5953 — Deterioro de valor de créditos a corto plazo a empresas del grupo
+      1.A.2.3.5954 — Deterioro de valor de créditos a corto plazo a empresas asociadas
+    1.A.2.4 — Inversiones financieras a corto plazo
+      1.A.2.4.540 — Inversiones financieras a corto plazo en instrumentos de patrimonio
+      1.A.2.4.541 — Valores representativos de deuda a corto plazo
+      1.A.2.4.542 — Créditos a corto plazo
+      1.A.2.4.543 — Créditos a corto plazo por enajenación de inmovilizado
+      1.A.2.4.545 — Dividendo a cobrar
+      1.A.2.4.546 — Intereses a corto plazo de valores representativos de deudas
+      1.A.2.4.547 — Intereses a corto plazo de créditos
+      1.A.2.4.548 — Imposiciones a corto plazo
+      1.A.2.4.549 — Desembolsos pendientes sobre participaciones en el patrimonio neto a corto plazo
+      1.A.2.4.551 — Cuenta corriente con socios y administradores
+      1.A.2.4.565 — Fianzas constituidas a corto plazo
+      1.A.2.4.566 — Depósitos constituidos a corto plazo
+      1.A.2.4.597 — Deterioro de valor de valores representativos de deuda a corto plazo
+      1.A.2.4.598 — Deterioro de valor de créditos a corto plazo
+      1.A.2.4.5305 — Participaciones a corto plazo, en otras partes vinculadas
+      1.A.2.4.5315 — Valores representativos de deuda a corto plazo de otras partes vinculadas
+      1.A.2.4.5325 — Créditos a corto plazo a otras partes vinculadas
+      1.A.2.4.5335 — Intereses a corto plazo de valores representativos de deuda de otras partes vinculadas
+      1.A.2.4.5345 — Intereses a corto plazo de créditos a otras partes vinculadas
+      1.A.2.4.5355 — Dividendo a cobrar de otras partes vinculadas
+      1.A.2.4.5395 — Desembolsos pendientes sobre participaciones a corto plazo en otras partes vinculadas
+      1.A.2.4.5525 — Cuenta corriente con otras partes vinculadas
+      1.A.2.4.5590 — Activos por derivados financieros a corto plazo, cartera de negociación
+      1.A.2.4.5945 — Deterioro de valor de valores representativos de deuda a corto plazo de otras partes vinculadas
+      1.A.2.4.5955 — Deterioro de valor de créditos a corto plazo a otras partes vinculadas
+    1.A.2.5 — Periodificaciones a corto plazo
+      1.A.2.5.480 — Gastos anticipados
+      1.A.2.5.567 — Intereses pagados por anticipado
+    1.A.2.6 — Efectivo y otros activos líquidos equivalentes
+      1.A.2.6.57 — Tesorería
+        1.A.2.6.570 — Caja, euros
+        1.A.2.6.571 — Caja, moneda extranjera
+        1.A.2.6.572 — Bancos e instituciones de crédito c/c vista, euros
+        1.A.2.6.573 — Bancos e instituciones de crédito c/c vista, moneda extranjera
+        1.A.2.6.574 — Bancos e instituciones de crédito, cuentas de ahorro, euros
+        1.A.2.6.575 — Bancos e instituciones de crédito, cuentas de ahorro, moneda extranjera
+        1.A.2.6.576 — Inversiones a corto plazo de gran liquidez
+2.P — PASIVOS
+  2.P.1 — PASIVO NO CORRIENTE
+    2.P.1.1 — Provisiones a largo plazo
+      2.P.1.1.14 — Provisiones
+        2.P.1.1.141 — Provisión para impuestos
+        2.P.1.1.142 — Provisión para otras responsabilidades
+        2.P.1.1.143 — Provisión por desmantelamiento, retiro o rehabilitación del inmovilizado
+        2.P.1.1.145 — Provisión para actuaciones medioambientales
+    2.P.1.2 — Deudas a largo plazo
+      2.P.1.2.1 — Deudas con entidades de crédito
+        2.P.1.2.1.170 — Deudas a largo plazo con entidades de crédito
+        2.P.1.2.1.1605 — Deudas a largo plazo con otras entidades de crédito vinculadas
+      2.P.1.2.2 — Acreedores por arrendamiento financiero
+        2.P.1.2.2.174 — Acreedores por arrendamiento financiero a largo plazo
+        2.P.1.2.2.1625 — Acreedores por arrendamiento financiero a largo plazo, otras partes vinculadas
+      2.P.1.2.3 — Otras deudas a largo plazo
+        2.P.1.2.3.171 — Deudas a largo plazo
+        2.P.1.2.3.172 — Deudas a largo plazo transformables en subvenciones, donaciones y legados
+        2.P.1.2.3.173 — Proveedores de inmovilizado a largo plazo
+        2.P.1.2.3.175 — Efectos a pagar a largo plazo
+        2.P.1.2.3.176 — Pasivos por derivados financieros a largo plazo
+        2.P.1.2.3.177 — Obligaciones y bonos
+        2.P.1.2.3.179 — Deudas representadas en otros valores negociables
+        2.P.1.2.3.180 — Fianzas recibidas a largo plazo
+        2.P.1.2.3.185 — Depósitos recibidos a largo plazo
+        2.P.1.2.3.1615 — Proveedores de inmovilizado a largo plazo, otras partes vinculadas
+        2.P.1.2.3.1635 — Otras deudas a largo plazo, con otras partes vinculadas
+    2.P.1.3 — Deudas con empresas del grupo y asociadas a largo plazo
+      2.P.1.3.1603 — Deudas a largo plazo con entidades de crédito, empresas del grupo
+      2.P.1.3.1604 — Deudas a largo plazo con entidades de crédito, empresas asociadas
+      2.P.1.3.1613 — Proveedores de inmovilizado a largo plazo, empresas del grupo
+      2.P.1.3.1614 — Proveedores de inmovilizado a largo plazo, empresas asociadas
+      2.P.1.3.1623 — Acreedores por arrendamiento financiero a largo plazo, empresas de grupo
+      2.P.1.3.1624 — Acreedores por arrendamiento financiero a largo plazo, empresas asociadas
+      2.P.1.3.1633 — Otras deudas a largo plazo, empresas del grupo
+      2.P.1.3.1634 — Otras deudas a largo plazo, empresas asociadas
+    2.P.1.4 — Pasivos por impuesto diferido
+      2.P.1.4.479 — Pasivos por diferencias temporarias imponibles
+    2.P.1.5 — Periodificaciones a largo plazo
+      2.P.1.5.181 — Anticipos recibidos por ventas o prestaciones de servicios a largo plazo
+  2.P.2 — PASIVO CORRIENTE
+    2.P.2.1 — Provisiones a corto plazo
+      2.P.2.1.499 — Provisiones por operaciones comerciales
+        2.P.2.1.4994 — Provisión por contratos onerosos
+        2.P.2.1.4999 — Provisión para otras operaciones comerciales
+      2.P.2.1.529 — Provisiones a corto plazo
+        2.P.2.1.5291 — Provisión a corto plazo para impuestos
+        2.P.2.1.5292 — Provisión a corto plazo para otras responsabilidades
+        2.P.2.1.5293 — Provisión a corto plazo por desmantelamiento, retiro o rehabilitación del inmovilizado
+        2.P.2.1.5295 — Provisión a corto plazo para actuaciones medioambientales
+    2.P.2.2 — Deudas a corto plazo
+      2.P.2.2.1 — Deudas con entidades de crédito
+        2.P.2.2.1.520 — Deudas a corto plazo con entidades de crédito
+          2.P.2.2.1.5200 — Préstamos a corto plazo de entidades de crédito
+          2.P.2.2.1.5201 — Deudas a corto plazo por crédito dispuesto
+          2.P.2.2.1.5208 — Deudas por efectos descontados
+          2.P.2.2.1.5209 — Deudas por operaciones de “factoring”
+        2.P.2.2.1.527 — Intereses a corto plazo de deudas con entidades de crédito
+      2.P.2.2.2 — Acreedores por arrendamiento financiero
+        2.P.2.2.2.524 — Acreedores por arrendamiento financiero a corto plazo
+      2.P.2.2.3 — Otras deudas a corto plazo
+        2.P.2.2.3.500 — Obligaciones y bonos a corto plazo
+        2.P.2.2.3.505 — Deudas representadas en otros valores negociables a corto plazo
+        2.P.2.2.3.506 — Intereses a corto plazo de empréstitos y otras emisiones análogas
+        2.P.2.2.3.509 — Valores negociables amortizados
+          2.P.2.2.3.5090 — Obligaciones y bonos amortizados
+          2.P.2.2.3.5095 — Otros valores negociables amortizados
+        2.P.2.2.3.521 — Deudas a corto plazo
+        2.P.2.2.3.522 — Deudas a corto plazo transformables en subvenciones, donaciones y legados
+        2.P.2.2.3.523 — Proveedores de inmovilizado a corto plazo
+        2.P.2.2.3.525 — Efectos a pagar a corto plazo
+        2.P.2.2.3.526 — Dividendo activo a pagar
+        2.P.2.2.3.528 — Intereses a corto plazo de deudas
+        2.P.2.2.3.555 — Partidas pendientes de aplicación
+        2.P.2.2.3.560 — Fianzas recibidas a corto plazo
+        2.P.2.2.3.561 — Depósitos recibidos a corto plazo
+        2.P.2.2.3.5595 — Pasivos por derivados financieros a corto plazo, cartera de negociación
+    2.P.2.3 — Deudas con partes vinculadas a corto plazo
+      2.P.2.3.1 — Empresas del grupo
+        2.P.2.3.1.5103 — Deudas a corto plazo con entidades de crédito, empresas del grupo
+        2.P.2.3.1.5113 — Proveedores de inmovilizado a corto plazo, empresas del grupo
+        2.P.2.3.1.5123 — Acreedores por arrendamiento financiero a corto plazo, empresas del grupo
+        2.P.2.3.1.5133 — Otras deudas a corto plazo con empresas del grupo
+        2.P.2.3.1.5143 — Intereses a corto plazo de deudas, empresas del grupo
+        2.P.2.3.1.5563 — Desembolsos exigidos sobre participaciones, empresas del grupo
+      2.P.2.3.2 — Empresas asociadas
+        2.P.2.3.2.5104 — Deudas a corto plazo con entidades de crédito, empresas asociadas
+        2.P.2.3.2.5114 — Proveedores de inmovilizado a corto plazo, empresas asociadas
+        2.P.2.3.2.5124 — Acreedores por arrendamiento financiero a corto plazo, empresas asociadas
+        2.P.2.3.2.5134 — Otras deudas a corto plazo con empresas asociadas
+        2.P.2.3.2.5144 — Intereses a corto plazo de deudas, empresas asociadas
+        2.P.2.3.2.5564 — Desembolsos exigidos sobre participaciones, empresas asociadas
+      2.P.2.3.3 — Otras partes vinculadas
+        2.P.2.3.3.5105 — Deudas a corto plazo con otras entidades de crédito vinculadas
+        2.P.2.3.3.5115 — Proveedores de inmovilizado a corto plazo, otras partes vinculadas
+        2.P.2.3.3.5125 — Acreedores por arrendamiento financiero a corto plazo, otras partes vinculadas
+        2.P.2.3.3.5135 — Otras deudas a corto plazo con otras partes vinculadas
+        2.P.2.3.3.5145 — Intereses a corto plazo de deudas, otras partes vinculadas
+        2.P.2.3.3.5565 — Desembolsos exigidos sobre participaciones, otras partes vinculadas
+        2.P.2.3.3.5566 — Desembolsos exigidos sobre participaciones de otras empresas
+    2.P.2.4 — Acreedores comerciales y otras cuentas a pagar
+      2.P.2.4.1 — Proveedores
+        2.P.2.4.1.1.400 — Proveedores
+          2.P.2.4.1.1.401 — Proveedores, efectos comerciales a pagar
+          2.P.2.4.1.1.406 — Envases y embalajes a devolver a proveedores
+          2.P.2.4.1.1.4000 — Proveedores (euros)
+          2.P.2.4.1.1.4004 — Proveedores (moneda extranjera)
+          2.P.2.4.1.1.4009 — Proveedores, facturas pendientes de recibir o de formalizar
+        2.P.2.4.1.2 — Proveedores con partes vinculadas
+          2.P.2.4.1.2.403 — Proveedores, empresas del grupo
+            2.P.2.4.1.4030 — Proveedores, empresas del grupo (euros)
+            2.P.2.4.1.4031 — Efectos comerciales a pagar, empresas del grupo
+            2.P.2.4.1.4034 — Proveedores, empresas del grupo (moneda extranjera)
+            2.P.2.4.1.4036 — Envases y embalajes a devolver a proveedores, empresas del grupo
+            2.P.2.4.1.4039 — Proveedores, empresas del grupo, facturas pendientes de recibir o de formalizar
+          2.P.2.4.1.2.404 — Proveedores, empresas asociadas
+          2.P.2.4.1.2.405 — Proveedores, otras partes vinculadas
+      2.P.2.4.2 — Otros acreedores
+        2.P.2.4.2.41 — Acreedores Varios
+          2.P.2.4.2.410 — Acreedores por prestaciones de servicios
+            2.P.2.4.2.4100 — Acreedores por prestaciones de servicios (euros)
+            2.P.2.4.2.4104 — Acreedores por prestaciones de servicios, (moneda extranjera)
+            2.P.2.4.2.4109 — Acreedores por prestaciones de servicios, facturas pendientes de recibir o de formalizar
+          2.P.2.4.2.411 — Acreedores, efectos comerciales a pagar
+          2.P.2.4.2.419 — Acreedores por operaciones en común
+        2.P.2.4.2.438 — Anticipos de clientes
+        2.P.2.4.2.465 — Remuneraciones pendientes de pago
+      2.P.2.4.3 — Administraciones públicas acreedoras (Fiscal/SS)
+        2.P.2.4.3.475 — Hacienda Pública, acreedora por conceptos fiscales
+          2.P.2.4.3.4750 — Hacienda Pública, acreedora por IVA
+          2.P.2.4.3.4751 — Hacienda Pública, acreedora por retenciones practicadas
+          2.P.2.4.3.4752 — Hacienda Pública, acreedora por impuesto sobre sociedades
+          2.P.2.4.3.4758 — Hacienda Pública, acreedora por subvenciones a reintegrar
+        2.P.2.4.3.476 — Organismos de la Seguridad Social, acreedores
+        2.P.2.4.3.477 — Hacienda Pública, IVA repercutido
+    2.P.2.5 — Periodificaciones a corto plazo
+      2.P.2.5.485 — Ingresos anticipados
+      2.P.2.5.568 — Intereses cobrados por anticipado
+3.E — PATRIMONIO
+  3.E.1 — Fondos propios
+    3.E.1.1 — Capital
+      3.E.1.1.1 — Capital escriturado
+        3.E.1.1.1.100 — Capital social
+        3.E.1.1.1.101 — Fondo social
+        3.E.1.1.1.102 — Capital
+      3.E.1.1.2 — Capital no exigido
+        3.E.1.1.2.1030 — Socios por desembolsos no exigidos, capital social
+        3.E.1.1.2.1034 — Socios por desembolsos no exigidos, capital pendiente de inscripción
+        3.E.1.1.2.1040 — Socios por aportaciones no dinerarias pendientes, capital social
+        3.E.1.1.2.1044 — Socios por aportaciones no dinerarias pendientes, capital pendiente de inscripción
+      3.E.1.1.3 — Capital emitido pendiente
+        3.E.1.1.3.190 — Acciones o participaciones emitidas
+        3.E.1.1.3.192 — Suscriptores de acciones
+        3.E.1.1.3.194 — Capital emitido pendiente de inscripción
+    3.E.1.2 — Prima de emisión
+      3.E.1.2.110 — Prima de emisión o asunción
+    3.E.1.3 — Reservas
+      3.E.1.3.112 — Reserva legal
+      3.E.1.3.113 — Reservas voluntarias
+      3.E.1.3.114 — Reservas especiales
+        3.E.1.3.1140 — Reservas para acciones o participaciones de la sociedad dominante
+        3.E.1.3.1141 — Reservas estatutarias
+        3.E.1.3.1142 — Reserva por capital amortizado
+        3.E.1.3.1144 — Reservas por acciones propias aceptadas en garantía
+      3.E.1.3.119 — Diferencias por ajuste del capital a euros
+    3.E.1.4 — Acciones y participaciones en patrimonio propias
+      3.E.1.4.108 — Acciones o participaciones propias en situaciones especiales
+      3.E.1.4.109 — Acciones o participaciones propias para reducción de capital
+    3.E.1.5 — Resultado de ejercicios anteriores
+      3.E.1.5.120 — Remanente
+      3.E.1.5.121 — Resultados negativos de ejercicios anteriores
+    3.E.1.6 — Otras aportaciones de socios
+      3.E.1.6.118 — Aportaciones de socios o propietarios
+    3.E.1.7 — Resultado del ejercicio
+      3.E.1.7.129 — Resultado del ejercicio
+    3.E.1.8 — Dividendo a cuenta
+      3.E.1.8.557 — Dividendo activo a cuenta
+  3.E.2 — Subvenciones, Donaciones y Legados Recibidos
+    3.E.2.130 — Subvenciones oficiales de capital
+    3.E.2.131 — Donaciones y legados de capital
+    3.E.2.132 — Otras subvenciones, donaciones y legados
+4.I — INGRESOS
+  4.I.70 — Ventas de Mercaderías, de Producción Propia, De Servicios, etc
+    4.I.700 — Ventas de mercaderías
+    4.I.701 — Ventas de productos terminados
+    4.I.702 — Ventas de productos semiterminados
+    4.I.703 — Ventas de subproductos y residuos
+    4.I.704 — Ventas de envases y embalajes
+    4.I.705 — Prestaciones de servicios
+    4.I.706 — Descuentos sobre ventas por pronto pago
+      4.I.7060 — Descuentos sobre ventas por pronto pago de mercaderías
+      4.I.7061 — Descuentos sobre ventas por pronto pago de productos terminados
+      4.I.7062 — Descuentos sobre ventas por pronto pago de productos semiterminados
+      4.I.7063 — Descuentos sobre ventas por pronto pago de subproductos y residuos
+    4.I.708 — Devoluciones de ventas y operaciones similares
+      4.I.7080 — Devoluciones de ventas de mercaderías
+      4.I.7081 — Devoluciones de ventas de productos terminados
+      4.I.7082 — Devoluciones de ventas de productos semiterminados
+      4.I.7083 — Devoluciones de ventas de subproductos y residuos
+      4.I.7084 — Devoluciones de ventas de envases y embalajes
+    4.I.709 — “Rappels” sobre ventas
+      4.I.7090 — «Rappels» sobre ventas de mercaderías
+      4.I.7091 — “Rappels” sobre ventas de productos terminados
+      4.I.7092 — “Rappels” sobre ventas de productos semiterminados
+      4.I.7093 — “Rappels” sobre ventas de subproductos y residuos
+      4.I.7094 — “Rappels” sobre ventas de envases y embalajes
+  4.I.71 — Variación de Existencias
+    4.I.710 — Variación de existencias de productos en curso
+    4.I.711 — Variación de existencias de productos semiterminados
+    4.I.712 — Variación de existencias de productos terminados
+    4.I.713 — Variación de existencias de subproductos, residuos y materiales recuperados
+  4.I.73 — Trabajos Realizados para la Empresa
+    4.I.730 — Trabajos realizados para el inmovilizado intangible
+    4.I.731 — Trabajos realizados para el inmovilizado material
+    4.I.732 — Trabajos realizados en inversiones inmobiliarias
+    4.I.733 — Trabajos realizados para el inmovilizado material en curso
+  4.I.74 — Subvenciones, Donaciones y Legados
+    4.I.740 — Subvenciones, donaciones y legados a la explotación
+    4.I.746 — Subvenciones, donaciones y legados de capital transferidos al resultado del ejercicio
+    4.I.747 — Otras subvenciones, donaciones y legados transferidos al resultado del ejercicio
+  4.I.75 — Otros Ingresos de Gestión
+    4.I.751 — Resultados de operaciones en común
+      4.I.7510 — Pérdida transferida (gestor)
+      4.I.7511 — Beneficio atribuido (partícipe o asociado no gestor)
+    4.I.752 — Ingresos por arrendamientos
+    4.I.753 — Ingresos de propiedad industrial cedida en explotación
+    4.I.754 — Ingresos por comisiones
+    4.I.755 — Ingresos por servicios al personal
+    4.I.759 — Ingresos por servicios diversos
+  4.I.76 — Ingresos Financieros
+    4.I.760 — Ingresos de participaciones en instrumentos de patrimonio
+      4.I.7600 — Ingresos de participaciones en instrumentos de patrimonio, empresas del grupo
+      4.I.7601 — Ingresos de participaciones en instrumentos de patrimonio, empresas asociadas
+      4.I.7602 — Ingresos de participaciones en instrumentos de patrimonio, otras partes vinculadas
+      4.I.7603 — Ingresos de participaciones en instrumentos de patrimonio, otras empresas
+    4.I.761 — Ingresos de valores representativos de deuda
+      4.I.7610 — Ingresos de valores representativos de deuda, empresas del grupo
+      4.I.7611 — Ingresos de valores representativos de deuda, empresas asociadas
+      4.I.7612 — Ingresos de valores representativos de deuda, otras partes vinculadas
+      4.I.7613 — Ingresos de valores representativos de deuda, otras empresas
+    4.I.762 — Ingresos de créditos
+      4.I.7620 — Ingresos de créditos a largo plazo
+        4.I.76200 — Ingresos de créditos a largo plazo, empresas del grupo
+        4.I.76201 — Ingresos de créditos a largo plazo, empresas asociadas
+        4.I.76202 — Ingresos de créditos a largo plazo, otras partes vinculadas
+        4.I.76203 — Ingresos de créditos a largo plazo, otras empresas
+      4.I.7621 — Ingresos de créditos a corto plazo
+        4.I.76210 — Ingresos de créditos a corto plazo, empresas del grupo
+        4.I.76211 — Ingresos de créditos a corto plazo, empresas asociadas
+        4.I.76212 — Ingresos de créditos a corto plazo, otras partes vinculadas
+        4.I.76213 — Ingresos de créditos a corto plazo, otras empresas
+    4.I.763 — Beneficios por valoración de instrumentos financieros por su valor razonable
+    4.I.766 — Beneficios en participaciones y valores representativos de deuda
+      4.I.7660 — Beneficios en valores representativos de deuda a largo plazo, empresas del grupo
+      4.I.7661 — Beneficios en valores representativos de deuda a largo plazo, empresas asociadas
+      4.I.7662 — Beneficios en valores representativos de deuda a largo plazo, otras partes vinculadas
+      4.I.7663 — Beneficios en participaciones y valores representativos de deuda a largo plazo, otras empresas
+      4.I.7665 — Beneficios en participaciones y valores representativos de deuda a corto plazo, empresas del grupo
+      4.I.7666 — Beneficios en participaciones y valores representativos de deuda a corto plazo, empresas asociadas
+      4.I.7667 — Beneficios en valores representativos de deuda a corto plazo, otras partes vinculadas
+      4.I.7668 — Beneficios en valores representativos de deuda a corto plazo, otras empresas
+    4.I.768 — Diferencias positivas de cambio
+    4.I.769 — Otros ingresos financieros
+  4.I.77 — Beneficios Procedentes de Activos No Corrientes e Ingresos Excepcionales
+    4.I.770 — Beneficios procedentes del inmovilizado intangible
+    4.I.771 — Beneficios procedentes del inmovilizado mate rial
+    4.I.772 — Beneficios procedentes de las inversiones inmobiliarias
+    4.I.773 — Beneficios procedentes de participaciones a largo plazo en partes vinculadas
+      4.I.7733 — Beneficios procedentes de participaciones a largo plazo, empresas del grupo
+      4.I.7734 — Beneficios procedentes de participaciones a largo plazo, empresas asociadas
+      4.I.7735 — Beneficios procedentes de participaciones a largo plazo, otras partes vinculadas
+    4.I.775 — Beneficios por operaciones con obligaciones propias
+    4.I.778 — Ingresos excepcionales
+  4.I.79 — Excesos y Aplicaciones De Provisiones y De Pérdidas Por Deterioro
+    4.I.790 — Reversión del deterioro del inmovilizado intangible
+    4.I.791 — Reversión del deterioro del inmovilizado material
+    4.I.792 — Reversión del deterioro de las inversiones inmobiliarias
+    4.I.793 — Reversión del deterioro de existencias
+      4.I.7930 — Reversión del deterioro de productos terminados y en curso de fabricación
+      4.I.7931 — Reversión del deterioro de mercaderías
+      4.I.7932 — Reversión del deterioro de materias primas
+      4.I.7933 — Reversión del deterioro de otros aprovisionamientos
+    4.I.794 — Reversión del deterioro de créditos por operaciones comerciales
+    4.I.795 — Exceso de provisiones
+      4.I.7951 — Exceso de provisión para impuestos
+      4.I.7952 — Exceso de provisión para otras responsabilidades
+      4.I.7954 — Exceso de provisión por operaciones comerciales
+        4.I.79544 — Exceso de provisión por contratos onerosos
+        4.I.79549 — Exceso de provisión para otras operaciones comerciales
+      4.I.7955 — Exceso de provisión para actuaciones medioambientales
+    4.I.796 — Reversión del deterioro de participaciones y valores representativos de deuda a largo plazo
+      4.I.7960 — Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas del grupo
+      4.I.7961 — Reversión del deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas asociadas
+      4.I.7965 — Reversión del deterioro de valores representativos de deuda a largo plazo, empresas del grupo
+      4.I.7966 — Reversión del deterioro de valores representativos de deuda a largo plazo, empresas asociadas
+      4.I.7967 — Reversión del deterioro de valores representativos de deuda a largo plazo, otras partes vinculadas
+      4.I.7968 — Reversión del deterioro de valores representativos de deuda a largo plazo, otras empresas
+    4.I.797 — Reversión del deterioro de créditos a largo plazo
+      4.I.7970 — Reversión del deterioro de créditos a largo plazo, empresas del grupo
+      4.I.7971 — Reversión del deterioro de créditos a largo plazo, empresas asociadas
+      4.I.7972 — Reversión del deterioro de créditos a largo plazo, otras partes vinculadas
+      4.I.7973 — Reversión del deterioro de créditos a largo plazo, otras empresas
+    4.I.798 — Reversión del deterioro de participaciones y valores representativos de deuda a corto plazo
+      4.I.7980 — Reversión del deterioro de participaciones en instrumentos de patrimonio neto a corto plazo, empresas del grupo
+      4.I.7981 — Reversión del deterioro de participaciones en instrumentos de patrimonio neto a corto plazo, empresas asociadas
+      4.I.7985 — Reversión del deterioro en valores representativos de deuda a corto plazo, empresas del grupo
+      4.I.7986 — Reversión del deterioro en valores representativos de deuda a corto plazo, empresas asociadas
+      4.I.7987 — Reversión del deterioro en valores representativos de deuda a corto plazo, otras partes vinculadas
+      4.I.7988 — Reversión del deterioro en valores representativos de deuda a corto plazo, otras empresas
+    4.I.799 — Reversión del deterioro de créditos a corto plazo
+      4.I.7990 — Reversión del deterioro de créditos a corto plazo, empresas del grupo
+      4.I.7991 — Reversión del deterioro de créditos a corto plazo, empresas asociadas
+      4.I.7992 — Reversión del deterioro de créditos a corto plazo, otras partes vinculadas
+      4.I.7993 — Reversión del deterioro de créditos a corto plazo, otras empresas
+5.G — GASTOS
+  5.G.60 — Compras
+    5.G.600 — Compras de mercaderías
+    5.G.601 — Compras de materias primas
+    5.G.602 — Compras de otros aprovisionamientos
+    5.G.606 — Descuentos sobre compras por pronto pago
+      5.G.6060 — Descuentos sobre compras por pronto pago de mercaderías
+      5.G.6061 — Descuentos sobre compras por pronto pago de materias primas
+      5.G.6062 — Descuentos sobre compras por pronto pago de otros aprovisionamientos
+    5.G.607 — Trabajos realizados por otras empresas
+    5.G.608 — Devoluciones de compras y operaciones similares
+      5.G.6080 — Devoluciones de compras de mercaderías
+      5.G.6081 — Devoluciones de compras de materias primas
+      5.G.6082 — Devoluciones de compras de otros aprovisionamientos
+    5.G.609 — “Rappels” por compras
+      5.G.6090 — “Rappels” por compras de mercaderías
+      5.G.6091 — “Rappels” por compras de materias primas
+      5.G.6092 — “Rappels” por compras de otros aprovisionamientos
+  5.G.61 — Variación de Existencias
+    5.G.610 — Variación de existencias de mercaderías
+    5.G.611 — Variación de existencias de materias primas
+    5.G.612 — Variación de existencias de otros aprovisionamientos
+  5.G.62 — Servicios Exteriores
+    5.G.620 — Gastos en investigación y desarrollo del ejercicio
+    5.G.621 — Arrendamientos y cánones
+    5.G.622 — Reparaciones y conservación
+    5.G.623 — Servicios de profesionales independientes
+    5.G.624 — Transportes
+    5.G.625 — Primas de seguros
+    5.G.626 — Servicios bancarios y similares
+    5.G.627 — Publicidad, propaganda y relaciones públicas
+    5.G.628 — Suministros
+    5.G.629 — Otros servicios
+  5.G.63 — Tributos
+    5.G.630 — Impuesto sobre beneficios
+      5.G.6300 — Impuesto corriente
+      5.G.6301 — Impuesto diferido
+    5.G.631 — Otros tributos
+    5.G.633 — Ajustes negativos en la imposición sobre be neficios
+    5.G.634 — Ajustes negativos en la imposición indirecta
+      5.G.6341 — Ajustes negativos en IVA de activo corriente
+      5.G.6342 — Ajustes negativos en IVA de inversiones
+    5.G.636 — Devolución de impuestos
+    5.G.638 — Ajustes positivos en la imposición sobre beneficios
+    5.G.639 — Ajustes positivos en la imposición indirecta
+      5.G.6391 — Ajustes positivos en IVA de activo corriente
+      5.G.6392 — Ajustes positivos en IVA de inversiones
+  5.G.64 — Gastos de Personal
+    5.G.640 — Sueldos y salarios
+    5.G.641 — Indemnizaciones
+    5.G.642 — Seguridad Social a cargo de la empresa
+    5.G.649 — Otros gastos sociales
+  5.G.65 — Otros Gastos de Gestión
+    5.G.650 — Pérdidas de créditos comerciales incobrables
+    5.G.651 — Resultados de operaciones en común
+      5.G.6510 — Beneficio transferido (gestor)
+      5.G.6511 — Pérdida soportada (partícipe o asociado no gestor)
+    5.G.659 — Otras pérdidas en gestión corriente
+  5.G.66 — Gastos Financieros
+    5.G.660 — Gastos financieros por actualización de provisiones
+    5.G.661 — Intereses de obligaciones y bonos
+      5.G.6610 — Intereses de obligaciones y bonos a largo plazo, empresas del grupo
+      5.G.6611 — Intereses de obligaciones y bonos a largo plazo, empresas asociadas
+      5.G.6612 — Intereses de obligaciones y bonos a largo plazo, otras partes vinculadas
+      5.G.6613 — Intereses de obligaciones y bonos a largo plazo, otras empresas
+      5.G.6615 — Intereses de obligaciones y bonos a corto plazo, empresas del grupo
+      5.G.6616 — Intereses de obligaciones y bonos a corto plazo, empresas asociadas
+      5.G.6617 — Intereses de obligaciones y bonos a corto plazo, otras partes vinculadas
+      5.G.6618 — Intereses de obligaciones y bonos a corto plazo, otras empresas
+    5.G.662 — Intereses de deudas
+      5.G.6620 — Intereses de deudas, empresas del grupo
+      5.G.6621 — Intereses de deudas, empresas asociadas
+      5.G.6622 — Intereses de deudas, otras partes vinculadas
+      5.G.6623 — Intereses de deudas con entidades de crédito
+      5.G.6624 — Intereses de deudas, otras empresas
+    5.G.663 — Pérdidas por valoración de instrumentos financieros por su valor razonable
+    5.G.664 — Gastos por dividendos de acciones o participaciones consideradas como pasivos financieros
+      5.G.6640 — Dividendos de pasivos, empresas del grupo
+      5.G.6641 — Dividendos de pasivos, empresas asociadas
+      5.G.6642 — Dividendos de pasivos, otras partes vinculadas
+      5.G.6643 — Dividendos de pasivos, otras empresas
+    5.G.665 — Intereses por descuento de efectos y operaciones de “factoring”
+      5.G.6650 — Intereses por descuento de efectos en entidades de crédito del grupo
+      5.G.6651 — Intereses por descuento de efectos en entidades de crédito asociadas
+      5.G.6652 — Intereses por descuento de efectos en otras entidades de crédito vinculadas
+      5.G.6653 — Intereses por descuento de efectos en otras entidades de crédito
+      5.G.6654 — Intereses por operaciones de “factoring” con entidades de crédito del grupo
+      5.G.6655 — Intereses por operaciones de “factoring” con entidades de crédito asociadas
+      5.G.6656 — Intereses por operaciones de “factoring” con otras entidades de crédito vinculadas
+      5.G.6657 — Intereses por operaciones de “factoring” con otras entidades de crédito
+    5.G.666 — Pérdidas en participaciones y valores representativos de deuda
+      5.G.6660 — Pérdidas en valores representativos de deuda a largo plazo, empresas del grupo
+      5.G.6661 — Pérdidas en valores representativos de deuda a largo plazo, empresas asociadas
+      5.G.6662 — Pérdidas en valores representativos de deuda a largo plazo, otras partes vinculadas
+      5.G.6663 — Pérdidas en participaciones y valores representativos de deuda a largo plazo, otras empresas
+      5.G.6665 — Pérdidas en participaciones y valores representativos de deuda a corto plazo, empresas del grupo
+      5.G.6666 — Pérdidas en participaciones y valores representativos de deuda a corto plazo, empresas asociadas
+      5.G.6667 — Pérdidas en valores representativos de deuda a corto plazo, otras partes vinculadas
+      5.G.6668 — Pérdidas en valores representativos de deuda a corto plazo, otras empresas
+    5.G.667 — Pérdidas de créditos no comerciales
+      5.G.6670 — Pérdidas de créditos a largo plazo, empresas del grupo
+      5.G.6671 — Pérdidas de créditos a largo plazo, empresas asociadas
+      5.G.6672 — Pérdidas de créditos a largo plazo, otras partes vinculadas
+      5.G.6673 — Pérdidas de créditos a largo plazo, otras empresas
+      5.G.6675 — Pérdidas de créditos a corto plazo, empresas del grupo
+      5.G.6676 — Pérdidas de créditos a corto plazo, empresas asociadas
+      5.G.6677 — Pérdidas de créditos a corto plazo, otras partes vinculadas
+      5.G.6678 — Pérdidas de créditos a corto plazo, otras empresas
+    5.G.668 — Diferencias negativas de cambio
+    5.G.669 — Otros gastos financieros
+  5.G.67 — Pérdidas Procedentes de Activos No Corrientes Y Gastos Excepcionales
+    5.G.670 — Pérdidas procedentes del inmovilizado intangible
+    5.G.671 — Pérdidas procedentes del inmovilizado material
+    5.G.672 — Pérdidas procedentes de las inversiones inmobiliarias
+    5.G.673 — Pérdidas procedentes de participaciones a largo plazo en partes vinculadas
+      5.G.6733 — Pérdidas procedentes de participaciones a largo plazo, empresas del grupo
+      5.G.6734 — Pérdidas procedentes de participaciones a largo plazo, empresas asociadas
+      5.G.6735 — Pérdidas procedentes de participaciones a largo plazo, otras partes vinculadas
+    5.G.675 — Pérdidas por operaciones con obli gaciones propias
+    5.G.678 — Gastos excepcionales
+  5.G.68 — Dotaciones para Amortizaciones
+    5.G.680 — Amortización del inmovilizado intangible
+    5.G.681 — Amortización del inmovilizado material
+    5.G.682 — Amortización de las inversiones inmobiliarias
+  5.G.69 — Pérdidas por Deterioro y Otras Dotaciones
+    5.G.690 — Pérdidas por deterioro del inmovilizado intangible
+    5.G.691 — Pérdidas por deterioro del inmovilizado material
+    5.G.692 — Pérdidas por deterioro de las inversiones inmobiliarias
+    5.G.693 — Pérdidas por deterioro de existencias
+      5.G.6930 — Pérdidas por deterioro de productos terminados y en curso de fabricación
+      5.G.6931 — Pérdidas por deterioro de mercaderías
+      5.G.6932 — Pérdidas por deterioro de materias primas
+      5.G.6933 — Pérdidas por deterioro de otros aprovisionamientos
+    5.G.694 — Pérdidas por deterioro de créditos por operaciones comerciales
+    5.G.695 — Dotación a la provisión por operaciones comerciales
+      5.G.6954 — Dotación a la provisión por contratos onerosos
+      5.G.6959 — Dotación a la provisión para otras operaciones comerciales
+    5.G.696 — Pérdidas por deterioro de participaciones y valores representativos de deuda a largo plazo
+      5.G.6960 — Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas del grupo
+      5.G.6961 — Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas asociadas
+      5.G.6962 — Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras partes vinculadas
+      5.G.6963 — Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, otras empresas
+      5.G.6965 — Pérdidas por deterioro en valores representativos de deuda a largo plazo, empresas del grupo
+      5.G.6966 — Pérdidas por deterioro en valores representativos de deuda a largo plazo, empresas asociadas
+      5.G.6967 — Pérdidas por deterioro en valores representativos de deuda a largo plazo, otras partes vinculadas
+      5.G.6968 — Pérdidas por deterioro en valores representativos de deuda a largo plazo, de otras empresas
+    5.G.697 — Pérdidas por deterioro de créditos a largo plazo
+      5.G.6970 — Pérdidas por deterioro de créditos a largo plazo, empresas del grupo
+      5.G.6971 — Pérdidas por deterioro de créditos a largo plazo, empresas asociadas
+      5.G.6972 — Pérdidas por deterioro de créditos a largo plazo, otras partes vinculadas
+      5.G.6973 — Pérdidas por deterioro de créditos a largo plazo, otras empresas
+    5.G.698 — Pérdidas por deterioro de participaciones y valores representativos de deuda a corto plazo
+      5.G.6980 — Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a corto plazo, empresas del grupo
+      5.G.6981 — Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a corto plazo, empresas asociadas
+      5.G.6985 — Pérdidas por deterioro en valores representativos de deuda a corto plazo, empresas del grupo
+      5.G.6986 — Pérdidas por deterioro en valores representativos de deuda a corto plazo, empresas asociadas
+      5.G.6987 — Pérdidas por deterioro en valores representativos de deuda a corto plazo, otras partes vinculadas
+      5.G.6988 — Pérdidas por deterioro en valores representativos de deuda a corto plazo, de otras empresas
+    5.G.699 — Pérdidas por deterioro de créditos a corto plazo
+      5.G.6990 — Pérdidas por deterioro de créditos a corto plazo, empresas del grupo
+      5.G.6991 — Pérdidas por deterioro de créditos a corto plazo, empresas asociadas
+      5.G.6992 — Pérdidas por deterioro de créditos a corto plazo, otras partes vinculadas
+      5.G.6993 — Pérdidas por deterioro de créditos a corto plazo, otras empresas

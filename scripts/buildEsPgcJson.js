@@ -171,6 +171,9 @@ function parseBizmotionSheet(worksheet, pgcCodeSet) {
     const extracted = extractPgcCodeFromBizmotionKey(a.bizmotion_sort_key);
     if (!extracted) continue;
     const code = String(extracted);
+    // Exception: never map Bizmotion (Balance/PyG) nodes to PGC root groups (1..7).
+    // Those are valid pages in the PGC view, but Bizmotion aggregation nodes must not redirect there.
+    if (/^[1-7]$/.test(code)) continue;
     if (!pgcCodeSet || !pgcCodeSet.has(code)) continue;
     a.code_pgc = code;
     a.pgc_sort_key = code;

@@ -1,0 +1,23 @@
+---
+title: "¿Por qué los terrenos (210) no tienen amortización acumulada (2810)?"
+slug: /notas/terrenos-sin-amortizacion-2810
+tags: [Contabilidad]
+---
+
+## Idea clave
+
+En el PGC, **210 — Terrenos y bienes naturales** (y en Bizmotion `1.A.1.2.210`) **normalmente tiene vida útil indefinida**: el terreno, por sí mismo, **no se consume por el uso** como una máquina o un edificio. Por eso **no se amortiza** y, en consecuencia, **no tiene una “amortización acumulada” asociada** del tipo `281x`.
+
+## Entonces, ¿por qué no “2810”?
+
+`2810` es el **grupo** de **amortización acumulada del inmovilizado material**. Se utiliza cuando el activo **sí es amortizable** (tiene vida útil finita y se deprecia sistemáticamente). En terrenos, **lo habitual** es que esa amortización **no proceda**, así que no hay una contrapartida “natural” en `281x`.
+
+## ¿Qué pasa si baja el valor del terreno?
+
+Si existe una pérdida de valor relevante, lo habitual es reconocer un **deterioro** (no amortización). Ver: [Amortización vs deterioro del valor](/es/notas/amortizacion-vs-deterioro).
+
+## Matices comunes
+
+- **Construcciones** (211) sí suelen amortizarse → ahí sí tiene sentido una `281x`.
+- Si dentro de “bienes naturales” hubiera componentes **agotables** o con **vida útil finita** (según el caso), el tratamiento puede diferir.
+

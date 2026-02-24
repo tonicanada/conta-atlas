@@ -1,6 +1,31 @@
 :root {
-  --ifm-color-primary: #1b4dff;
+  /* Brand (Bizmotion logo blue ≈ #314ba6) */
+  --ifm-color-primary: #314ba6;
+  --ifm-color-primary-dark: #2b4292;
+  --ifm-color-primary-darker: #283e88;
+  --ifm-color-primary-darkest: #213371;
+  --ifm-color-primary-light: #465daf;
+  --ifm-color-primary-lighter: #5268b4;
+  --ifm-color-primary-lightest: #6f81c1;
   --ifm-font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: var(--ifm-color-primary-dark);
+  --ifm-link-decoration: none;
+  --ifm-link-hover-decoration: underline;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #7aa2ff;
+  --ifm-color-primary-dark: #6e92e6;
+  --ifm-color-primary-darker: #6688d6;
+  --ifm-color-primary-darkest: #5875b8;
+  --ifm-color-primary-light: #85a9ff;
+  --ifm-color-primary-lighter: #8dafff;
+  --ifm-color-primary-lightest: #9ab8ff;
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: #9bb8ff;
+  --ifm-link-decoration: none;
+  --ifm-link-hover-decoration: underline;
 }
 
 .containerMax {

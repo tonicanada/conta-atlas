@@ -1,0 +1,83 @@
+---
+title: "Amortización vs deterioro del valor"
+slug: /notas/amortizacion-vs-deterioro
+tags: [Contabilidad]
+---
+
+import AccountingEntryTable from '@site/src/components/AccountingEntryTable';
+
+## Idea clave
+
+- **Amortización**: reparto **sistemático** del coste de un inmovilizado a lo largo de su **vida útil** (gasto “normal” del paso del tiempo/uso).
+- **Deterioro del valor**: **pérdida adicional** (normalmente no lineal) cuando el valor recuperable del activo es **menor** que su valor en libros.
+
+> En la práctica pueden coexistir: un activo se amortiza y, si procede, también se reconoce deterioro.
+
+## Pistas rápidas (checklist)
+
+- Si es un gasto **periódico previsible** por el uso/tiempo → suele ser **amortización**.
+- Si hay un “evento” o evidencia de que el activo vale **menos de lo que figura** (daño, obsolescencia, caída de demanda, etc.) → suele ser **deterioro**.
+- Tras un deterioro, la amortización futura suele calcularse sobre el **nuevo valor** (valor en libros tras el ajuste) y la vida útil restante.
+
+## Ejemplos de asientos contables (orientativos)
+
+> Ejemplos ilustrativos (los números de cuenta exactos pueden variar por empresa/ERP).
+
+### 1) Amortización anual de una aplicación informática (intangible)
+
+Amortización del ejercicio: 1.200 €.
+
+<AccountingEntryTable
+  rows={[
+    { account: '680 — Amortización del inmovilizado intangible', debit: 1200 },
+    { account: '280 — Amortización acumulada del inmovilizado intangible', credit: 1200 }
+  ]}
+/>
+
+### 2) Amortización mensual de maquinaria (material)
+
+Amortización del mes: 500 €.
+
+<AccountingEntryTable
+  rows={[
+    { account: '681 — Amortización del inmovilizado material', debit: 500 },
+    { account: '281 — Amortización acumulada del inmovilizado material', credit: 500 }
+  ]}
+/>
+
+### 3) Deterioro de valor de maquinaria (material)
+
+Se reconoce un deterioro: 3.000 €.
+
+<AccountingEntryTable
+  rows={[
+    { account: '691 — Pérdidas por deterioro del inmovilizado material', debit: 3000 },
+    { account: '291 — Deterioro de valor del inmovilizado material', credit: 3000 }
+  ]}
+/>
+
+## ¿Se puede registrar un deterioro sin tasación?
+
+En general, **sí**: el PGC no exige “tasación” por defecto para contabilizar un deterioro. Lo que exige es que exista **evidencia/indicios** y que la empresa **estime el importe recuperable** (el mayor entre el **valor razonable menos costes de venta** y el **valor en uso**).
+
+- Una **tasación independiente** suele ser muy útil (especialmente en inmuebles), pero no es el único soporte posible.
+- Alternativas habituales (según el activo): comparables de mercado, ofertas verificables, presupuestos de reparación, informes técnicos, proyecciones de flujos (valor en uso) con hipótesis razonables, etc.
+
+## ¿Puede dar problemas con Hacienda? (Impuesto sobre Sociedades)
+
+En España, desde la Ley 27/2014, las pérdidas por deterioro de **inmovilizado material**, **inversiones inmobiliarias** e **inmovilizado intangible** **no son fiscalmente deducibles** (art. 13.2.a). Eso implica, normalmente:
+
+- El deterioro puede estar **bien contabilizado**, pero en el **Impuesto sobre Sociedades** se suele hacer un **ajuste extracontable positivo** (no reduce la base imponible en ese ejercicio).
+- Si se usa el deterioro “para pagar menos” y **no** se hace el ajuste fiscal que corresponde, ahí sí puedes tener contingencias (regularización, intereses y, en su caso, sanción).
+
+La recuperación fiscal del efecto suele venir **cuando se realiza la pérdida** (por ejemplo, con la **baja/venta** del activo). En caso de duda (tipo de activo/situación), conviene confirmarlo con tu asesoría fiscal.
+
+## Buenas prácticas (para defender el criterio)
+
+- Documentar el **indicio** que dispara el test (obsolescencia, caída de demanda, daño, cambios regulatorios, etc.).
+- Guardar el **cálculo** del importe recuperable (método elegido, supuestos, sensibilidad).
+- Aplicar criterios **consistentes** y revisar al cierre: si desaparecen las causas, valorar la **reversión** del deterioro (cuando proceda).
+
+## Ver también
+
+- [Notas (ES)](/es/notas)

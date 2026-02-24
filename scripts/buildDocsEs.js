@@ -27,6 +27,24 @@ function cmpEs(a, b) {
   return String(a).localeCompare(String(b), 'es', { numeric: true });
 }
 
+function stripAccents(value) {
+  return String(value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+}
+
+function slugifySegment(value) {
+  const s = stripAccents(value).toLowerCase();
+  return s
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/--+/g, '-');
+}
+
+function isPgcRootCode(code) {
+  return /^[1-7]$/.test(String(code || '').trim());
+}
+
 function main() {
   const repoRoot = path.join(__dirname, '..');
   const dataPath = path.join(repoRoot, 'data', 'es', 'pgc_accounts.json');
@@ -38,6 +56,15 @@ function main() {
   }
 
   const all = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+
+  // Balance/PyG (Bizmotion) nodes that should have their own route when they
+  // don't map to a specific PGC account (and must never map to PGC roots 1..7).
+  const bizmotionNoMap = all.filter((a) => {
+    const id = String(a.id || '');
+    if (!id.startsWith('bm:')) return false;
+    const code = a.code_pgc ? String(a.code_pgc) : '';
+    return !code || isPgcRootCode(code);
+  });
 
   const byCode = new Map();
   for (const a of all) {
@@ -90,13 +117,58 @@ function main() {
     writeFileIfMissing(filePath, mdx);
   }
 
+  const balanceDir = path.join(docsRoot, 'balance');
+  ensureDir(balanceDir);
+
+  writeFileIfChanged(
+    path.join(balanceDir, '_category_.json'),
+    `${JSON.stringify({ label: 'Balance/PyG' }, null, 2)}\n`
+  );
+
+  writeFileIfChanged(
+    path.join(balanceDir, 'index.mdx'),
+    `---\n` +
+      `title: ${yamlString('Balance/PyG (ES)')}\n` +
+      `---\n\n` +
+      `Páginas de nodos del Balance/PyG (Bizmotion) sin correspondencia directa en el PGC oficial.\n\n` +
+      `Total: **${bizmotionNoMap.length}**\n`
+  );
+
+  for (const a of bizmotionNoMap) {
+    const key = String(a.bizmotion_sort_key || a.code_display || a.id || '').replace(/^bm:/, '');
+    if (!key) continue;
+    const slug = slugifySegment(key);
+    if (!slug) continue;
+
+    const titleName = a && a.name ? String(a.name) : '';
+    const title = titleName ? `${key} — ${titleName}` : String(key);
+    const filePath = path.join(balanceDir, `${slug}.mdx`);
+    const mdx =
+      `---\n` +
+      `title: ${yamlString(title)}\n` +
+      `slug: ${yamlString(`/balance/${slug}`)}\n` +
+      `bizmotion_key: ${yamlString(key)}\n` +
+      `---\n\n` +
+      `<!-- Placeholder: nodo Balance/PyG sin cuenta PGC asociada -->\n\n` +
+      `Este nodo pertenece a la vista **Balance/PyG (Bizmotion)** y no tiene una correspondencia directa con una cuenta concreta del **PGC oficial**.\n\n` +
+      `## Vistas\n\n` +
+      `- [Ver árbol Balance/PyG](/es/plan-completo-bizmotion)\n` +
+      `- [Ver árbol PGC oficial](/es/plan-completo-pgc)\n`;
+    writeFileIfMissing(filePath, mdx);
+  }
+
   writeFileIfChanged(
     path.join(cuentasDir, '.generated.json'),
     `${JSON.stringify({ generatedAt: new Date().toISOString(), cuentas: codes.length }, null, 2)}\n`
   );
 
+  writeFileIfChanged(
+    path.join(balanceDir, '.generated.json'),
+    `${JSON.stringify({ generatedAt: new Date().toISOString(), balanceNodes: bizmotionNoMap.length }, null, 2)}\n`
+  );
+
   console.log(`OK: docs/es/cuentas (cuentas: ${codes.length})`);
+  console.log(`OK: docs/es/balance (nodos: ${bizmotionNoMap.length})`);
 }
 
 main();
-

@@ -1,0 +1,58 @@
+---
+title: "¿Por qué 706 y 708 están en el grupo 7 si suelen ir al debe?"
+slug: /notas/706-708-por-que-estan-en-grupo-7
+tags: [Contabilidad, PGC, Ventas]
+---
+
+import AccountingEntryTable from '@site/src/components/AccountingEntryTable';
+
+## Idea clave
+
+Las cuentas **706** (descuentos por pronto pago) y **708** (devoluciones de ventas) están en el **grupo 7** porque son **cuentas correctoras de ingresos**: forman parte del cálculo de la **cifra de ventas neta**.
+
+Aunque contablemente se registren **al debe** (saldo deudor), **no son gastos “de grupo 6”**: su función es **restar** a las ventas brutas para presentar el **ingreso neto**.
+
+En resumen:
+
+- **700/701/… (ventas)** suelen ir al **haber**.
+- **706/708** suelen ir al **debe** para **minorarlas**.
+- En la PyG se presentan como **menor ingreso**, no como gasto operativo.
+
+## Ejemplos de asientos (orientativos)
+
+> Ejemplos ilustrativos con IVA para que se vea la lógica; los nombres exactos de cuentas pueden variar.
+
+### 1) Descuento sobre ventas por pronto pago (706)
+
+Factura previa: base 1.000 € + IVA 21% = 1.210 €.  
+Se concede un pronto pago del **2%** sobre la base: 20 € (y su IVA: 4,20 €) al cobrar.
+
+<AccountingEntryTable
+  rows={[
+    { account: 'Bancos', debit: 1185.8 },
+    { account: '706 — Descuentos sobre ventas por pronto pago', debit: 20 },
+    { account: '477 — Hacienda Pública, IVA repercutido', debit: 4.2 },
+    { account: 'Clientes', credit: 1210 }
+  ]}
+/>
+
+### 2) Devolución de ventas (708)
+
+Devolución: base 200 € + IVA 21% = 242 € (abono / rectificativa).
+
+<AccountingEntryTable
+  rows={[
+    { account: '708 — Devoluciones de ventas y operaciones similares', debit: 200 },
+    { account: '477 — Hacienda Pública, IVA repercutido', debit: 42 },
+    { account: 'Clientes (o Bancos si se reembolsa)', credit: 242 }
+  ]}
+/>
+
+## Pista práctica
+
+Pregunta guía: **¿esto reduce el ingreso de la venta (netea la cifra de ventas), o es un gasto independiente?**  
+Si es reducción directa de la venta (descuento/abono/devolución) → suele ir a **706/708 (grupo 7)**.
+
+## Ver también
+
+- [Notas (ES)](/es/notas)
