@@ -4777,7 +4777,7 @@
   },
   {
     "id": "bm:2.P.2.4.1",
-    "name": "Proveedores",
+    "name": "Cuentas por pagar de proveedores",
     "is_group": true,
     "parent_id": "bm:2.P.2.4",
     "bizmotion_class": "P",
@@ -4860,66 +4860,6 @@
     "code_display": "2.P.2.4.1.4009"
   },
   {
-    "id": "bm:2.P.2.4.1.4030",
-    "name": "Proveedores, empresas del grupo (euros)",
-    "is_group": false,
-    "parent_id": "bm:2.P.2.4.2.403",
-    "bizmotion_class": "P",
-    "bizmotion_sort_key": "2.P.2.4.1.4030",
-    "pgc_group": 4,
-    "pgc_sort_key": "4030",
-    "code_pgc": "4030",
-    "code_display": "2.P.2.4.1.4030"
-  },
-  {
-    "id": "bm:2.P.2.4.1.4031",
-    "name": "Efectos comerciales a pagar, empresas del grupo",
-    "is_group": false,
-    "parent_id": "bm:2.P.2.4.2.403",
-    "bizmotion_class": "P",
-    "bizmotion_sort_key": "2.P.2.4.1.4031",
-    "pgc_group": 4,
-    "pgc_sort_key": "4031",
-    "code_pgc": "4031",
-    "code_display": "2.P.2.4.1.4031"
-  },
-  {
-    "id": "bm:2.P.2.4.1.4034",
-    "name": "Proveedores, empresas del grupo (moneda extranjera)",
-    "is_group": false,
-    "parent_id": "bm:2.P.2.4.2.403",
-    "bizmotion_class": "P",
-    "bizmotion_sort_key": "2.P.2.4.1.4034",
-    "pgc_group": 4,
-    "pgc_sort_key": "4034",
-    "code_pgc": "4034",
-    "code_display": "2.P.2.4.1.4034"
-  },
-  {
-    "id": "bm:2.P.2.4.1.4036",
-    "name": "Envases y embalajes a devolver a proveedores, empresas del grupo",
-    "is_group": false,
-    "parent_id": "bm:2.P.2.4.2.403",
-    "bizmotion_class": "P",
-    "bizmotion_sort_key": "2.P.2.4.1.4036",
-    "pgc_group": 4,
-    "pgc_sort_key": "4036",
-    "code_pgc": "4036",
-    "code_display": "2.P.2.4.1.4036"
-  },
-  {
-    "id": "bm:2.P.2.4.1.4039",
-    "name": "Proveedores, empresas del grupo, facturas pendientes de recibir o de formalizar",
-    "is_group": false,
-    "parent_id": "bm:2.P.2.4.2.403",
-    "bizmotion_class": "P",
-    "bizmotion_sort_key": "2.P.2.4.1.4039",
-    "pgc_group": 4,
-    "pgc_sort_key": "4039",
-    "code_pgc": "4039",
-    "code_display": "2.P.2.4.1.4039"
-  },
-  {
     "id": "bm:2.P.2.4.2",
     "name": "Proveedores con partes vinculadas",
     "is_group": true,
@@ -4966,6 +4906,66 @@
     "pgc_sort_key": "405",
     "code_pgc": "405",
     "code_display": "2.P.2.4.2.405"
+  },
+  {
+    "id": "bm:2.P.2.4.2.4030",
+    "name": "Proveedores, empresas del grupo (euros)",
+    "is_group": false,
+    "parent_id": "bm:2.P.2.4.2.403",
+    "bizmotion_class": "P",
+    "bizmotion_sort_key": "2.P.2.4.2.4030",
+    "pgc_group": 4,
+    "pgc_sort_key": "4030",
+    "code_pgc": "4030",
+    "code_display": "2.P.2.4.2.4030"
+  },
+  {
+    "id": "bm:2.P.2.4.2.4031",
+    "name": "Efectos comerciales a pagar, empresas del grupo",
+    "is_group": false,
+    "parent_id": "bm:2.P.2.4.2.403",
+    "bizmotion_class": "P",
+    "bizmotion_sort_key": "2.P.2.4.2.4031",
+    "pgc_group": 4,
+    "pgc_sort_key": "4031",
+    "code_pgc": "4031",
+    "code_display": "2.P.2.4.2.4031"
+  },
+  {
+    "id": "bm:2.P.2.4.2.4034",
+    "name": "Proveedores, empresas del grupo (moneda extranjera)",
+    "is_group": false,
+    "parent_id": "bm:2.P.2.4.2.403",
+    "bizmotion_class": "P",
+    "bizmotion_sort_key": "2.P.2.4.2.4034",
+    "pgc_group": 4,
+    "pgc_sort_key": "4034",
+    "code_pgc": "4034",
+    "code_display": "2.P.2.4.2.4034"
+  },
+  {
+    "id": "bm:2.P.2.4.2.4036",
+    "name": "Envases y embalajes a devolver a proveedores, empresas del grupo",
+    "is_group": false,
+    "parent_id": "bm:2.P.2.4.2.403",
+    "bizmotion_class": "P",
+    "bizmotion_sort_key": "2.P.2.4.2.4036",
+    "pgc_group": 4,
+    "pgc_sort_key": "4036",
+    "code_pgc": "4036",
+    "code_display": "2.P.2.4.2.4036"
+  },
+  {
+    "id": "bm:2.P.2.4.2.4039",
+    "name": "Proveedores, empresas del grupo, facturas pendientes de recibir o de formalizar",
+    "is_group": false,
+    "parent_id": "bm:2.P.2.4.2.403",
+    "bizmotion_class": "P",
+    "bizmotion_sort_key": "2.P.2.4.2.4039",
+    "pgc_group": 4,
+    "pgc_sort_key": "4039",
+    "code_pgc": "4039",
+    "code_display": "2.P.2.4.2.4039"
   },
   {
     "id": "bm:2.P.2.4.3",
@@ -7417,7 +7417,7 @@
   },
   {
     "id": "bm:5.G.67",
-    "name": "Pérdidas Procedentes de Activos No Corrientes Y Gastos Excepcionales",
+    "name": "Pérdidas procedentes de activos no corrientes y gastos excepcionales",
     "is_group": true,
     "parent_id": "bm:5.G",
     "bizmotion_class": "G",
@@ -8029,7 +8029,7 @@
   },
   {
     "id": "bm:5.G.675",
-    "name": "Pérdidas por operaciones con obli gaciones propias",
+    "name": "Pérdidas por operaciones con obligaciones propias",
     "is_group": false,
     "parent_id": "bm:5.G.67",
     "bizmotion_class": "G",
