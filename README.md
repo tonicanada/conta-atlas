@@ -29,6 +29,8 @@ Genera/actualiza el dataset único de ES:
 npm run build:es:data
 ```
 
+Esto también genera los perfiles simplificados (esqueletos) en `data/es/esqueletos/*.json`.
+
 3. Inicia el sitio:
 
 ```bash

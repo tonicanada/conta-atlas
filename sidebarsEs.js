@@ -7,7 +7,12 @@ const sidebars = {
       items: [
         { type: 'doc', id: 'plan-completo-bizmotion', label: 'Plan completo (Balance/PyG)' },
         { type: 'doc', id: 'plan-completo-pgc', label: 'Plan completo (PGC oficial)' },
-        { type: 'doc', id: 'esqueletos/index', label: 'Esqueletos' },
+        {
+          type: 'category',
+          label: 'Esqueletos',
+          link: { type: 'doc', id: 'esqueletos/index' },
+          items: [{ type: 'doc', id: 'esqueletos/pyme_basico', label: 'PYME básico' }]
+        },
         { type: 'doc', id: 'glosario/index', label: 'Glosario' },
         {
           type: 'category',

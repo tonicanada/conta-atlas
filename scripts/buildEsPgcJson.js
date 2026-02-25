@@ -125,6 +125,7 @@ function parseBizmotionSheet(worksheet, pgcCodeSet) {
   const codeIdx = findColIndex(headerNorm, ['account number', 'codigo', 'code', 'numero', 'número', 'number']);
   const parentCodeIdx = findColIndex(headerNorm, ['parent account number', 'parent code', 'codigo padre', 'parent number']);
   const isGroupIdx = findColIndex(headerNorm, ['is group', 'grupo', 'group']);
+  const esqueletoPymeBasicoIdx = findColIndex(headerNorm, ['esqueleto_pyme_basico']);
 
   if (!nameIdx || !codeIdx) {
     console.error('No pude detectar columnas de nombre/código en la hoja Bizmotion.');
@@ -139,6 +140,9 @@ function parseBizmotionSheet(worksheet, pgcCodeSet) {
     const rawCode = cellToPrimitive(row.getCell(codeIdx).value);
     const rawParentCode = parentCodeIdx ? cellToPrimitive(row.getCell(parentCodeIdx).value) : null;
     const rawIsGroup = isGroupIdx ? cellToPrimitive(row.getCell(isGroupIdx).value) : null;
+    const rawEsqueletoPymeBasico = esqueletoPymeBasicoIdx
+      ? cellToPrimitive(row.getCell(esqueletoPymeBasicoIdx).value)
+      : null;
 
     const name = cleanName(rawName);
     const bizmotion_sort_key = formatCode(rawCode);
@@ -149,7 +153,8 @@ function parseBizmotionSheet(worksheet, pgcCodeSet) {
       name,
       bizmotion_sort_key,
       parent_sort_key,
-      is_group_raw: rawIsGroup
+      is_group_raw: rawIsGroup,
+      esqueleto_pyme_basico_raw: rawEsqueletoPymeBasico
     });
   });
 
@@ -164,7 +169,8 @@ function parseBizmotionSheet(worksheet, pgcCodeSet) {
     pgc_sort_key: null,
     code_pgc: null,
     code_display: r.bizmotion_sort_key || null,
-    _is_group_raw: r.is_group_raw
+    _is_group_raw: r.is_group_raw,
+    _esqueleto_pyme_basico_raw: r.esqueleto_pyme_basico_raw
   }));
 
   for (const a of accounts) {
@@ -197,7 +203,15 @@ function parseBizmotionSheet(worksheet, pgcCodeSet) {
     delete a._is_group_raw;
   }
 
-  return accounts;
+  const directSkeletonIds = {
+    pyme_basico: accounts
+      .filter((a) => truthy(a._esqueleto_pyme_basico_raw) === true)
+      .map((a) => a.id)
+  };
+
+  for (const a of accounts) delete a._esqueleto_pyme_basico_raw;
+
+  return { accounts, directSkeletonIds };
 }
 
 function parsePgcSheet(worksheet) {
@@ -313,7 +327,8 @@ async function main() {
 
   const parsedPgc = parsePgcSheet(pgcWs);
   const pgcAccounts = parsedPgc.accounts;
-  const bizmotionAccounts = parseBizmotionSheet(bizmotionWs, parsedPgc.codes);
+  const parsedBizmotion = parseBizmotionSheet(bizmotionWs, parsedPgc.codes);
+  const bizmotionAccounts = parsedBizmotion.accounts;
   const accounts = [...bizmotionAccounts, ...pgcAccounts];
 
   accounts.sort((a, b) => String(a.id).localeCompare(String(b.id), 'es', { numeric: true }));
@@ -324,6 +339,47 @@ async function main() {
   console.log(`Fuente: ${path.relative(repoRoot, excelPath)}`);
   console.log(`Hoja Bizmotion: ${bizmotionWs.name} (cuentas: ${bizmotionAccounts.length})`);
   console.log(`Hoja PGC: ${pgcWs.name} (cuentas: ${pgcAccounts.length})`);
+
+  // Esqueletos (ES): perfiles simplificados construidos desde columnas booleanas en la hoja "plan".
+  const bmById = new Map(bizmotionAccounts.map((a) => [a.id, a]));
+
+  function withAncestors(directIds) {
+    const out = new Set(directIds);
+    for (const id of directIds) {
+      let cur = bmById.get(id);
+      while (cur && cur.parent_id && bmById.has(cur.parent_id)) {
+        out.add(cur.parent_id);
+        cur = bmById.get(cur.parent_id);
+      }
+    }
+    return Array.from(out).sort((a, b) => String(a).localeCompare(String(b), 'es', { numeric: true }));
+  }
+
+  const esqueletosDir = path.join(repoRoot, 'data', 'es', 'esqueletos');
+  ensureDir(esqueletosDir);
+
+  const directPymeBasico = Array.isArray(parsedBizmotion.directSkeletonIds.pyme_basico)
+    ? parsedBizmotion.directSkeletonIds.pyme_basico
+    : [];
+
+  const pymeBasicoProfile = {
+    id: 'pyme_basico',
+    title: 'PYME básico',
+    generatedAt: new Date().toISOString(),
+    source: {
+      excel: path.relative(repoRoot, excelPath),
+      sheet: bizmotionWs.name,
+      column: 'esqueleto_pyme_basico'
+    },
+    directBizmotionIds: directPymeBasico,
+    includedBizmotionIds: withAncestors(directPymeBasico)
+  };
+
+  const pymeBasicoOutPath = path.join(esqueletosDir, 'pyme_basico.json');
+  fs.writeFileSync(pymeBasicoOutPath, `${JSON.stringify(pymeBasicoProfile, null, 2)}\n`, 'utf8');
+  console.log(
+    `OK: ${path.relative(repoRoot, pymeBasicoOutPath)} (directas: ${pymeBasicoProfile.directBizmotionIds.length}, incl.: ${pymeBasicoProfile.includedBizmotionIds.length})`
+  );
 }
 
 main().catch((err) => {
