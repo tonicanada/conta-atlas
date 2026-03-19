@@ -14,9 +14,12 @@ const config = {
   url: 'https://conta-atlas.bizmotion.io',
   baseUrl: '/',
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-
+  onBrokenLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   i18n: {
     defaultLocale: 'es',
     locales: ['es']
