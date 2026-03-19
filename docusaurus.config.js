@@ -8,10 +8,10 @@ const darkCodeTheme = prismThemes.dracula;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Conta-Atlas',
-  tagline: 'Plan de cuentas (SAT) navegable',
+  tagline: 'Atlas práctico de contabilidad internacional',
   favicon: 'img/favicon.svg',
 
-  url: 'https://example.com',
+  url: 'https://conta-atlas.bizmotion.io',
   baseUrl: '/',
 
   onBrokenLinks: 'throw',
@@ -73,7 +73,28 @@ const config = {
         title: 'Conta-Atlas',
         items: [
           { to: '/mx/intro', label: '🇲🇽 MX', position: 'left' },
-          { to: '/es/plan-completo-bizmotion', label: '🇪🇸 ES', position: 'left' }
+          { to: '/es', label: '🇪🇸 ES', position: 'left' },
+          {
+            type: 'html',
+            position: 'right',
+            value: `
+              <a
+                href="https://bizmotion.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="navbar__bizmotion-link"
+                aria-label="Powered by Bizmotion"
+                title="Powered by Bizmotion"
+              >
+                <img
+                  src="/img/bizmotion_logo.png"
+                  alt="Bizmotion"
+                  class="navbar__bizmotion-logo"
+                />
+                <span class="navbar__bizmotion-text">Powered by Bizmotion</span>
+              </a>
+            `
+          }
         ]
       },
       footer: {

@@ -793,7 +793,7 @@
   },
   {
     "id": "bm:1.A.1.3.22",
-    "name": "Inversiones Inmobiliarias",
+    "name": "Inversiones inmobiliarias",
     "is_group": true,
     "parent_id": "bm:1.A.1.3",
     "bizmotion_class": "A",
@@ -949,7 +949,7 @@
   },
   {
     "id": "bm:1.A.1.4.1.2493",
-    "name": "Desembolsos pendientes sobre participaciones a largo plazo en em presas del grupo",
+    "name": "Desembolsos pendientes sobre participaciones a largo plazo en empresas del grupo",
     "is_group": false,
     "parent_id": "bm:1.A.1.4.1",
     "bizmotion_class": "A",
@@ -1909,7 +1909,7 @@
   },
   {
     "id": "bm:1.A.2.1.392",
-    "name": "Deterioro de valor de otros aprovi sionamientos",
+    "name": "Deterioro de valor de otros aprovisionamientos",
     "is_group": false,
     "parent_id": "bm:1.A.2.1.39",
     "bizmotion_class": "A",
@@ -2017,7 +2017,7 @@
   },
   {
     "id": "bm:1.A.2.2.1.432",
-    "name": "Clientes, operaciones de “factoring”",
+    "name": "Clientes, operaciones de \"factoring\"",
     "is_group": false,
     "parent_id": "bm:1.A.2.2.1",
     "bizmotion_class": "A",
@@ -2221,7 +2221,7 @@
   },
   {
     "id": "bm:1.A.2.2.2.4332",
-    "name": "Clientes empresas del grupo, operaciones de “factoring”",
+    "name": "Clientes empresas del grupo, operaciones de \"factoring\"",
     "is_group": false,
     "parent_id": "bm:1.A.2.2.2.433",
     "bizmotion_class": "A",
@@ -2629,7 +2629,7 @@
   },
   {
     "id": "bm:1.A.2.3.1.5303",
-    "name": "Participaciones a corto plazo, en empresas del grupo",
+    "name": "Participaciones a corto plazo en empresas del grupo",
     "is_group": false,
     "parent_id": "bm:1.A.2.3.1",
     "bizmotion_class": "A",
@@ -2689,7 +2689,7 @@
   },
   {
     "id": "bm:1.A.2.3.1.5353",
-    "name": "Dividendo a cobrar de empresas de grupo",
+    "name": "Dividendo a cobrar de empresas del grupo",
     "is_group": false,
     "parent_id": "bm:1.A.2.3.1",
     "bizmotion_class": "A",
@@ -2773,7 +2773,7 @@
   },
   {
     "id": "bm:1.A.2.3.2.5304",
-    "name": "Participaciones a corto plazo, en empresas asociadas",
+    "name": "Participaciones a corto plazo en empresas asociadas",
     "is_group": false,
     "parent_id": "bm:1.A.2.3.2",
     "bizmotion_class": "A",
@@ -2917,7 +2917,7 @@
   },
   {
     "id": "bm:1.A.2.3.3.5305",
-    "name": "Participaciones a corto plazo, en otras partes vinculadas",
+    "name": "Participaciones a corto plazo en otras partes vinculadas",
     "is_group": false,
     "parent_id": "bm:1.A.2.3.3",
     "bizmotion_class": "A",
@@ -3805,7 +3805,7 @@
   },
   {
     "id": "bm:2.P.1.3.1.1623",
-    "name": "Acreedores por arrendamiento financiero a largo plazo, empresas de grupo",
+    "name": "Acreedores por arrendamiento financiero a largo plazo, empresas del grupo",
     "is_group": false,
     "parent_id": "bm:2.P.1.3.1",
     "bizmotion_class": "P",
@@ -4237,7 +4237,7 @@
   },
   {
     "id": "bm:2.P.2.2.2.5209",
-    "name": "Deudas por operaciones de “factoring”",
+    "name": "Deudas por operaciones de \"factoring\"",
     "is_group": false,
     "parent_id": "bm:2.P.2.2.2.520",
     "bizmotion_class": "P",
@@ -5053,7 +5053,7 @@
   },
   {
     "id": "bm:2.P.2.4.3.4104",
-    "name": "Acreedores por prestaciones de servicios, (moneda extranjera)",
+    "name": "Acreedores por prestaciones de servicios (moneda extranjera)",
     "is_group": false,
     "parent_id": "bm:2.P.2.4.3.410",
     "bizmotion_class": "P",
@@ -5929,7 +5929,7 @@
   },
   {
     "id": "bm:4.I.709",
-    "name": "“Rappels” sobre ventas",
+    "name": "\"Rappels\" sobre ventas",
     "is_group": true,
     "parent_id": "bm:4.I.70",
     "bizmotion_class": "I",
@@ -6241,7 +6241,7 @@
   },
   {
     "id": "bm:4.I.771",
-    "name": "Beneficios procedentes del inmovilizado mate rial",
+    "name": "Beneficios procedentes del inmovilizado material",
     "is_group": false,
     "parent_id": "bm:4.I.77",
     "bizmotion_class": "I",
@@ -6529,7 +6529,7 @@
   },
   {
     "id": "bm:4.I.7090",
-    "name": "«Rappels» sobre ventas de mercaderías",
+    "name": "\"Rappels\" sobre ventas de mercaderías",
     "is_group": false,
     "parent_id": "bm:4.I.709",
     "bizmotion_class": "I",
@@ -6541,7 +6541,7 @@
   },
   {
     "id": "bm:4.I.7091",
-    "name": "“Rappels” sobre ventas de productos terminados",
+    "name": "\"Rappels\" sobre ventas de productos terminados",
     "is_group": false,
     "parent_id": "bm:4.I.709",
     "bizmotion_class": "I",
@@ -6553,7 +6553,7 @@
   },
   {
     "id": "bm:4.I.7092",
-    "name": "“Rappels” sobre ventas de productos semiterminados",
+    "name": "\"Rappels\" sobre ventas de productos semiterminados",
     "is_group": false,
     "parent_id": "bm:4.I.709",
     "bizmotion_class": "I",
@@ -6565,7 +6565,7 @@
   },
   {
     "id": "bm:4.I.7093",
-    "name": "“Rappels” sobre ventas de subproductos y residuos",
+    "name": "\"Rappels\" sobre ventas de subproductos y residuos",
     "is_group": false,
     "parent_id": "bm:4.I.709",
     "bizmotion_class": "I",
@@ -6577,7 +6577,7 @@
   },
   {
     "id": "bm:4.I.7094",
-    "name": "“Rappels” sobre ventas de envases y embalajes",
+    "name": "\"Rappels\" sobre ventas de envases y embalajes",
     "is_group": false,
     "parent_id": "bm:4.I.709",
     "bizmotion_class": "I",
@@ -7525,7 +7525,7 @@
   },
   {
     "id": "bm:5.G.609",
-    "name": "“Rappels” por compras",
+    "name": "\"Rappels\" por compras",
     "is_group": true,
     "parent_id": "bm:5.G.60",
     "bizmotion_class": "G",
@@ -7717,7 +7717,7 @@
   },
   {
     "id": "bm:5.G.633",
-    "name": "Ajustes negativos en la imposición sobre be neficios",
+    "name": "Ajustes negativos en la imposición sobre beneficios",
     "is_group": false,
     "parent_id": "bm:5.G.63",
     "bizmotion_class": "G",
@@ -7921,7 +7921,7 @@
   },
   {
     "id": "bm:5.G.665",
-    "name": "Intereses por descuento de efectos y operaciones de “factoring”",
+    "name": "Intereses por descuento de efectos y operaciones de \"factoring\"",
     "is_group": true,
     "parent_id": "bm:5.G.66",
     "bizmotion_class": "G",
@@ -8281,7 +8281,7 @@
   },
   {
     "id": "bm:5.G.6090",
-    "name": "“Rappels” por compras de mercaderías",
+    "name": "\"Rappels\" por compras de mercaderías",
     "is_group": false,
     "parent_id": "bm:5.G.609",
     "bizmotion_class": "G",
@@ -8293,7 +8293,7 @@
   },
   {
     "id": "bm:5.G.6091",
-    "name": "“Rappels” por compras de materias primas",
+    "name": "\"Rappels\" por compras de materias primas",
     "is_group": false,
     "parent_id": "bm:5.G.609",
     "bizmotion_class": "G",
@@ -8305,7 +8305,7 @@
   },
   {
     "id": "bm:5.G.6092",
-    "name": "“Rappels” por compras de otros aprovisionamientos",
+    "name": "\"Rappels\" por compras de otros aprovisionamientos",
     "is_group": false,
     "parent_id": "bm:5.G.609",
     "bizmotion_class": "G",
@@ -8665,7 +8665,7 @@
   },
   {
     "id": "bm:5.G.6654",
-    "name": "Intereses por operaciones de “factoring” con entidades de crédito del grupo",
+    "name": "Intereses por operaciones de \"factoring\" con entidades de crédito del grupo",
     "is_group": false,
     "parent_id": "bm:5.G.665",
     "bizmotion_class": "G",
@@ -8677,7 +8677,7 @@
   },
   {
     "id": "bm:5.G.6655",
-    "name": "Intereses por operaciones de “factoring” con entidades de crédito asociadas",
+    "name": "Intereses por operaciones de \"factoring\" con entidades de crédito asociadas",
     "is_group": false,
     "parent_id": "bm:5.G.665",
     "bizmotion_class": "G",
@@ -8689,7 +8689,7 @@
   },
   {
     "id": "bm:5.G.6656",
-    "name": "Intereses por operaciones de “factoring” con otras entidades de crédito vinculadas",
+    "name": "Intereses por operaciones de \"factoring\" con otras entidades de crédito vinculadas",
     "is_group": false,
     "parent_id": "bm:5.G.665",
     "bizmotion_class": "G",
@@ -8701,7 +8701,7 @@
   },
   {
     "id": "bm:5.G.6657",
-    "name": "Intereses por operaciones de “factoring” con otras entidades de crédito",
+    "name": "Intereses por operaciones de \"factoring\" con otras entidades de crédito",
     "is_group": false,
     "parent_id": "bm:5.G.665",
     "bizmotion_class": "G",

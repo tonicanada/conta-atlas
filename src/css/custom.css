@@ -32,6 +32,443 @@
   max-width: 1100px;
 }
 
+.homePage {
+  background:
+    radial-gradient(circle at top left, rgba(49, 75, 166, 0.16), transparent 28%),
+    linear-gradient(180deg, #f5f8ff 0%, #ffffff 38%, #f6f4ef 100%);
+}
+
+.homeHero {
+  padding: 5rem 0 3rem;
+}
+
+.homeHero__mapWrap {
+  margin-bottom: 2rem;
+}
+
+.homeHero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(280px, 0.95fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.homeEyebrow {
+  margin: 0 0 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+}
+
+.homeHero h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  max-width: 12ch;
+}
+
+.homeLead {
+  margin: 1.5rem 0 0;
+  max-width: 42rem;
+  font-size: 1.18rem;
+  line-height: 1.7;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.homeHero__panel,
+.homeCard,
+.homeFeature,
+.homeQuote,
+.homeCountryCard {
+  border: 1px solid rgba(49, 75, 166, 0.14);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 50px rgba(22, 34, 74, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.homeHero__panel {
+  padding: 1.5rem;
+}
+
+.homePanel__title {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.homePanel__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.homeSection {
+  padding: 2rem 0 3rem;
+}
+
+.homeSection--alt {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(49, 75, 166, 0.04));
+}
+
+.homeSection__header {
+  max-width: 48rem;
+  margin-bottom: 1.6rem;
+}
+
+.homeSection__header h2,
+.homeSplit h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.homeSection__header p,
+.homeSplit p,
+.homeCard p,
+.homeFeature p,
+.homeCountryCard p,
+.homeCountryCard a {
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.homeGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.homeGrid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.homeGrid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.homeCard,
+.homeFeature,
+.homeCountryCard {
+  padding: 1.4rem;
+}
+
+.homeCard h3,
+.homeFeature h3,
+.homeCountryCard h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+
+.homeFeature ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.homeSplit {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.8fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.homeQuote {
+  padding: 1.8rem;
+  background: linear-gradient(135deg, rgba(49, 75, 166, 0.12), rgba(255, 255, 255, 0.96));
+}
+
+.homeQuote p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.homeCountryCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.homeCountryCard p {
+  margin: 0;
+}
+
+.homeCountryCard a {
+  font-weight: 700;
+}
+
+.atlasHeroMap {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(49, 75, 166, 0.14);
+  border-radius: 32px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(236, 242, 255, 0.88)),
+    radial-gradient(circle at top left, rgba(49, 75, 166, 0.16), transparent 28%);
+  box-shadow: 0 24px 70px rgba(22, 34, 74, 0.12);
+}
+
+.atlasHeroMap__svg {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 1.4rem 1.4rem 4.6rem;
+}
+
+.atlasHeroMap__svg svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.atlasHeroMap__svg path {
+  fill: #eceae6;
+  stroke: rgba(116, 124, 145, 0.42);
+  stroke-width: 0.9;
+  transition: fill 180ms ease, stroke 180ms ease, opacity 180ms ease;
+}
+
+.atlasHeroMap__svg [id='ES'],
+.atlasHeroMap__svg [id='MX'] {
+  fill: rgba(49, 75, 166, 0.36);
+  stroke: rgba(49, 75, 166, 0.72);
+  cursor: pointer;
+}
+
+.atlasHeroMap__svg .Argentina,
+.atlasHeroMap__svg .Chile,
+.atlasHeroMap__svg [id='BO'] {
+  fill: rgba(234, 145, 45, 0.32);
+  stroke: rgba(234, 145, 45, 0.75);
+}
+
+.atlasHeroMap__svg [id='ES']:hover,
+.atlasHeroMap__svg [id='MX']:hover {
+  fill: rgba(49, 75, 166, 0.48);
+  stroke: rgba(49, 75, 166, 0.9);
+}
+
+.atlasHeroMap__veil {
+  position: absolute;
+  z-index: 0;
+  border-radius: 999px;
+  filter: blur(42px);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.atlasHeroMap__veil--one {
+  top: -2rem;
+  left: -3rem;
+  width: 18rem;
+  height: 18rem;
+  background: rgba(49, 75, 166, 0.2);
+}
+
+.atlasHeroMap__veil--two {
+  right: -4rem;
+  bottom: -3rem;
+  width: 20rem;
+  height: 20rem;
+  background: rgba(234, 145, 45, 0.16);
+}
+
+.atlasHeroMap__tooltip {
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  gap: 0.12rem;
+  transform: translate(14px, -112%);
+  padding: 0.55rem 0.72rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(49, 75, 166, 0.14);
+  box-shadow: 0 12px 28px rgba(12, 18, 41, 0.12);
+  white-space: nowrap;
+  color: var(--ifm-font-color-base);
+  pointer-events: none;
+}
+
+.atlasHeroMap__tooltip strong {
+  font-size: 0.92rem;
+  line-height: 1.1;
+}
+
+.atlasHeroMap__tooltip span {
+  font-size: 0.76rem;
+  color: var(--ifm-color-emphasis-700);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.atlasHeroMap__legend {
+  position: absolute;
+  z-index: 2;
+  left: 1.5rem;
+  bottom: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(49, 75, 166, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+.atlasHeroMap__legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.atlasHeroMap__legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.atlasHeroMap__legendDot--active {
+  background: #314ba6;
+}
+
+.atlasHeroMap__legendDot--soon {
+  background: #ea912d;
+}
+
+[data-theme='dark'] .homePage {
+  background:
+    radial-gradient(circle at top left, rgba(122, 162, 255, 0.18), transparent 28%),
+    linear-gradient(180deg, #121827 0%, #0d1423 40%, #111827 100%);
+}
+
+[data-theme='dark'] .homeHero__panel,
+[data-theme='dark'] .homeCard,
+[data-theme='dark'] .homeFeature,
+[data-theme='dark'] .homeQuote,
+[data-theme='dark'] .homeCountryCard {
+  background: rgba(13, 20, 35, 0.84);
+  border-color: rgba(122, 162, 255, 0.2);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+}
+
+[data-theme='dark'] .atlasHeroMap {
+  background:
+    linear-gradient(180deg, rgba(13, 20, 35, 0.96), rgba(18, 24, 39, 0.9)),
+    radial-gradient(circle at top left, rgba(122, 162, 255, 0.18), transparent 28%);
+  border-color: rgba(122, 162, 255, 0.2);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+[data-theme='dark'] .atlasHeroMap__svg path {
+  fill: rgba(228, 228, 230, 0.08);
+  stroke: rgba(169, 177, 198, 0.24);
+}
+
+[data-theme='dark'] .atlasHeroMap__svg [id='ES'],
+[data-theme='dark'] .atlasHeroMap__svg [id='MX'] {
+  fill: rgba(122, 162, 255, 0.34);
+  stroke: rgba(154, 184, 255, 0.8);
+}
+
+[data-theme='dark'] .atlasHeroMap__svg .Argentina,
+[data-theme='dark'] .atlasHeroMap__svg .Chile,
+[data-theme='dark'] .atlasHeroMap__svg [id='BO'] {
+  fill: rgba(234, 145, 45, 0.28);
+  stroke: rgba(245, 175, 90, 0.82);
+}
+
+[data-theme='dark'] .atlasHeroMap__svg [id='ES']:hover,
+[data-theme='dark'] .atlasHeroMap__svg [id='MX']:hover {
+  fill: rgba(122, 162, 255, 0.46);
+  stroke: rgba(154, 184, 255, 0.96);
+}
+
+[data-theme='dark'] .atlasHeroMap__tooltip,
+[data-theme='dark'] .atlasHeroMap__legend {
+  background: rgba(13, 20, 35, 0.9);
+  border-color: rgba(122, 162, 255, 0.2);
+}
+
+@media (max-width: 996px) {
+  .homeHero {
+    padding-top: 3.5rem;
+  }
+
+  .homeHero__grid,
+  .homeGrid--3,
+  .homeGrid--2,
+  .homeSplit {
+    grid-template-columns: 1fr;
+  }
+
+  .homeHero h1 {
+    max-width: 100%;
+  }
+
+  .atlasHeroMap__svg {
+    padding: 1.1rem 0.95rem 4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .homeHero {
+    padding-top: 2.75rem;
+  }
+
+  .homeLead {
+    font-size: 1.05rem;
+  }
+
+  .homeHero__panel,
+  .homeCard,
+  .homeFeature,
+  .homeQuote,
+  .homeCountryCard {
+    border-radius: 20px;
+  }
+
+  .atlasHeroMap__svg {
+    padding: 0.75rem 0.45rem 4.2rem;
+  }
+
+  .atlasHeroMap__tooltip {
+    max-width: min(42vw, 150px);
+    padding: 0.35rem 0.5rem;
+    border-radius: 12px;
+    white-space: normal;
+  }
+
+  .atlasHeroMap__tooltip strong {
+    font-size: 0.8rem;
+  }
+
+  .atlasHeroMap__tooltip span {
+    font-size: 0.64rem;
+  }
+
+  .atlasHeroMap__legend {
+    left: 0.8rem;
+    right: 0.8rem;
+    bottom: 0.8rem;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 0.6rem 0.7rem;
+    border-radius: 16px;
+  }
+}
+
 .acctEntry {
   margin: 0.75rem 0 1.25rem;
 }
@@ -79,4 +516,45 @@
 .acctEntry__totals td {
   border-top: 2px solid var(--ifm-toc-border-color, #d0d0d0);
   font-weight: 700;
+}
+
+
+.navbar__bizmotion-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 0.45rem;
+  padding: 0 12px;
+  text-decoration: none;
+  color: var(--ifm-navbar-link-color);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.navbar__bizmotion-link:hover {
+  text-decoration: none;
+  opacity: 1;
+  transform: translateY(-1px);
+  color: var(--ifm-navbar-link-hover-color);
+}
+
+.navbar__bizmotion-logo {
+  height: 24px;
+  width: auto;
+  display: block;
+}
+
+.navbar__bizmotion-text {
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 996px) {
+  .navbar__bizmotion-text {
+    display: none;
+  }
+
+  .navbar__bizmotion-logo {
+    height: 22px;
+  }
 }
