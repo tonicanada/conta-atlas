@@ -1,14 +1,12 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import { useHistory } from '@docusaurus/router';
 
 const countryMeta = {
-  ES: { name: 'España', status: 'Disponible', to: '/es' },
-  MX: { name: 'México', status: 'Disponible', to: '/mx' },
-  Argentina: { name: 'Argentina', status: 'Próximamente' },
-  Chile: { name: 'Chile', status: 'Próximamente' },
-  BO: { name: 'Bolivia', status: 'Próximamente' }
+  ES: { name: 'España', status: 'En desarrollo' },
+  MX: { name: 'México', status: 'En desarrollo' },
+  Chile: { name: 'Chile', status: 'En desarrollo' },
+  BO: { name: 'Bolivia', status: 'En desarrollo' }
 } as const;
 
 type CountryKey = keyof typeof countryMeta;
@@ -18,6 +16,86 @@ type HoveredCountry = {
   x: number;
   y: number;
 };
+
+const agencyLogoByCountry = {
+  es: '/img/logos_hacienda/aeat.svg',
+  bo: '/img/logos_hacienda/sin.png',
+  cl: '/img/logos_hacienda/sii.svg',
+  mx: '/img/logos_hacienda/sat.svg'
+} as const;
+
+const glossaryRows = [
+  {
+    concept: 'Agencia tributaria',
+    bo: 'SIN',
+    cl: 'SII',
+    es: 'AEAT',
+    mx: 'SAT'
+  },
+  {
+    concept: 'Identificación fiscal',
+    bo: 'NIT',
+    cl: 'RUT',
+    es: 'NIF',
+    mx: 'RFC'
+  },
+  {
+    concept: 'Factura electrónica',
+    bo: 'Factura electrónica',
+    cl: 'DTE',
+    es: 'Factura electrónica / Veri*Factu',
+    mx: 'CFDI'
+  },
+  {
+    concept: 'Declaración mensual',
+    bo: 'Formularios periódicos',
+    cl: 'F29',
+    es: 'Modelo 303 y otros',
+    mx: 'Declaraciones SAT'
+  },
+  {
+    concept: 'Retenciones',
+    bo: 'RC-IVA / retenciones',
+    cl: 'Retenciones',
+    es: 'IRPF / retenciones',
+    mx: 'ISR / retenciones'
+  },
+  {
+    concept: 'Nómina',
+    bo: 'Planilla',
+    cl: 'Liquidación de sueldo',
+    es: 'Nómina',
+    mx: 'Nómina'
+  },
+  {
+    concept: 'Seguridad social',
+    bo: 'Caja / AFP',
+    cl: 'AFP / Salud / AFC',
+    es: 'Seguridad Social',
+    mx: 'IMSS / INFONAVIT'
+  },
+  {
+    concept: 'Certificado digital',
+    bo: 'Firma digital',
+    cl: 'Certificado digital',
+    es: 'Certificado electrónico',
+    mx: 'e.firma / CSD'
+  },
+  {
+    concept: 'Portal tributario',
+    bo: 'Oficina Virtual SIN',
+    cl: 'Portal SII',
+    es: 'Sede AEAT',
+    mx: 'Portal SAT'
+  },
+  {
+    concept: 'Plan de cuentas',
+    bo: 'Plan de cuentas',
+    cl: 'Plan de cuentas',
+    es: 'PGC',
+    mx: 'Catálogo de cuentas'
+  }
+] as const;
 
 function AtlasWorldMap(): JSX.Element {
   const history = useHistory();
@@ -46,7 +124,7 @@ function AtlasWorldMap(): JSX.Element {
   }, []);
 
   const getCountryKey = (target: Element | null): CountryKey | null => {
-    const country = target?.closest('#ES, #MX, #BO, .Argentina, .Chile');
+    const country = target?.closest('#ES, #MX, #BO, .Chile');
 
     if (!country) {
       return null;
@@ -54,10 +132,6 @@ function AtlasWorldMap(): JSX.Element {
 
     if (country.id === 'ES' || country.id === 'MX' || country.id === 'BO') {
       return country.id;
-    }
-
-    if (country.classList.contains('Argentina')) {
-      return 'Argentina';
     }
 
     if (country.classList.contains('Chile')) {
@@ -117,7 +191,7 @@ function AtlasWorldMap(): JSX.Element {
       <div
         className="atlasHeroMap__svg"
         role="img"
-        aria-label="Mapa del atlas contable con países disponibles y próximos."
+        aria-label="Mapa del atlas contable con países en desarrollo."
         dangerouslySetInnerHTML={{ __html: svgMarkup }}
       />
 
@@ -132,8 +206,7 @@ function AtlasWorldMap(): JSX.Element {
       ) : null}
 
       <div className="atlasHeroMap__legend">
-        <span><i className="atlasHeroMap__legendDot atlasHeroMap__legendDot--active" />Disponible</span>
-        <span><i className="atlasHeroMap__legendDot atlasHeroMap__legendDot--soon" />Próximamente</span>
+        <span><i className="atlasHeroMap__legendDot atlasHeroMap__legendDot--soon" />En desarrollo</span>
       </div>
     </div>
   );
@@ -170,8 +243,8 @@ export default function Home(): JSX.Element {
               <div className="homeHero__panel">
                 <p className="homePanel__title">El mapa como puerta de entrada</p>
                 <ul className="homePanel__list">
-                  <li>España y México ya pueden explorarse desde la portada.</li>
-                  <li>Argentina, Chile y Bolivia marcan la siguiente expansión visible.</li>
+                  <li>España, México, Chile y Bolivia están en desarrollo.</li>
+                  <li>El mapa muestra el estado actual de avance por país.</li>
                   <li>La visión es crecer por país sin perder las equivalencias entre marcos contables.</li>
                   <li>Todo con foco en documentación útil, comparativa y aterrizable en ERPNext.</li>
                 </ul>
@@ -272,33 +345,87 @@ export default function Home(): JSX.Element {
           </div>
         </section>
 
+        <section className="homeSection">
+          <div className="container containerMax">
+            <div className="homeSection__header">
+              <p className="homeEyebrow">Glosario</p>
+              <h2>Equivalencias rápidas entre países</h2>
+              <p>
+                Este resumen permite ubicar de un vistazo cómo cambia el nombre de conceptos
+                tributarios y contables entre Bolivia, Chile, España y México.
+              </p>
+            </div>
+            <div className="homeGlossaryTableWrap">
+              <table className="homeGlossaryTable">
+                <thead>
+                  <tr>
+                    <th scope="col">Concepto</th>
+                    <th scope="col">ES</th>
+                    <th scope="col">BO</th>
+                    <th scope="col">CL</th>
+                    <th scope="col">MX</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="homeGlossaryTable__logoRow">
+                    <th scope="row">Logo agencia</th>
+                    <td>
+                      <img src={agencyLogoByCountry.es} alt="Logo AEAT (España)" className="homeGlossaryLogo" loading="lazy" />
+                    </td>
+                    <td>
+                      <img src={agencyLogoByCountry.bo} alt="Logo SIN (Bolivia)" className="homeGlossaryLogo" loading="lazy" />
+                    </td>
+                    <td>
+                      <img src={agencyLogoByCountry.cl} alt="Logo SII (Chile)" className="homeGlossaryLogo" loading="lazy" />
+                    </td>
+                    <td>
+                      <img src={agencyLogoByCountry.mx} alt="Logo SAT (México)" className="homeGlossaryLogo" loading="lazy" />
+                    </td>
+                  </tr>
+
+                  {glossaryRows.map((row) => (
+                    <tr key={row.concept}>
+                      <th scope="row">{row.concept}</th>
+                      <td>{row.es}</td>
+                      <td>{row.bo}</td>
+                      <td>{row.cl}</td>
+                      <td>{row.mx}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
         <section className="homeSection homeSection--alt">
           <div className="container containerMax">
             <div className="homeSection__header">
               <p className="homeEyebrow">Expansión</p>
-              <h2>Un atlas en expansión, no una lista cerrada de países</h2>
+              <h2>Estado actual del atlas por país</h2>
               <p>
-                España y México son hoy el punto de partida visible, pero el proyecto está
-                pensado para crecer por Iberoamérica y reforzar progresivamente las
-                equivalencias, glosarios y mapeos comunes entre distintos marcos.
+                Los cuatro países visibles del mapa están actualmente en desarrollo.
+                La prioridad es madurar contenido, equivalencias y mapeos comunes antes
+                de marcar disponibilidad pública por país.
               </p>
             </div>
 
-            <div className="homeGrid homeGrid--3">
+            <div className="homeGrid homeGrid--4">
               <article className="homeCountryCard">
                 <h3>España</h3>
-                <p>Plan general contable, esqueletos simplificados, notas y estructura navegable.</p>
-                <Link to="/es">Ir al contenido de España</Link>
+                <p>En desarrollo.</p>
               </article>
               <article className="homeCountryCard">
                 <h3>México</h3>
-                <p>Plan de cuentas SAT, perfiles base y exploración jerárquica del catálogo.</p>
-                <Link to="/mx">Ir al contenido de México</Link>
+                <p>En desarrollo.</p>
               </article>
               <article className="homeCountryCard">
-                <h3>Próximamente</h3>
-                <p>Argentina, Chile y Bolivia serán los siguientes hitos visibles dentro del mapa del proyecto.</p>
-                <Link to="/global/intro">Ir al espacio global</Link>
+                <h3>Chile</h3>
+                <p>En desarrollo.</p>
+              </article>
+              <article className="homeCountryCard">
+                <h3>Bolivia</h3>
+                <p>En desarrollo.</p>
               </article>
             </div>
           </div>

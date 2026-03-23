@@ -30,15 +30,12 @@ THE SOFTWARE.
 <svg baseprofile="tiny" fill="#ececec" height="857" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" version="1.2" viewBox="0 0 2000 857" width="2000" xmlns="http://www.w3.org/2000/svg">
  <style>
   #ES,
-  #MX {
-   fill: rgba(49, 75, 166, 0.42) !important;
-   stroke: rgba(49, 75, 166, 0.82) !important;
-   cursor: pointer;
-  }
-
-  .Argentina,
+  #MX,
+  #BO,
+  #CL,
   .Chile,
-  #BO {
+  #AR,
+  .Argentina {
    fill: rgba(234, 145, 45, 0.34) !important;
    stroke: rgba(234, 145, 45, 0.78) !important;
   }
