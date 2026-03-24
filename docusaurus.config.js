@@ -2,8 +2,22 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const { themes: prismThemes } = require('prism-react-renderer');
+
+const { countries, countryStatusLabels } = require('./data/countries');
+
 const lightCodeTheme = prismThemes.github;
 const darkCodeTheme = prismThemes.dracula;
+
+const countryDropdownItems = countries.map((country) => {
+  const statusLabel = countryStatusLabels[country.status];
+  const hasPublicContent = country.status === 'available' && Boolean(country.href);
+
+  return {
+    label: country.flag + ' ' + country.name + ' — ' + statusLabel,
+    to: hasPublicContent ? country.href : '/',
+    className: hasPublicContent ? 'navbar__country-item' : 'navbar__country-item navbar__country-item--pending'
+  };
+});
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -75,35 +89,39 @@ const config = {
       navbar: {
         title: 'Conta-Atlas',
         items: [
-          { to: '/mx/intro', label: '🇲🇽 MX', position: 'left' },
-          { to: '/es', label: '🇪🇸 ES', position: 'left' },
+          {
+            label: 'Explorar países',
+            position: 'left',
+            items: countryDropdownItems
+          },
+          { to: '/equivalencias', label: 'Equivalencias', position: 'left' },
           {
             type: 'html',
             position: 'right',
-            value: `
-              <a
-                href="https://bizmotion.io"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="navbar__bizmotion-link"
-                aria-label="Powered by Bizmotion"
-                title="Powered by Bizmotion"
-              >
-                <img
-                  src="/img/bizmotion_logo.png"
-                  alt="Bizmotion"
-                  class="navbar__bizmotion-logo"
-                />
-                <span class="navbar__bizmotion-text">Powered by Bizmotion</span>
-              </a>
-            `
+            value: [
+              '<a',
+              '  href="https://bizmotion.io"',
+              '  target="_blank"',
+              '  rel="noopener noreferrer"',
+              '  class="navbar__bizmotion-link"',
+              '  aria-label="Powered by Bizmotion"',
+              '  title="Powered by Bizmotion"',
+              '>',
+              '  <img',
+              '    src="/img/bizmotion_logo.png"',
+              '    alt="Bizmotion"',
+              '    class="navbar__bizmotion-logo"',
+              '  />',
+              '  <span class="navbar__bizmotion-text">Powered by Bizmotion</span>',
+              '</a>'
+            ].join('\n')
           }
         ]
       },
       footer: {
         style: 'dark',
         links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Conta-Atlas`
+        copyright: 'Copyright © ' + new Date().getFullYear() + ' Conta-Atlas'
       },
       prism: {
         theme: lightCodeTheme,
