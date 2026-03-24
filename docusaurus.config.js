@@ -46,6 +46,11 @@ const config = {
       ({
         docs: false,
         blog: false,
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          filename: 'sitemap.xml'
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
         }
