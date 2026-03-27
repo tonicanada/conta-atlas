@@ -88,6 +88,8 @@ const config = {
     ]
   ],
 
+  clientModules: [require.resolve('./src/clientModules/sidebarRouteState.js')],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

@@ -5,6 +5,8 @@ function buildCountrySidebar(countryLabel, options = {}) {
     {
       type: 'category',
       label: countryLabel,
+      collapsible: true,
+      collapsed: false,
       items: [
         { type: 'doc', id: 'intro', label: 'Introducción' },
         {
@@ -20,6 +22,8 @@ function buildCountrySidebar(countryLabel, options = {}) {
         {
           type: 'category',
           label: 'Plan de cuentas',
+          collapsible: true,
+          collapsed: false,
           items: [
             { type: 'doc', id: 'plan-de-cuentas/vision-general', label: 'Visión general' },
             { type: 'doc', id: esqueletoBaseDocId, label: 'Esqueleto base' },

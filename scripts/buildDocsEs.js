@@ -94,6 +94,7 @@ function main() {
     path.join(cuentasDir, 'index.mdx'),
     `---\n` +
       `title: ${yamlString('Cuentas (ES)')}\n` +
+      `displayed_sidebar: ${yamlString('esSidebar')}\n` +
       `---\n\n` +
       `Páginas individuales del plan de cuentas (ES). Generadas desde \`data/es/pgc_accounts.json\`.\n\n` +
       `Total: **${codes.length}**\n`
@@ -109,6 +110,7 @@ function main() {
       `title: ${yamlString(title)}\n` +
       `slug: ${yamlString(`/cuentas/${code}`)}\n` +
       `code_pgc: ${yamlString(String(code))}\n` +
+      `displayed_sidebar: ${yamlString('esSidebar')}\n` +
       `---\n\n` +
       `<!-- Placeholder: contenido específico de la cuenta -->\n\n` +
       `## Vistas\n\n` +

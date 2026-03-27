@@ -1133,3 +1133,10 @@
     margin-bottom: 0.35rem;
   }
 }
+
+/* Keep "Esqueleto base" visually active when browsing /es/cuentas/* */
+body.route-es-cuentas .menu__link[href="/es/plan-completo-bizmotion"] {
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+  background: var(--ifm-menu-color-background-active);
+}
