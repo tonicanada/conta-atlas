@@ -1140,3 +1140,102 @@ body.route-es-cuentas .menu__link[href="/es/plan-completo-bizmotion"] {
   font-weight: 700;
   background: var(--ifm-menu-color-background-active);
 }
+
+.account-tree-poc {
+  margin-bottom: 0.9rem;
+  padding: 0.7rem 0.7rem 0.55rem;
+  border: 1px solid #d5dbe3;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #f6f8fb 0%, #f2f5f9 100%);
+  box-shadow: none;
+}
+
+.account-tree-poc__title {
+  margin: 0 0 0.45rem;
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4f46e5;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+}
+
+.account-tree-poc__pre {
+  margin: 0;
+  padding: 0.7rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  font-size: 0.74rem;
+  line-height: 1.45;
+  overflow: auto;
+  white-space: pre;
+}
+
+.account-tree-poc__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0.7rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+}
+
+.account-tree-poc__list--root {
+  padding-left: 0.25rem;
+  max-height: 40vh;
+  overflow: auto;
+}
+
+.account-tree-poc__list .account-tree-poc__list {
+  margin-left: 0.35rem;
+  padding-left: 0.6rem;
+  border-left: 1px dashed #c4ceda;
+}
+
+.account-tree-poc__node {
+  margin: 0.08rem 0;
+}
+
+.account-tree-poc__summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.account-tree-poc__summary::-webkit-details-marker {
+  display: none;
+}
+
+.account-tree-poc__summary::before {
+  content: '▸';
+  color: #64748b;
+  font-size: 0.72rem;
+  width: 0.7rem;
+  display: inline-block;
+}
+
+.account-tree-poc__details[open] > .account-tree-poc__summary::before {
+  content: '▾';
+}
+
+.account-tree-poc__label {
+  font-size: 0.76rem;
+  line-height: 1.35;
+  color: #334155;
+  text-decoration: none;
+}
+
+.account-tree-poc__label:hover {
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.account-tree-poc__label.is-current {
+  color: #22c55e;
+  font-weight: 700;
+}
+
+.account-tree-poc__node.is-ancestor > .account-tree-poc__details > .account-tree-poc__summary > .account-tree-poc__label {
+  color: #1e293b;
+  font-weight: 600;
+}
