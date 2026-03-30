@@ -10,7 +10,7 @@ const countries = [
     slug: 'es',
     name: 'España',
     flag: '🇪🇸',
-    status: 'available',
+    status: 'inDevelopment',
     href: '/es',
     mapSelector: '#ES'
   },
@@ -19,7 +19,7 @@ const countries = [
     slug: 'mx',
     name: 'México',
     flag: '🇲🇽',
-    status: 'available',
+    status: 'inDevelopment',
     href: '/mx',
     mapSelector: '#MX'
   },
@@ -28,7 +28,7 @@ const countries = [
     slug: 'chile',
     name: 'Chile',
     flag: '🇨🇱',
-    status: 'inDevelopment',
+    status: 'comingSoon',
     mapSelector: '.Chile'
   },
   {
@@ -44,7 +44,7 @@ const countries = [
     slug: 'bolivia',
     name: 'Bolivia',
     flag: '🇧🇴',
-    status: 'inDevelopment',
+    status: 'comingSoon',
     mapSelector: '#BO'
   }
 ];

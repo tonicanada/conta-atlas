@@ -10,7 +10,9 @@ const darkCodeTheme = prismThemes.dracula;
 
 const countryDropdownItems = countries.map((country) => {
   const statusLabel = countryStatusLabels[country.status];
-  const hasPublicContent = country.status === 'available' && Boolean(country.href);
+  const hasPublicContent =
+    (country.status === 'available' || country.status === 'inDevelopment') &&
+    Boolean(country.href);
 
   return {
     label: country.flag + ' ' + country.name + ' — ' + statusLabel,
@@ -93,6 +95,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false
+      },
       navbar: {
         title: 'Conta-Atlas',
         items: [

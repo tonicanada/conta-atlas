@@ -16,6 +16,9 @@ function AtlasWorldMap(): JSX.Element {
   const history = useHistory();
   const [hoveredCountry, setHoveredCountry] = React.useState<HoveredCountry | null>(null);
   const [svgMarkup, setSvgMarkup] = React.useState('');
+  const hoverRafRef = React.useRef<number | null>(null);
+  const pendingHoverRef = React.useRef<HoveredCountry | null>(null);
+  const renderedHoverRef = React.useRef<HoveredCountry | null>(null);
 
   React.useEffect(() => {
     let isMounted = true;
@@ -35,6 +38,14 @@ function AtlasWorldMap(): JSX.Element {
 
     return () => {
       isMounted = false;
+    };
+  }, []);
+
+  React.useEffect(() => {
+    return () => {
+      if (hoverRafRef.current !== null) {
+        window.cancelAnimationFrame(hoverRafRef.current);
+      }
     };
   }, []);
 
@@ -58,29 +69,65 @@ function AtlasWorldMap(): JSX.Element {
     }
 
     for (const country of mapCountries) {
-      const isAvailable = country.status === 'available' && Boolean(country.href);
-      if (isAvailable && event.target.closest(country.mapSelector)) {
+      const isNavigable =
+        (country.status === 'available' || country.status === 'inDevelopment') &&
+        Boolean(country.href);
+      if (isNavigable && event.target.closest(country.mapSelector)) {
         history.push(country.href as string);
         return;
       }
     }
   };
 
+  const flushHoverUpdate = React.useCallback((): void => {
+    hoverRafRef.current = null;
+    const next = pendingHoverRef.current;
+    const prev = renderedHoverRef.current;
+
+    if (!next && !prev) {
+      return;
+    }
+
+    if (
+      next &&
+      prev &&
+      next.country.code === prev.country.code &&
+      Math.abs(next.x - prev.x) < 2 &&
+      Math.abs(next.y - prev.y) < 2
+    ) {
+      return;
+    }
+
+    renderedHoverRef.current = next;
+    setHoveredCountry(next);
+  }, []);
+
+  const scheduleHoverUpdate = React.useCallback(
+    (next: HoveredCountry | null): void => {
+      pendingHoverRef.current = next;
+      if (hoverRafRef.current !== null) {
+        return;
+      }
+      hoverRafRef.current = window.requestAnimationFrame(flushHoverUpdate);
+    },
+    [flushHoverUpdate]
+  );
+
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>): void => {
     if (!(event.target instanceof Element)) {
-      setHoveredCountry(null);
+      scheduleHoverUpdate(null);
       return;
     }
 
     const country = getCountryFromTarget(event.target);
 
     if (!country) {
-      setHoveredCountry(null);
+      scheduleHoverUpdate(null);
       return;
     }
 
     const bounds = event.currentTarget.getBoundingClientRect();
-    setHoveredCountry({
+    scheduleHoverUpdate({
       country,
       x: event.clientX - bounds.left,
       y: event.clientY - bounds.top
@@ -92,7 +139,15 @@ function AtlasWorldMap(): JSX.Element {
       className="atlasHeroMap"
       onClick={handleMapClick}
       onMouseMove={handleMouseMove}
-      onMouseLeave={() => setHoveredCountry(null)}
+      onMouseLeave={() => {
+        pendingHoverRef.current = null;
+        renderedHoverRef.current = null;
+        if (hoverRafRef.current !== null) {
+          window.cancelAnimationFrame(hoverRafRef.current);
+          hoverRafRef.current = null;
+        }
+        setHoveredCountry(null);
+      }}
     >
       <div className="atlasHeroMap__veil atlasHeroMap__veil--one" />
       <div className="atlasHeroMap__veil atlasHeroMap__veil--two" />
@@ -114,7 +169,6 @@ function AtlasWorldMap(): JSX.Element {
       ) : null}
 
       <div className="atlasHeroMap__legend">
-        <span><i className="atlasHeroMap__legendDot atlasHeroMap__legendDot--available" />{countryStatusLabels.available}</span>
         <span><i className="atlasHeroMap__legendDot atlasHeroMap__legendDot--development" />{countryStatusLabels.inDevelopment}</span>
         <span><i className="atlasHeroMap__legendDot atlasHeroMap__legendDot--soon" />{countryStatusLabels.comingSoon}</span>
       </div>

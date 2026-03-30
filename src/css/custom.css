@@ -242,14 +242,18 @@
 }
 
 .atlasHeroMap__svg [id='ES'],
-.atlasHeroMap__svg [id='MX'],
-.atlasHeroMap__svg [id='BO'],
+.atlasHeroMap__svg [id='MX'] {
+  fill: rgba(234, 145, 45, 0.32);
+  stroke: rgba(234, 145, 45, 0.75);
+}
+
 .atlasHeroMap__svg [id='CL'],
+.atlasHeroMap__svg [id='BO'],
 .atlasHeroMap__svg [id='AR'],
 .atlasHeroMap__svg .Chile,
 .atlasHeroMap__svg .Argentina {
-  fill: rgba(234, 145, 45, 0.32);
-  stroke: rgba(234, 145, 45, 0.75);
+  fill: rgba(61, 127, 227, 0.22);
+  stroke: rgba(61, 127, 227, 0.7);
 }
 
 .atlasHeroMap__svg [id='ES'],
@@ -258,14 +262,18 @@
 }
 
 .atlasHeroMap__svg [id='ES']:hover,
-.atlasHeroMap__svg [id='MX']:hover,
-.atlasHeroMap__svg [id='BO']:hover,
+.atlasHeroMap__svg [id='MX']:hover {
+  fill: rgba(234, 145, 45, 0.44);
+  stroke: rgba(234, 145, 45, 0.9);
+}
+
 .atlasHeroMap__svg [id='CL']:hover,
+.atlasHeroMap__svg [id='BO']:hover,
 .atlasHeroMap__svg [id='AR']:hover,
 .atlasHeroMap__svg .Chile:hover,
 .atlasHeroMap__svg .Argentina:hover {
-  fill: rgba(234, 145, 45, 0.44);
-  stroke: rgba(234, 145, 45, 0.9);
+  fill: rgba(61, 127, 227, 0.34);
+  stroke: rgba(61, 127, 227, 0.9);
 }
 
 .atlasHeroMap__veil {
@@ -355,7 +363,7 @@
 }
 
 .atlasHeroMap__legendDot--soon {
-  background: #ea912d;
+  background: #3d7fe3;
 }
 
 [data-theme='dark'] .homePage {
@@ -388,25 +396,33 @@
 }
 
 [data-theme='dark'] .atlasHeroMap__svg [id='ES'],
-[data-theme='dark'] .atlasHeroMap__svg [id='MX'],
-[data-theme='dark'] .atlasHeroMap__svg [id='BO'],
-[data-theme='dark'] .atlasHeroMap__svg [id='CL'],
-[data-theme='dark'] .atlasHeroMap__svg [id='AR'],
-[data-theme='dark'] .atlasHeroMap__svg .Chile,
-[data-theme='dark'] .atlasHeroMap__svg .Argentina {
+[data-theme='dark'] .atlasHeroMap__svg [id='MX'] {
   fill: rgba(234, 145, 45, 0.28);
   stroke: rgba(245, 175, 90, 0.82);
 }
 
+[data-theme='dark'] .atlasHeroMap__svg [id='CL'],
+[data-theme='dark'] .atlasHeroMap__svg [id='BO'],
+[data-theme='dark'] .atlasHeroMap__svg [id='AR'],
+[data-theme='dark'] .atlasHeroMap__svg .Chile,
+[data-theme='dark'] .atlasHeroMap__svg .Argentina {
+  fill: rgba(120, 173, 255, 0.2);
+  stroke: rgba(120, 173, 255, 0.75);
+}
+
 [data-theme='dark'] .atlasHeroMap__svg [id='ES']:hover,
-[data-theme='dark'] .atlasHeroMap__svg [id='MX']:hover,
-[data-theme='dark'] .atlasHeroMap__svg [id='BO']:hover,
+[data-theme='dark'] .atlasHeroMap__svg [id='MX']:hover {
+  fill: rgba(245, 175, 90, 0.4);
+  stroke: rgba(245, 175, 90, 0.95);
+}
+
 [data-theme='dark'] .atlasHeroMap__svg [id='CL']:hover,
+[data-theme='dark'] .atlasHeroMap__svg [id='BO']:hover,
 [data-theme='dark'] .atlasHeroMap__svg [id='AR']:hover,
 [data-theme='dark'] .atlasHeroMap__svg .Chile:hover,
 [data-theme='dark'] .atlasHeroMap__svg .Argentina:hover {
-  fill: rgba(245, 175, 90, 0.4);
-  stroke: rgba(245, 175, 90, 0.95);
+  fill: rgba(120, 173, 255, 0.34);
+  stroke: rgba(120, 173, 255, 0.95);
 }
 
 [data-theme='dark'] .atlasHeroMap__tooltip,
@@ -739,8 +755,8 @@
 }
 
 .homeCountryStatus--comingSoon {
-  color: #505869;
-  background: rgba(80, 88, 105, 0.14);
+  color: #2358ad;
+  background: rgba(61, 127, 227, 0.16);
 }
 
 .homeCountryCard__link {
@@ -766,7 +782,7 @@
 }
 
 .atlasHeroMap__legendDot--soon {
-  background: #6e7584;
+  background: #3d7fe3;
 }
 
 @media (max-width: 996px) {
@@ -786,8 +802,8 @@
 }
 
 [data-theme='dark'] .homeCountryStatus--comingSoon {
-  color: #c8cfde;
-  background: rgba(114, 128, 159, 0.25);
+  color: #b9d5ff;
+  background: rgba(120, 173, 255, 0.24);
 }
 
 [data-theme='dark'] .atlasHeroMap__legendDot--available {
@@ -799,7 +815,7 @@
 }
 
 [data-theme='dark'] .atlasHeroMap__legendDot--soon {
-  background: #9ea8c0;
+  background: #78adff;
 }
 
 /* Minimal home */
