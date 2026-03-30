@@ -109,33 +109,20 @@ const config = {
             items: countryDropdownItems
           },
           { to: '/equivalencias', label: 'Equivalencias', position: 'left' },
-          {
-            type: 'html',
-            position: 'right',
-            value: [
-              '<a',
-              '  href="https://bizmotion.io"',
-              '  target="_blank"',
-              '  rel="noopener noreferrer"',
-              '  class="navbar__bizmotion-link"',
-              '  aria-label="Powered by Bizmotion"',
-              '  title="Powered by Bizmotion"',
-              '>',
-              '  <img',
-              '    src="/img/bizmotion_logo.png"',
-              '    alt="Bizmotion"',
-              '    class="navbar__bizmotion-logo"',
-              '  />',
-              '  <span class="navbar__bizmotion-text">Powered by Bizmotion</span>',
-              '</a>'
-            ].join('\n')
-          }
+          { to: '/acerca-de', label: 'Acerca de', position: 'right' }
         ]
       },
       footer: {
         style: 'dark',
         links: [],
-        copyright: 'Copyright © ' + new Date().getFullYear() + ' Conta-Atlas'
+        copyright: [
+          '<a href="https://bizmotion.io" target="_blank" rel="noopener noreferrer" class="footer__bizmotion-link" aria-label="Powered by Bizmotion" title="Powered by Bizmotion">',
+          '  <img src="/img/bizmotion_logo.png" alt="Bizmotion" class="footer__bizmotion-logo" />',
+          '  <span>Powered by Bizmotion</span>',
+          '</a>',
+          '<span class="footer__separator" aria-hidden="true">—</span>',
+          '<span>Copyright © ' + new Date().getFullYear() + ' Conta-Atlas</span>'
+        ].join('')
       },
       prism: {
         theme: lightCodeTheme,

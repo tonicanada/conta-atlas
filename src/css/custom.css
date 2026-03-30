@@ -38,6 +38,18 @@
     linear-gradient(180deg, #f5f8ff 0%, #ffffff 38%, #f6f4ef 100%);
 }
 
+.homePage--about {
+  min-height: calc(100vh - (var(--ifm-navbar-height) * 2));
+  display: flex;
+  align-items: center;
+}
+
+.homePage--about .homeSection {
+  width: 100%;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
 .homeHero {
   padding: 5rem 0 3rem;
 }
@@ -1098,6 +1110,53 @@
 
 .footer__copyright {
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.footer__bizmotion-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--ifm-footer-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer__bizmotion-link:hover {
+  color: var(--ifm-footer-link-color);
+  text-decoration: none;
+}
+
+.footer__separator {
+  display: inline-block;
+  opacity: 0.78;
+}
+
+.footer__bizmotion-logo {
+  height: 16px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .footer__bottom {
+    padding: 0.35rem 0.75rem;
+    line-height: 1.25;
+  }
+
+  .footer__copyright {
+    white-space: normal;
+    flex-wrap: wrap;
+    row-gap: 0.15rem;
+  }
 }
 
 /* Vertical centering for map-only landing (desktop) */
